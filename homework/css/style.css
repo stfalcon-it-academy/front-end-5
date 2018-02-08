@@ -1,0 +1,22 @@
+body {
+    background-color: #fcfcfc;  /* селектор тега*/
+}
+q {
+    color:#6a737d; font-size: larger; background-color: #f5eaf9 /* селектор тега*/
+}
+.italic {
+    font-style: italic; color: #1b0021; /*селектор класа*/
+}
+#atr {
+    color: #62247a; font-size: larger; /*id селектори*/
+}
+ol li {
+    background-color: azure;
+    font-size: larger;
+}
+h2 {
+    background-color: antiquewhite;
+}
+a[href] {
+    color: #c11131; /*селектор атрибута*/
+}
