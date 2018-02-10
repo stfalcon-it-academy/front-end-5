@@ -1,0 +1,40 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.centrifier {
+    width: 90vw;
+    margin: 0 auto;
+}
+.article {
+    margin-top: 60px;
+}
+.article-title {
+    color: #000;
+    font-size: 24px;
+}
+.article-content {
+    color: #333333;
+    margin-top: 60px;
+    font-size: 15px;
+    line-height: 26px;
+}
+.article-text {
+    margin-top: 40px;
+}
+.info {
+    font-size: 14px;
+    color: #999;
+}
+.info-link a {
+    text-decoration: none;
+    color: #666;
+}
+.info-link a:hover {
+    color: #59c9fe;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.info-sep {
+    margin-left: 16px;
+    margin-right: 16px;
+}
