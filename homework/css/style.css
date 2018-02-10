@@ -1,0 +1,31 @@
+/*стилі в окремрму файлі*/
+
+
+/*застосування до класу*/
+.sub-title {
+    color:mediumslateblue;
+    font-size: 24px;
+}
+
+.tags li:hover{
+   background-color: gray;
+}
+
+blockquote {
+    color: darkblue;
+    font-family:Calibri;
+    font-style: italic;
+}
+.title{
+    color: crimson;
+    font-size: 24px;
+    font-weight: bold;
+}
+.list{
+    color: darkblue;
+    font-style: italic;
+    font-weight: bold;
+}
+.links {
+    font-size: 32px;
+}
