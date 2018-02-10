@@ -1,0 +1,41 @@
+body {
+    background: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:57px;
+    width: 870px;
+    height: 656px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #000000;
+}
+
+div {
+    font-weight: 300;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 67px;
+}
+p {
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 40px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    background-color: #666666;
+    color: #fafafa;
+}
