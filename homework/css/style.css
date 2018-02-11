@@ -1,0 +1,23 @@
+.text{
+    border: 1px solid #000;
+    width: 870px;
+    margin: auto;
+    padding: 30px;
+}
+
+.description{
+    margin-top: 0;
+    margin-bottom: 65px;
+}
+h1{
+    font-size: 24px;
+    margin: 0;
+}
+p{
+    font-size: 15px;
+}
+
+p span{
+    color: gray;
+
+}
