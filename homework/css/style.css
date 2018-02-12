@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .text{
     border: 1px solid #000;
     width: 870px;
