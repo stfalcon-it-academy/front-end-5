@@ -1,0 +1,36 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+div {
+    margin: 0 auto;
+    width: 870px;
+    height: 608px;
+    padding: 30px;
+    line-height: 26px;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-align: justify;
+
+
+
+}
+h1 {
+    font-size: 24;
+    color: #000000;
+    font-weight: 400;
+
+}
+span {
+    font-size: 14px;
+    color: #999999;
+}
+.text {
+    font-size: 14px;
+    color: #666666;
+}
+p{
+    font-size: 15px;
+    color: #333333;
+
+
+}
