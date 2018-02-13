@@ -1,0 +1,25 @@
+body{
+    margin: 30px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #000000;
+}
+div{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+span.some-class_1{
+    color: #999999
+}
+span.some-class_2{
+    color: #666666;
+}
+P{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #333333
+}
