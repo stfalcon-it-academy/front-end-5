@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body> <!-- html, body -->
-<h1>Основи HTML</h1> <!-- html, body, h1 -->
+<h1>Основи HTML</h1> <!-- html, body, body h1, body > h1, body + h1, h1 -->
 <hr> <!-- html, body, hr -->
-<h2>Контент і семантика</h2> <!-- html, body, h2 -->
+<h2>Контент і семантика</h2> <!--html, body, body h2, body > h2, h1 + h2, h2 -->
 <blockquote> <!-- html, body, blockquote -->
   <p>Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої) слів і їх складових частин, словосполук і фразеологізмів.</p> <!-- html, body, blockquote, p -->
 </blockquote>
 <h2>Теги і атрибути</h2> <!-- html, body, h2 -->
-<h3>Атрибути</h3> <!-- html, body, h3 -->
+<h3>Атрибути</h3> <!-- html, body, body h3, body > h3, h1 + h3, h3 -->
 <ol class="first"> <!-- html, body, ol, .first, [class], [class="first"] -->
   <li id="line1"><code>id</code></li> <!-- html, body, ol, li, code, #line1 -->
   <li id="line2"><code>class</code></li> <!-- html, body, ol, li, code, #line2 -->
@@ -26,16 +26,16 @@
 </ol>
 <h3>Документ і метадані</h3> <!-- html, body, h3 -->
 <ol class="second">  <!-- html, body, ol, .second, [class], [class="second"] -->
-  <li><code>&#60;!DOCTYPE&#62;</code></li>
-  <li><code>&#60;html&#62;</code></li>
-  <li><code>&#60;meta&#62;</code></li>
-  <li><code>&#60;title&#62;</code></li>
-  <li><code>&#60;head&#62;</code></li>
+  <li><code>&#60;!DOCTYPE&#62;</code></li> <!-- html, body, ol, li, code, li:first-child -->
+  <li><code>&#60;html&#62;</code></li> <!-- html, body, ol, li, code, li:nth-child(2) -->
+  <li><code>&#60;meta&#62;</code></li> <!-- html, body, ol, li, code, li:nth-child(3) -->
+  <li><code>&#60;title&#62;</code></li> <!-- html, body, ol, li, code, li:nth-child(4) -->
+  <li><code>&#60;head&#62;</code></li> <!-- html, body, ol, li, code, li:last-child -->
 </ol>
 <h3>Структура контенту</h3> <!-- html, body, h3 -->
 <ol class="third"> <!-- html, body, ol, .third, [class], [class="third"] -->
-  <li><code>&#60;body&#62;</code></li>
-  <li><code>&#60;article&#62;</code></li>
+  <li><code>&#60;body&#62;</code></li> <!-- html, body, ol, li, code, ol li -->
+  <li><code>&#60;article&#62;</code></li> <!-- html, body, ol, li, code, ol li, li+li -->
   <li><code>&#60;section&#62;</code></li>
   <li><code>&#60;nav&#62;</code></li>
   <li><code>&#60;aside&#62;</code></li>
