@@ -1,17 +1,65 @@
+div.dr-5 {
+    color: greenyellow;
+    background: aqua; height: 23px; width: 53px;
+}
+h1.dj-1 {
+    color: darkred;
+}
 
-Li {
-    background: orange;
-    border: 1px solid yellowgreen;
+body {
+    margin: 10px;
 }
 
 div {
-    margin: 0 auto;
-    font-weight: bold;
-    text-decoration: none;
-    border: 3px outset midnightblue;
-    border-bottom: 2px dotted blue;
+   font-weight: bolder;
 }
 
-p {
-    color: darkred;
+li.dn-1 {
+    color: blueviolet;
+}
+
+div.dr-4 {
+    color: red;
+    background: black; height: 26px; width: 112px;
+}
+
+div.dr-3 {
+    color: blue;
+    background: gold; height: 29px; width: 150px;
+}
+
+li.dn-2 {
+    color: fuchsia;
+}
+
+li.dn-3 {
+    color: chocolate;
+}
+div.dr-2 {
+    color: gray;
+    background: lightcoral; width: 200px; height: 20px;
+ }
+
+li.dn-4 {
+    color: indigo;
+}
+div.dr-1 {
+    color: indigo;
+    background: hotpink; height: 23px; width: 161px;
+}
+li.dn-5 {color: chartreuse;
+}
+div.dr-0 {
+    color: lime;
+    background: darkorchid; height: 20px; width: 150px;
+}
+li.dn-7 {
+    color: orange;
+}
+div.dr-0-1 {
+    color: brown;
+    background: forestgreen; height: 20px; width: 148px;
+}
+li.dn-6 {
+    color: lightsalmon;
 }
