@@ -1,0 +1,38 @@
+/*font-family: 'Montserrat', sans-serif;*/
+body ul {
+	padding: 0;
+}
+body {
+	font-family:'Montserrat','minionPro', sans-serif; 
+}
+@font-face{
+
+font-family: 'minionPro';
+src:url(../fonts/MinionPro-Regular.otf);
+
+}
+.wrapper {
+	padding: 60px 30px 30px 30px;
+}
+.text {
+	margin-top: 45px;
+}
+.spisok ul li {
+	list-style: none;
+	display: inline-block;
+	padding-right: 20px;
+	margin-right: 20px;
+	border-right: 1px solid #999999;
+}
+.spisok ul li:last-child{
+	border-right: none;
+}
+.spisok ul li span {
+	color: #999999;
+}
+.text p {
+	font-size: 15px;
+	line-height: 26px;
+	color:#333333;
+	font-family:'Montserrat', sans-serif; 
+}
