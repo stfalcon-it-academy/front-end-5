@@ -1,0 +1,43 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.733;
+    color: #333333;
+}
+
+header h1 {
+    font-size: 24px;
+    line-height: 1.083;
+    color: #000000;
+    margin: 60px 30px 15px;
+}
+
+.menu nav ul {
+    margin: 15px 30px 60px;
+    padding-left: 0;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    margin-left: 0;
+}
+
+li+li {
+    border-left: 1px solid #999999;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+li span {
+    color: #999999;
+}
+
+li a {
+    text-decoration: none;
+    color: #666666;
+}
+.main p {
+    margin: 40px 30px;
+}
