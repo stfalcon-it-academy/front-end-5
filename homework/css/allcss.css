@@ -1,0 +1,44 @@
+body {
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+}
+li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999999;
+}
+li+li {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: #999999 solid 1px;
+    line-height: 14px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+div {
+    padding: 34px 30px 14px 30px;
+}
+a {
+    text-decoration: none;
+    color: #666666;
+}
+nav {
+    margin-bottom: 52px;
+}
+p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #333333;
+    margin-bottom: 26px;
+}
