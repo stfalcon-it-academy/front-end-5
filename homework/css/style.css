@@ -15,9 +15,15 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
+
+/*-----------Start Header Style------------*/
 
 header {
   margin-bottom: 30px;
@@ -31,6 +37,18 @@ header {
   content: "";
   display: table;
   clear: both;
+  font-size: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 0;
+  width: 0;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .main-header {
@@ -122,7 +140,7 @@ header {
   font-size: 0;
 }
 
-.contacts-block .search-block {
+.contacts-block .search {
   float: right;
   position: relative;
 }
@@ -132,7 +150,7 @@ header {
   position: relative;
 }
 
-.search-block input {
+.search input {
   float: left;
   box-sizing: border-box;
   width: 276px;
@@ -147,7 +165,7 @@ header {
   background-color: transparent;
 }
 
-.search-block span {
+.search span {
   display: inline-block;
   position: absolute;
   top: 13px;
@@ -158,7 +176,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.search-block input:focus + span {
+.search input:focus + span {
   display: none;
 }
 
@@ -178,6 +196,7 @@ header {
 .site-nav a.bag-container {
   float: right;
   position: relative;
+  top: 8px;
   width: 27px;
   padding-right: 0;
   font-size: 0;
@@ -221,7 +240,249 @@ a.active-nav-link, .site-nav a:hover {
 
 .count-icon .numb {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.384;
   font-weight: 500;
   color: #000;
+}
+
+/*-----------Start Main Style------------*/
+.breadcrumbs-block {
+  height: 118px;
+  padding: 0 27px;
+  margin-bottom: 30px;
+
+  color: #232323;
+
+  background-color: #e7e7e7;
+}
+
+/*--- Вирівнювання по вертикалі + зміна потоку ---*/
+.breadcrumbs-label {
+  float: left;
+  height: 100%;
+
+  text-transform: uppercase;
+  font-style: 0;
+  font-weight: 600;
+}
+
+.breadcrumbs-label h1 {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.breadcrumbs-label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+/*--- Вирівнювання по вертикалі + зміна потоку ---*/
+.breadcrumbs-links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 0;
+  list-style: none;
+}
+
+.breadcrumbs-links::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.breadcrumbs-links li {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.breadcrumbs-links a {
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-links a[href] {
+  position: relative;
+  color: #999;
+  padding: 20px;
+}
+
+.breadcrumbs-links a[href]::after {
+  content: '/';
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 7px;
+}
+
+.breadcrumbs-links a[href]:hover {
+  text-decoration: underline;
+}
+
+.contacts-block {
+  margin-bottom: 60px;
+}
+
+.map-info {
+  font-size: 0;
+}
+
+.contacts-details {
+  padding: 64px 18px;
+  padding-bottom: 38px;
+  background-color: #fff;
+}
+
+.contacts-info {
+  float: left;
+  width: 34%;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contacts-info > div {
+  margin-bottom: 35px;
+}
+
+.contacts-details h3 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1.733;
+  font-weight: 700;
+  color: #000;
+}
+
+.contacts-info h3 {
+  margin-bottom: 12px;
+}
+
+.contacts-form h3 {
+  margin-bottom: 6px;
+}
+
+.contacts-info h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  line-height: 2.333;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.contacts-info ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contacts-info li {
+  margin-bottom: 12px;
+  line-height: 1.733;
+  text-indent: 18px;
+}
+
+.contacts-info li::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  height: 26px;
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contacts-address li::before {
+  background-image: url(../img/Location.png);
+}
+
+.contacts-tel li::before {
+  background-image: url(../img/Phone.png);
+}
+
+.contacts-email li::before {
+  background-image: url(../img/Mail.png);
+}
+
+.contacts-form {
+  float: right;
+  width: 65%;
+}
+
+.contacts-form p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 68px;
+  font-weight: 500;
+}
+
+.contacts-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #d5d1cd;
+  min-height: 70px;
+}
+
+.contacts-form ::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: #d4d4d4;
+}
+
+.contacts-form .left-col {
+  float: left;
+  height: 160px;
+  width: 48%;
+}
+
+.contacts-form .right-col {
+  float: right;
+  height: 160px;
+  width: 48%;
+}
+
+.contacts-form input {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #d5d1cd;
+  padding: 0;
+  padding-top: 30px;
+  margin: 0;
+  width: 100%;
+  height: 78px;
+  outline: none;
+}
+
+button[type='submit'] {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  clear: both;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  background-color: #fff;
+  border: 1px solid #be926f;
 }
