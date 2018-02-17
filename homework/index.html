@@ -14,31 +14,45 @@
 <header>
     <div class="head-top">
         <div class="site-center">
-            <address>(+123) 456 789</address>
+            <address><a href="tel:">(+123) 456 789</a></address>
             <span><a href="#">Log in</a> or <a href="#">Register</a></span>
         </div>
     </div>
     <div class="head-main">
         <div class="site-center">
             <div class="head-logo">
-                <a href="#"><img src="img/logo.png" alt="logo"></a>
+                <a href="/"><img src="img/logo.png" alt="logo"></a>
             </div>
-            <input type="text" placeholder="Search Products...">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Living room</a></li>
-                    <li><a href="#">Office</a></li>
-                    <li><a href="#">Bedroom</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="head-search">
+                <form action="" method="get">
+                    <input type="search" placeholder="Search Products..." name="search" value="">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <div class="head-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Living room</a></li>
+                        <li><a href="#">Office</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="head-bag">
-                <a href="#"><img src="img/bag.png" alt="bag"></a>
+                <div class="counter" id="2"></div>
+                <button type="button"></button>
             </div>
         </div>
     </div>
 </header>
+<div class="site-center">
+    <div class="content-top">
+        <h1>contact us</h1>
+        <span><a href="#">home</a> / <a href="#">contact</a></span>
+    </div>
+</div>
 </body>
 </html>

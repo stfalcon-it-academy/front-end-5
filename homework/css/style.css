@@ -11,22 +11,22 @@ body {
 }
 
 .head-top {
+    padding: 10px 0;
+    box-sizing: border-box;
     background: #2b2b2b;
     width: 100%;
     height: 35px;
-    line-height: 35px;
 }
 
 .head-top address {
     color: #7f7f7f;
-    font-weight: 300;
     font-style: normal;
     float: left;
 }
 
 .head-top span {
-    font-size: 12px;
     color: #3b3b3b;
+    font-size: 12px;
     float: right;
 }
 
@@ -37,21 +37,23 @@ body {
 }
 
 .head-main {
+    padding-top: 30px;
+    box-sizing: border-box;
     background: #232323;
     width: 100%;
     height: 168px;
-
 }
 
 .head-logo {
-    display: inline-block;
-    margin-top: 30px;
-
+    clear: both;
+    float: left;
 }
 
-.head-main input {
+.head-search {
     float: right;
-    margin-top: 30px;
+}
+
+.head-search input {
     background: #232323;
     font-size: 13px;
     font-weight: 300;
@@ -60,6 +62,21 @@ body {
     width: 275px;
     height: 45px;
     padding-left: 25px;
+}
+
+.head-search button {
+    border: none;
+    background: url(../img/search.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-left: -40px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.head-menu {
+    clear: both;
+    float: left;
 }
 
 .head-main ul {
@@ -84,7 +101,61 @@ body {
 }
 
 .head-bag {
-
     float: right;
-    margin-top: -30px;
+    padding: 20px 0;
+}
+
+.head-bag button {
+    border: none;
+    background: url(../img/bag.png) no-repeat;
+    width: 17px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: -8px;
+}
+
+.head-bag div {
+    background: #be926f;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+    position: relative;
+}
+
+.counter::after {
+    content: attr(id);
+    font-size: 12px;
+    padding: 6px;
+}
+
+.content-top {
+    margin: 30px 0;
+    box-sizing: border-box;
+    background: #e7e7e7;
+    height: 115px;
+}
+
+.content-top h1 {
+    font-size: 30px;
+    padding: 20px;
+    text-transform: uppercase;
+    clear: both;
+    float: left;
+}
+
+.content-top span {
+    padding: 50px 20px;
+    color: #999999;
+    float: right;
+}
+
+.content-top a {
+    color: #666666;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content-top a:hover {
+    color: #999999;
 }
