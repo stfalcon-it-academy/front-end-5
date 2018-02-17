@@ -1,0 +1,63 @@
+
+
+body {
+    counter-reset: pages; /* ініціалізація лічильника */
+}
+
+a {
+    counter-increment: pages; /* збільшення лічильника */
+}
+p {
+	margin: 0;
+}
+a::before {
+    content: counter(pages); /* відображення лічильника */
+}
+.block-one {
+	position: relative;
+	
+}
+.block-two {
+	position: relative;
+}
+.block-one .number {
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 50px;
+	background-color: #cc4242;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block-one .text {
+	margin-left: 50px;
+	height: 100%;
+	background-color: #cccccc;
+	padding: 8px 10px 8px 2px;
+}
+p {
+	padding: 5px 0;
+}
+a {
+	color: #fff;
+	font-size: 24px;
+}
+.block-two .number {
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 50px;
+	background-color: #ff5353;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block-two .text {
+	margin-left: 50px;
+	height: 100%;
+	background-color: #fff;
+	padding: 8px 10px 8px 2px;
+}
