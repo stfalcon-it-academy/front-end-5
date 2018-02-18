@@ -1,0 +1,55 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fafafa;
+}
+
+.main {
+    margin: 30px;
+    line-height: 26px
+}
+
+.main-title {
+    margin-top: 60px;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.article-info {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333
+}
+
+.some-info {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+
+.author-link a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.comments-link a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.categories-link a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.devider {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+a:hover {
+    color: #000000;
+}
