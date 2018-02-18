@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadpro-regular/MyriadPro-Regular.eot');
+    src: url('../fonts/myriadpro-regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/myriadpro-regular/MyriadPro-Regular.woff2') format('woff2'),
+    url('../fonts/myriadpro-regular/MyriadPro-Regular.woff') format('woff'),
+    url('../fonts/myriadpro-regular/MyriadPro-Regular.ttf') format('truetype'),
+    url('../fonts/myriadpro-regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
