@@ -1,13 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 6</title>
 </head>
 <body>
-
+  <header class="main-header">
+  <nav class="main-nav">
+    <div class="user-block">
+      <div class="wrapper clearfix">
+        <a href="tel:+123456789" class="tel"><span>(+123) 456 789</span></a>
+        <ul>
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contacts-block">
+      <div class="wrapper clearfix">
+        <a href="#" class="main-site-logo">
+          <img src="img/Logo.png" alt="Main site logo">
+        </a>
+        <div class="search">
+          <form class="container clearfix" action="#" method="post">
+            <input type="text" placeholder="Search Products..." name="search-field">
+            <button type="submit" class="icon" name="search-btn"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="site-nav">
+      <div class="wrapper clearfix">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Living room</a></li>
+          <li><a href="#">Office</a></li>
+          <li><a href="#">Bedroom</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a class="active">Contact</a></li>
+        </ul>
+        <a href="#" class="bag-container clearfix">
+          <img src="img/Bag.png" alt="Bag icon">
+          <span class="count-icon">
+            <span class="numb">2</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <main>
+    <div class="wrapper">
+      <div class="breadcrumbs-block clearfix">
+        <span class="breadcrumbs-label"><h1>contact us</h1></span>
+        <ul class="breadcrumbs-links">
+          <li><a href="/">home</a></li>
+          <li><a>contact</a></li>
+        </ul>
+      </div>
+      <section class="contacts-block">
+        <h2 class="visually-hidden">Coordinats information</h2>
+        <div class="map-info">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2594.7460477906134!2d26.99775331575516!3d49.43261497934789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1518854367973" height="629" frameborder="0" style="border:0"></iframe>
+        </div>
+        <div class="contacts-details clearfix">
+          <div class="contacts-info">
+            <h3>Contacts information</h3>
+            <div class="contacts-address">
+                <h4>Address</h4>
+                <ul>
+                  <li>
+                    <address>Head: 12 W 1st St, 90001 Los<br>
+                    Angeles, California, US</address>
+                  </li>
+                  <li>
+                    <address>Agency: 15 RuePernele, 5651 Paris,<br>
+                    France</address>
+                  </li>
+                </ul>
+            </div>
+            <div class="contacts-tel">
+              <h4>Call Us</h4>
+              <ul>
+                <li><a href="tel:+190012345678">+1 – 900 – 1234 -5678</a></li>
+                <li><a href="tel:+190012345678">+1 – 900 – 1234 -5678</a></li>
+              </ul>
+            </div>
+            <div class="contacts-email">
+              <h4>Email</h4>
+              <ul>
+                <li><a href="mailto:info@templaza.com">info@templaza.com</a></li>
+                <li><a href="mailto:support@templaza.com">support@templaza.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts-form">
+            <h3>Write us a message</h3>
+            <p>Your email address will not be published.</p>
+            <form action="#" method="post">
+              <textarea name="name" wrap="hard" placeholder="Your Message"></textarea>
+              <div class="left-col">
+                <input type="text" placeholder="Your Subject" name="message">
+                <input type="text" placeholder="Name" name="name">
+              </div>
+              <div class="right-col">
+                <input type="text" placeholder="Email(*)" name="email">
+                <input type="text" placeholder="Website" name="site">
+              </div>
+              <button class="btn" type="submit" name="send-message-btn">Send Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+      <div class="subscribe-block">
+        <div class="wrapper">
+          <div class="subscribe-message">
+            <h2>Newsletter</h2>
+            <p>
+              Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.
+            </p>
+          </div>
+          <form action="index.html" method="post">
+            <input type="email" name="subscribe-email" placeholder="Email address">
+            <button class="btn subs-btn" type="submit" name="subs-btn">
+              <span>subscribe</span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="feachers">
+        <div class="wrapper">
+          <ul>
+            <li><span class="ship">free shipping</span></li>
+            <li><span class="supp">customer support</span></li>
+            <li><span class="money-back">15 days money back</span></li>
+            <li><span class="help-center">24/7 help center</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contacts-logo">
+        <div class="wrapper">
+          <div class="row row-1">
+            <div class="col">
+              <img src="img/iPhone.jpg" alt="Phome icon">
+            </div>
+            <div class="col">
+              <img src="img/Location-Large.jpg" alt="Location icon">
+            </div>
+            <div class="col">
+              <img src="img/Mail.jpg" alt="Mail icon">
+            </div>
+          </div>
+          <div class="row row-2">
+            <div class="col">
+              <span>Call us</span>
+            </div>
+            <div class="col">
+              <span>Location</span>
+            </div>
+            <div class="col">
+              <span>Mail</span>
+            </div>
+          </div>
+          <div class="row row-3">
+            <div class="col">
+              <a href="tel:18002777766">1-800-277-7766</a>
+            </div>
+            <div class="col">
+              <a href="#"><address>Moscow, Pushkin str. 32/A</address></a>
+            </div>
+            <div class="col">
+              <a href="mailto:info@domain.com">info@domain.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-nav">
+        <div class="wrapper">
+          <div>
+            <span>2016 Domain.com. All rights reserved</span>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#"><span>Terms & Conditions</span></a></li>
+              <li><a href="#"><span>Privacy</span></a></li>
+              <li><a href="#"><span>Downloads</span></a></li>
+            </ul>
+          </div>
+          <div class="sosial">
+            <ul>
+              <li><a href="#"><img src="img/twitter.png" alt="Twitter icon"></a></li>
+              <li><a href="#"><img src="img/google+.png" alt="Google plus icon"></a></li>
+              <li><a href="#"><img src="img/facebook.png" alt="Facebook icon"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
 </body>
 </html>
