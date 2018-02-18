@@ -21,6 +21,7 @@ list-style: none;
 body a {
 	text-decoration: none;
 }
+
 .header-top {
 background-color: #2b2b2b;
 padding: 15px 0;
@@ -36,14 +37,13 @@ padding: 15px 0;
 	display: inline-block;
 	float: right;
 }
-.header-register ul li {
-	display: inline-block;
-}
-.header-register ul li a {
+
+.header-register  a {
 	font-family: 'Montserrat:400', sans-serif;
 	color: #666666;
+	display: inline-block;
 }
-.header-register ul li span {
+.header-register  span {
 	color: #363636;
 }
 /*head menu*/
@@ -62,9 +62,14 @@ padding: 15px 0;
    .logo-left {
    	display: inline-block;
    }
- .search a {
+ .search button {
  	color: #fff;
+ 	background-color: #232323;
+ 	border: none;
+ 	cursor: pointer;
+ 	border-style: none;
  }
+ .search input:-webkit-input-placeholder { color: red; }
    input[type="search"] {
     border: none; /* Убираем рамку */
     outline: none; /* Убираем свечение в Chrome и Safari */
@@ -77,18 +82,21 @@ padding: 15px 0;
    .head-nav {
    	padding: 35px 0;
    }
-   .head-nav-left {
+   nav {
    	display: inline-block;
    }
-   .head-nav-left ul li  {
+   nav ul li  {
    	display: inline-block;
    	margin-right: 30px;
    }
-    .head-nav-left ul li a {
+  nav ul li a {
     	font-family: 'Montserrat:400', sans-serif;
     	color: #d3d3d3;
     }
-    .head-nav-left ul li a:hover{
+    nav ul li a:active{
+    	color: #be926f;
+    }
+    .active {
     	color: #be926f;
     }
     .head-nav-right{
@@ -101,12 +109,20 @@ padding: 15px 0;
     	font-size: 25px;
 
     }
-    .icon {
+    .head-nav-right::before {
     	position: absolute;
-    	top: 0px;
-    	left: 12px;
-    	
+    	top:-5px;
+    	right: -10px;
+    	display: inline-block;
+    	width: 18px;
+    	height: 18px;
+    	background-color: chocolate;
+    	border-radius: 50%;
+    	text-align: center;
+    	content: attr(data-count);
+    	line-height: 18px;
     }
+
 /*contact*/
 .contact {
 	background: #e7e7e7;
@@ -151,11 +167,13 @@ padding: 15px 0;
 }
 .info-left {
 	display: inline-block;
+	width: 49%;
 }
 .info-right {
 	display: inline-block;
 	vertical-align: top;
 	float: right;
+	width: 49%;
 }
 .info-left span {
 	font-weight: bold;
@@ -169,36 +187,31 @@ padding: 15px 0;
 .email {
 	margin-top: 30px;
 }
-.register input {
-	border: none;
-	border-bottom: 1px solid #d5d1cd;
-	
-}
-.register .sms {
-	width: 450px;
-}
-.reg-b-s, .reg-b-e, .reg-c-n, .reg-c-w {
-display: inline-block;
-}
-.reg-b-e, .reg-c-w {
-	float: right;
+.
+
 } 
 .register {
 	margin-top: 35px;
 }
+.register input {
+	border: none;
+	border-bottom: 1px solid #d5d1cd;
+	padding: 10px 0;
+
+}
 .register p {
-	color: #d4d4d4;
+	margin-top: 50px;
 }
-.button {
-	margin-top: 30px;
-}
-.button a{
+.submit input {
+	padding: 20px 50px;
+	cursor: pointer;
+	background: #fff;
 	border: 1px solid #be926f;
-	display: inline-block;
-	padding: 15px 50px;
-	color: #333;
-	font-weight: bold;
-}   
+}
+.right   {
+	float: right;
+}
+
 /*newsletter*/
 .newsletter {
 	font-family: 'Montserrat:400', sans-serif;
@@ -217,6 +230,7 @@ display: inline-block;
 }
 .letter-l, .letter-r {
 	display: inline-block;
+	width: 49%;
 }
 .letter-r {
 	vertical-align: top;
@@ -224,7 +238,7 @@ display: inline-block;
 	margin-top: 30px;
 }
 .letter-r input {
-	width: 270px;
+	
 	height: 34px;
 	padding-left: 5px;
 }
@@ -244,6 +258,7 @@ display: inline-block;
 	display: inline-block;
 	width: 24%;
 	font-weight: bold;
+	font-size: 13px;
 	
 }
 .icon-one ul li:last-child {
@@ -262,13 +277,19 @@ display: inline-block;
 .icon-two i {
 color: #be926f;
 }
-.icon-two a {
-	font-size: 40px;
-}
+
 .icon-a, .icon-b, .icon-c {
 	display: inline-block;
 	text-align: center;
 	width: 30%;
+}
+.icon-tel {
+	font-weight: bold;
+	color: #333;
+}
+.icon-mail {
+	font-size: 12px;
+	color: #be926f;
 }
 .icon-b span {
 	font-size: 15px;
@@ -289,7 +310,7 @@ color: #be926f;
 ,.footer-c 
 , .footer-r {
 	display: inline-block;
-	width: 33%;
+	width: 32%;
 	text-align: center;
 }
 .footer-c ul li {
@@ -298,9 +319,7 @@ display: inline-block;
 .footer-r ul li {
 	display: inline-block;
 }
-.footer-c ul li a {
-	margin-right: 15px;
-}
+
 .footer-r ul li a {
 	margin-right: 15px;
 }

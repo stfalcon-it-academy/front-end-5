@@ -4,21 +4,22 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalyze.css">
-	<link rel="stylesheet" href="css/style.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
 	 		<header>
 	 				<div class="header-top">
 	 					<div class="wrapper">
-		 						<div class="tel"><a href="#">(+123) 456 789</a></div>
+		 						<div class="tel"><a href="tel:(+123) 456 789">(+123) 456 789</a></div>
 		 						<div class="header-register">
-		 								<ul>
-		 									<li><a href="#">Log in</a></li>
-		 									<li><span>or</span></li>
-		 									<li><a href="#">Register</a></li>
+		 								
+		 									<a href="#">Log in</a>
+		 									<span>or</span>
+		 									<a href="#">Register</a>
 		 								</ul>
 		 						</div>
 		 				</div>
@@ -30,26 +31,27 @@
 	 												<a href="#"><img src="img/Logo.png" alt="logo"></a>
 	 										</div>
 	 										<div class="search">
-	 											<form >
-	 												<input type="search" name="q" placeholder="Search products...">
-     											<a href="#"><i class="fas fa-search f002"></i></a>
+	 											<form method="post" action="#">
+	 												<input type="search" name="q" placeholder="Search products..." style="color: #fff;">
+     											
+     											<button type="submit"><i class="fas fa-search f002"></i></button>
 	 											</form>
 	 										</div>
 	 								</div>
 	 								<div class="head-nav">
-	 										<div class="head-nav-left">
+	 										<nav>
 	 												<ul>
-	 													<li><a href="#">Home</a></li>
+	 													<li ><a href="#" class="active">Home</a></li>
 	 													<li><a href="#">Living room</a></li>
 	 													<li><a href="#">Office</a></li>
 	 													<li><a href="#">Bedroom</a></li>
 	 													<li><a href="#">Blog</a></li>
 	 													<li><a href="#">Contact</a></li>
 	 												</ul>
-	 										</div>
-	 										<div class="head-nav-right">
-	 												<a href="#"><i class="fas fa-shopping-bag"></i></a>
-	 												<span class="icon"><img src="img/circle.png" alt=""></span>
+	 										</nav>
+	 										<div class="head-nav-right" data-count='2'>
+	 												<a href="#" ><i class="fas fa-shopping-bag"></i></a>
+	 												
 	 										</div>
 	 								</div>
 	 						</div>
@@ -80,55 +82,53 @@
 	 								<h3>CONTACT INFORMATION</h3>
 	 								<div class="adress">
 	 										<p><span>Address</span></p>
-	 										<p><a href="#"><i class="fas fa-map-marker-alt"></i></a> Head: 12 W 1st St, 90001 Los Angeles, California, US</p>
-	 										<p><a href="#"><i class="fas fa-map-marker-alt"></i></a> Agency: 15 RuePernele, 5651 Paris, France</p>
+	 										<p><a href="#" type="adress"><i class="fas fa-map-marker-alt"></i> Head: 12 W 1st St, 90001 Los Angeles, California, US</a></p>
+	 										<p><a href="#"><i class="fas fa-map-marker-alt"></i> Agency: 15 RuePernele, 5651 Paris, France</a> </p>
 	 								</div>
 	 								<div class="call">
 	 										<p><span>Call Us</span></p>
-	 										<p><a href="#"><i class="fas fa-phone"></i></a> +1 – 900 – 1234 -5678</p>
-	 										<p><a href="#"><i class="fas fa-phone"></i></a> +1 – 900 – 1234 -5678</p>
+	 										<p><a href="tel:+1 – 900 – 1234 -5678"><i class="fas fa-phone"></i> +1 – 900 – 1234 -5678</a> </p>
+	 										<p><a href="tel:+1 – 900 – 1234 -5678"><i class="fas fa-phone"></i> +1 – 900 – 1234 -5678</a> </p>
+	 										
 	 								</div>
 	 								<div class="email">
 	 										<p><span>Email</span></p>
-	 										<p><a href="#"><i class="fas fa-envelope"></i></a> info@templaza.com</p>
-	 										<p><a href="#"><i class="fas fa-envelope"></i></a> support@templaza.com</p>
+	 										<p><a href="mailto:info@templaza.com"><i class="fas fa-envelope"></i> info@templaza.com</a> </p>
+	 										<p><a href="mailto:support@templaza.com"><i class="fas fa-envelope"></i> support@templaza.com</a> </p>
 	 								</div>
 	 						</div>
 	 						<div class="info-right">
 	 								<h3>WRITE US A MESSAGE</h3>
 	 								<p>Your email address will not be published.</p>
 	 								<div class="register">
-	 										<div class="rigister-a">
-	 												<p>Your message</p>
-	 												<input type="text" class="sms">
-	 										</div>
-	 										<div class="rigister-b">
-	 												<div class="reg-b-s">
-	 													<p>Your Subject</p>
-	 													<input type="text">
-	 												</div>
-	 												<div class="reg-b-e">
-	 													<p>Email(*)</p>
-														<input type="text">
-	 												</div>	 												
-	 										</div>
-	 										<div class="rigister-c">
-	 												<div class="reg-c-n">
-	 													<p>Name</p>
-	 													<input type="text">
-	 												</div>
-	 												<div class="reg-c-w">
-	 													<p>Website</p>
-														<input type="text">
-	 												</div>
-	 												
-	 										</div>	
-	 										<div class="button">
-	 												<a href="#">SEND NOW</a>
-	 										</div>											
+	 									<form action="#" method="post">
+	 										<p>
+	 											<input type="text" name="message" placeholder="Your Message" style="width: 100%">
+	 										</p>
+	 										<p>
+	 											<span>
+	 												<input type="text" name="Your Subject" placeholder="Your Subject">
+	 											</span>
+	 											<span class="right">
+	 												<input type="text" name="Email" placeholder="Email(*)">
+	 											</span>
+	 										</p>
+	 										<p>
+	 											<span>
+	 												<input type="text" name="Name" placeholder="Name">
+	 											</span>
+	 											<span class="right">
+	 												<input type="text" name="Website" placeholder="Website">
+	 											</span>
+	 										</p>
+	 										<p class="submit">
+	 											<input type="submit" name="send now" value="SEND NOW">
+	 										</p>
+	 									</form>	
+	 																					
 	 								</div>
 	 						</div>
-	 						</div>
+	 					</div>
 	 				</div>
 	 		
 	 				<div class="newsletter">
@@ -139,8 +139,10 @@
 	Enter your e-mail and subscribe to our newsletter.</p>
 		 						</div>
 		 						<div class="letter-r">
-		 								<input type="text" placeholder="Email address">
+		 								<form action="#" method="post">
+		 								<input type="text" name="email" placeholder="Email address">
 		 								<a href="#"><i class="fas fa-paper-plane"></i> SUBSCRIBE</a>
+		 							</form>
 		 						</div>
 		 						<hr>
 	 				</div>
@@ -148,10 +150,10 @@
 	 			<div class="icon-one">
 	 					<div class="wrapper">
 	 							<ul>
-	 								<li><a href="#"><i class="fas fa-plane"></i></a> FREE SHIPING</li>
-	 								<li><a href="#"><i class="fas fa-undo-alt"></i></a> 15 DAYS MONEY BACK</li>
-	 								<li><a href="#"><i class="fas fa-user"></i></a> CUSTOMER SUPPORT</li>
-	 								<li><a href="#"><i class="fas fa-phone-volume"></i></a>  24/7 HELP CENTER</li>
+	 								<li><a href="#"><i class="fas fa-plane"></i></a><span> FREE SHIPING</span></li>
+	 								<li><a href="#"><i class="fas fa-undo-alt"></i></a><span>15 DAYS MONEY BACK</span> </li>
+	 								<li><a href="#"><i class="fas fa-user"></i></a> <span>CUSTOMER SUPPORT</span></li>
+	 								<li><a href="#"><i class="fas fa-phone-volume"></i></a> <span>24/7 HELP CENTER</span> </li>
 	 							</ul>
 	 					</div>
 	 			</div>
@@ -160,7 +162,7 @@
 	 							<div class="icon-a">
 	 								<a href="#"><i class="fas fa-mobile"></i></a>
 	 								<p>Call us</p>
-	 								<p>1-800-277-7766</p>
+	 								<a class="icon-tel" href="tel:1-800-277-7766">1-800-277-7766</a>
 	 							</div>
 	 							<div class="icon-b">
 	 								 <a href="#"><i class="fas fa-map-marker-alt"></i></a>
@@ -170,7 +172,7 @@
 	 							<div class="icon-c">
 	 								 <a href="#"><i class="fas fa-envelope"></i></a>
 	 								 <p>Mail</p>
-	 								 <span>info@domain.com</span>
+	 								 <a class="icon-mail" href="mailto:info@domain.com">info@domain.com</a>
 	 							</div>
 	 							<hr>
 	 					</div>
