@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+    background-color: #555555;
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    line-height: 1.714;
+
+}
+
+.list {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.list li {
+    background: #cccccc;
+}
+
+.list ol {
+    list-style: none;
+    counter-reset:li;
+    padding: 0;
+}
+
+.list ol li {
+    position: relative;
+    padding:4px 8px;
+    background:#f6f6f6;
+}
+
+ol li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50px;
+    width: 50px;
+    padding: 8px 0;
+    color: #fff;
+    background: #ff5353;
+    font-weight: bold;
+    font-family: 'Myriad Pro';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li:nth-child(odd){
+    background-color: #cccccc;
+    z-index: 5;
+}
+
+.list li:nth-child(odd):before {
+    background-color: #cc4242;
+}
+
