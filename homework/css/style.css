@@ -132,7 +132,7 @@ header {
   display: inline-block;
   font-size: 12px;
   font-weight: 500;
-  color: #3b3939;
+  color: #575656;
 }
 
 .contacts-block a {
@@ -143,6 +143,10 @@ header {
 .contacts-block .search {
   float: right;
   position: relative;
+}
+
+.contacts-block iframe {
+  width: 100%;
 }
 
 .container {
@@ -165,18 +169,21 @@ header {
   background-color: transparent;
 }
 
-.search span {
+.search button {
   display: inline-block;
   position: absolute;
   top: 13px;
   right: 17px;
+  padding: 0;
+  margin: 0;
   width: 18px;
   height: 18px;
-  background-image: url(../img/Search.png);
+  border: none;
+  background: rgba(0, 0, 0, 0) url(../img/Search.png);
   background-repeat: no-repeat;
 }
 
-.search input:focus + span {
+.search input:focus + button {
   display: none;
 }
 
@@ -215,7 +222,8 @@ header {
   line-height: 1.5;
 }
 
-a.active-nav-link, .site-nav a:hover {
+a.active,
+.site-nav a:hover {
   color: #be926f;
 }
 
@@ -273,6 +281,7 @@ a.active-nav-link, .site-nav a:hover {
   vertical-align: middle;
   margin: 0;
   padding: 0;
+  font-weight: 600;
   font-size: 30px;
 }
 
@@ -371,6 +380,16 @@ a.active-nav-link, .site-nav a:hover {
   margin-bottom: 12px;
 }
 
+.contacts-info div a {
+  float: none;
+  font-size: 15px;
+  color: inherit;
+}
+
+.contacts-info div a:hover {
+  text-decoration: underline;
+}
+
 .contacts-form h3 {
   margin-bottom: 6px;
 }
@@ -394,7 +413,7 @@ a.active-nav-link, .site-nav a:hover {
 .contacts-info li {
   margin-bottom: 12px;
   line-height: 1.733;
-  text-indent: 18px;
+  text-indent: 19px;
 }
 
 .contacts-info li::before {
@@ -406,6 +425,10 @@ a.active-nav-link, .site-nav a:hover {
   width: 12px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.contacts-address address {
+  font-style: normal;
 }
 
 .contacts-address li::before {
@@ -472,17 +495,260 @@ a.active-nav-link, .site-nav a:hover {
   outline: none;
 }
 
-button[type='submit'] {
-  width: 200px;
-  height: 50px;
+main button[type='submit'] {
   margin-top: 30px;
   clear: both;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
 
+.btn {
+  border: 1px solid #be926f;
+  width: 200px;
+  height: 52px;
   font-family: inherit;
   font-weight: 600;
-  font-size: 16px;
   text-transform: uppercase;
+}
 
+/*-----------Start styling footer-----------*/
+.subscribe-block {
   background-color: #fff;
-  border: 1px solid #be926f;
+  padding: 60px 0;
+}
+
+.subscribe-block .wrapper {
+  font-size: 0;
+}
+
+.subscribe-message {
+  display: inline-block;
+  vertical-align: middle;
+  width: 44%;
+}
+
+.subscribe-message h2 {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.subscribe-message p {
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.subscribe-block form {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 56%;
+  font-size: 0;
+}
+
+.subscribe-block input[type="email"] {
+  width: 392px;
+  height: 52px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  border: 1px solid #e8e8e8;
+}
+
+.subscribe-block input:placeholder {
+  color: #999;
+}
+
+.subs-btn {
+  padding: 0;
+  margin-left: 15px;
+  font-size: 18px;
+  background-color: #f8f8f8;
+}
+
+.subs-btn span {
+  color: #333;
+  padding-left: 50px;
+  position: relative;
+}
+
+.subs-btn span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 33px;
+  height: 26px;
+  background-image: url(../img/Sub.png);
+}
+
+.feachers ul {
+  margin: 0 -54px;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.feachers li {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 25%;
+  padding: 32px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feachers span {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.feachers span::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.ship::before {
+  background-image: url(../img/Plane.png);
+}
+
+.supp::before {
+  background-image: url(../img/Support.png);
+}
+
+.money-back::before {
+  background-image: url(../img/Back.png);
+}
+
+.help-center::before {
+  background-image: url(../img/Help-24-7.png);
+}
+
+.contacts-logo {
+  background-color: #fff;
+}
+
+.contacts-logo {
+  border-bottom: 1px solid #e6e6e6
+}
+
+.row {
+ font-size: 0;
+ margin: 0 -26px;
+}
+
+.row-1 {
+  padding: 45px 0 14px;
+}
+
+.row-3 {
+  padding-bottom: 50px;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33.3%;
+  text-align: center;
+}
+
+.row-3 .col {
+  padding: 20px 0 0;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+.row-3 a[href^="tel:"] {
+  font-size: 24px;
+  font-weight: 500;
+  color: #232323;
+}
+
+.row-3 a[href^="mailto:"] {
+  font-weight: 500;
+  color: #be926f;
+}
+
+.row-3 a:hover {
+  text-decoration: underline;
+}
+
+.row-2 .col span {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #000;
+}
+
+.row-3 address {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #666;
+}
+
+.bottom-nav {
+  padding: 30px 0 24px;
+  height: 20px;
+  background-color: #fff;
+  font-size: 0;
+}
+
+.bottom-nav .wrapper div {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  text-align: center;
+}
+
+.bottom-nav .wrapper div:first-child {
+  text-align: left;
+}
+
+.bottom-nav .wrapper div:last-child {
+  text-align: right;
+}
+
+.bottom-nav span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+}
+
+.bottom-nav li {
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 0 14px;
+}
+
+.sosial li {
+  padding: 0 18px;
+}
+
+.sosial li:last-child {
+  padding: 0 12px;
+}
+
+.bottom-nav a:hover {
+  text-decoration: underline;
 }
