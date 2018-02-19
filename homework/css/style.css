@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .text{
@@ -21,7 +23,16 @@ p{
     font-size: 15px;
 }
 
-p span{
-    color: gray;
+ul.main-menu {
+    padding-left: 0;
+}
 
+.main-menu a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+.main-menu li {
+    display: inline;
 }
