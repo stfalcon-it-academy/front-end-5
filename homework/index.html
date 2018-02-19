@@ -6,37 +6,34 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <title>Lesson-6 HOMEWORK</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="1.css">
 </head>
 <body>
   <header class="header">
     <div class="header-stripe">
-        <div class="centrifier">
-          <address>(+123) 456 789</address>
-          <span class="log-reg">
-            <a href="#">Login</a>
-            <span class="log-reg-or">or</span>
-            <a href="#">Register</a>
-          </span>
-        </div>
-      </div>
-
-    <div class="logo-search clearfix">
       <div class="centrifier">
-        <div class="logo">
-          <a href="#">
-            <img src="img/logo.png">
-          </a>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="Search Products...">
+        <div class="tel-log-reg">
+          <a href="tel:+123456789">(+123) 456 789</a>
+          <div class="tel-log-reg--log-reg">
+            <a href="#">Log in</a>
+            <span>or</span>
+            <a href="#">Register</a>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="centrifier-nav">
+    <div class="logo-search">
+      <div class="centrifier">
+        <a class="logo" href="/"></a>
+        <form id="logo-search--search" method="post">
+          <input placeholder="Search Products...">
+          <button type="submit" name="search-submit"></button>
+        </form>
+      </div>
+    </div>
+    <div class="centrifier">
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -44,7 +41,7 @@
           <li><a href="#">Office</a></li>
           <li><a href="#">Bedroom</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="active" href="#">Contact</a></li>
         </ul>
       </nav>
       <div class="shopping-bag">
@@ -54,20 +51,114 @@
       </div>
     </div>
   </header>
-
   <div class="centrifier">
     <div class="contact-us">
-      <span class="contact-us-cont-us">CONTACT US</span>
-      <span class="contact-us-home-cont">
+      <h1>CONTACT US</h1>
+      <span class="contact-us--home-cont">
         <a href="#">HOME</a>
         <span>/</span>
         <a href="#">CONTACT</a>
       </span>
     </div>
   </div>
-
-
-
-
+  <div class="centrifier">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1834.7783146666409!2d27.000741663429725!3d49.43219286830783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1519022156318"
+          width="100%" height="630" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="centrifier info">
+    <div class="contact-info">
+      <div class="contact-info--information">
+        <h2>CONTACT INFORMATION</h2>
+        <h3>Address</h3>
+        <address>
+          <ul class="address-location">
+            <li>Head: 12 W 1st St, 90001 Los Angeles, California, US</li>
+            <li>Agency: 15 RuePernele, 5651 Paris, France</li>
+          </ul>
+        </address>
+        <h3>Call us</h3>
+        <address>
+          <ul class="address-phone">
+            <li><a href="tel:+190012345678">+1 – 900 – 1234 -5678</a></li>
+            <li><a href="tel:+190012345678">+1 – 900 – 1234 -5678</a></li>
+          </ul>
+        </address>
+        <h3>Email</h3>
+          <address>
+            <ul class="address-email">
+              <li><a href="mailto:info@templaza.com">info@templaza.com</a></li>
+              <li><a href="mailto:support@templaza.com">support@templaza.com</a></li>
+            </ul>
+          </address>
+      </div>
+      <div class="contact-info--write-us">
+        <h2>WRITE US A MESSAGE</h2>
+        <h3>Your email will not be published</h3>
+        <form id="feedback">
+          <textarea placeholder="Your message"></textarea>
+          <input id="feedback-message-subject" type="text" placeholder="Your subject">
+          <input id="feedback-message-email" type="email" placeholder="Email(*)">
+          <input id="feedback-message-name" type="text" placeholder="Name">
+          <input id="feedback-message-website" type="text" placeholder="Website">
+          <button type="submit" name="feedback-submit">SEND NOW</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe">
+    <div class="centrifier">
+      <div class="subscribe--slogan">
+        <h2>NEWSLETTER</h2>
+        <span>Keep up on our always evolving product features and technology.
+              Enter your e-mail and subscribe to our newsletter.</span>
+      </div>
+      <div class="subscribe--email">
+        <form id="subscription">
+          <input type="email" placeholder="Email address">
+          <button type="submit" name="subscription-submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="centrifier benefits">
+    <div class="benefits--shipping"><span>FREE SHIPING</span></div>
+    <div class="benefits--support"><span>CUSTOMER SUPPORT</span></div>
+    <div class="benefits--moneyback"><span>15 DAYS MONEY BACK</span></div>
+    <div class="benefits--help"><span>24/7 HELP CENTER</span></div>
+  </div>
+  <div class="summary-info">
+    <div class="centrifier">
+      <div class="summary-info--callus">
+        <div class="callus-phone"></div>
+        <span>Call us</span>
+        <a href="tel:18002777766">1-800-277-7766</a>
+      </div>
+      <div class="summary-info--location">
+        <div class="location-check"></div>
+        <span>Location</span>
+        <address>Moscow, Pushkin str. 32/A</address>
+      </div>
+      <div class="summary-info--mail">
+        <div class="summary-mail"></div>
+        <span>Mail</span>
+        <a href="mailto:info@domain.com">info@domain.com</a>
+      </div>
+    </div>
+    <footer>
+      <div class="centrifier">
+        <span>2016 Domain.com. All rights reserved</span>
+        <span>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy</a>
+          <a href="#">Downloads</a>
+        </span>
+        <span class="footer-social-icons">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </span>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
