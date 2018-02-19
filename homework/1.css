@@ -1,0 +1,505 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f7f7;
+    counter-reset: goods;
+    counter-increment: goods 2;
+}
+.header {
+    width: 100%;
+    height: 202px;
+    background: #232323;
+}
+.header-stripe {
+    background: #2b2b2b;
+    height: 35px;
+}
+.centrifier {
+    width: 61%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.info {
+    margin: -3px auto 0 auto;
+}
+.tel-log-reg a {
+    display: inline-block;
+    color: #7f7f7f;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 0.875em;
+    font-weight: 400;
+}
+.tel-log-reg--log-reg {
+    display: inline-block;
+    float: right;
+    color: #666;
+}
+.tel-log-reg--log-reg span {
+    color: #be926f;
+    font-size: 0.75em;
+    margin: 0 12px;
+}
+.tel-log-reg--log-reg a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.logo-search {
+    height: 50px;
+    margin: 30px 0 0 0;
+}
+.logo {
+    display: inline-block;
+    width: 166px;
+    height: 49px;
+    background: url("img/Logo.png");
+}
+#logo-search--search {
+    display: inline-block;
+    float: right;
+}
+#logo-search--search input {
+    color: #666666;
+    background: #232323;
+    border: 1px solid #323232;
+    box-sizing: border-box;
+    font-size: 0.812em;
+    font-weight: 300;
+    font-style: normal;
+    padding: 25px 17px;
+    outline: none;
+    height: 46px;
+    width: 276px;
+}
+#logo-search--search input:focus {
+    color: #fff;
+    outline: 1px solid #fff;
+}
+#logo-search--search button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    background: url("img/Search.png");
+    border: none;
+    outline: none;
+    margin: -33px 0 0 240px;
+}
+.header ul {
+    font-size: 1em;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.header li {
+    display: inline-block;
+    margin: 0 0 0 50px;
+}
+.header li:first-child {
+    margin: 0;
+}
+.header nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header nav a:hover,
+.header nav .active{
+    color: #be926f;
+}
+.shopping-bag-img {
+    background-image: url("img/bag.png");
+    height: 22px;
+    width: 18px;
+    display: inline-block;
+    float: right;
+    margin: -15px 13px 0 0;
+    position: relative;
+}
+.shopping-bag-img:before {
+    content: counter(goods);
+    color: #232323;
+    display: block;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    background: #be926f;
+    position: absolute;
+    text-align: center;
+    line-height: 18px;
+    right: -11px;
+    top: -6px;
+}
+.contact-us {
+    background: #e7e7e7;
+    height: 117px;
+    margin: 30px 0;
+    line-height: 117px;
+}
+.contact-us h1 {
+    color: #232323;
+    display: inline-block;
+    font-size: 1.875em;
+    font-weight: 600;
+    margin: 0 0 0 25px;
+}
+.contact-us--home-cont {
+    display: inline-block;
+    float: right;
+    margin: 0 15px 0 0;
+}
+.contact-us--home-cont a {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.contact-us--home-cont span+a {
+    color: #666666;
+}
+.contact-us--home-cont a:hover {
+    text-decoration: underline;
+    color: #232323;
+}
+.contact-us--home-cont span {
+    font-size: 0.875em;
+    color: #999999;
+    margin: 0 7px;
+}
+.contact-info {
+    margin: 0;
+    background: #fff;
+    height: 575px;
+    overflow-y: auto;
+}
+.contact-info h2 {
+    color: #000;
+    font-size: 0.937em;
+    font-weight: 600;
+}
+.contact-info--information {
+    display: inline-block;
+    color: #333333;
+    height: 430px;
+    width: 400px;
+    margin: 70px 0 70px 20px;
+    padding: 0 110px 0 0;
+    box-sizing: border-box;
+}
+.contact-info--information a {
+    text-decoration: none;
+    color: #333;
+}
+.contact-info--information a:hover {
+    color: #be926f;
+}
+.contact-info--information li {
+    margin: 20px 0 0 0;
+    font-size: 0.937em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.625em;
+}
+.contact-info--information li:first-child {
+    margin: 0 0 0 0;
+}
+.contact-info--information h3 {
+    color: #333;
+    font-size: 0.937em;
+    font-weight: 600;
+    margin: 25px 0 0 0;
+}
+.contact-info--information ul {
+    padding: 0 0 0 20px;
+}
+.address-location {
+    list-style-image: url("img/Forma 1.png");
+}
+.address-phone {
+    list-style-image: url("img/Forma 2.png");
+}
+.address-email {
+    list-style-image: url("img/Forma 3.png");
+}
+.contact-info--write-us {
+    display: inline-block;
+    height: 430px;
+    float: right;
+    width: calc(100% - 430px);
+    vertical-align: top;
+    margin: 70px 0 0 0;
+}
+.contact-info--write-us h3 {
+    color: #333;
+    font-size: 0.937em;
+    font-weight: 600;
+    margin: -5px 0 0 0;
+}
+#feedback textarea {
+    border: none;
+    border-bottom: 1px solid #d5d1cd;
+    font-size: 0.875em;
+    margin: 50px 0 0 0;
+    height: 70px;
+    width: calc(100% - 20px);
+}
+#feedback textarea:focus {
+    outline: 1px solid #d5d1cd;
+    color: #000;
+}
+#feedback input {
+    display: inline-block;
+    width: calc((100% - 55px)/2);
+    height: 40px;
+    margin: 30px 20px 0 0;
+    border: none;
+    border-bottom: 1px solid #d5d1cd;
+    font-size: 0.875em;
+    font-weight: 300;
+    outline: none;
+}
+#feedback input:focus {
+    color: #000;
+}
+#feedback input::placeholder,
+#feedback textarea::placeholder {
+    color: #d4d4d4;
+}
+#feedback button {
+    background: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid #be926f;
+    margin: 33px 0 0 0;
+    line-height: 50px;
+    outline: none;
+}
+#feedback button:hover {
+    cursor: pointer;
+    background: #be926f;
+}
+#feedback button:active {
+    outline: 1px solid #ff8b2f;
+}
+.subscribe {
+    width: 100%;
+    height: 186px;
+    background: #fff;
+    margin: 60px 0 0 0;
+}
+.subscribe--slogan {
+    display: inline-block;
+    width: 490px;
+    font-size: 0.937em;
+    color: #666;
+    padding: 45px 0;
+}
+.subscribe--slogan h2 {
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #333;
+}
+.subscribe--email {
+    display: inline-block;
+    float: right;
+    padding: 75px 0;
+}
+#subscription button {
+    background: #f8f8f8 url('img/Forma 4.png') 10% 50% no-repeat;
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid #be926f;
+    line-height: 50px;
+    outline: none;
+    text-align: right;
+    padding-right: 25px;
+
+}
+#subscription button:hover {
+    cursor: pointer;
+}
+#subscription button:active {
+    outline: 1px solid #ff8b2f;
+}
+#subscription input {
+    height: 50px;
+    width: calc(100% - 390px - 490px);
+    min-width: 300px;
+    margin: 0 15px 0 0;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    padding: 0;
+    font-size: 1em;
+    outline: none;
+    line-height: 1em;
+}
+#subscription input::placeholder {
+    color: #ccc;
+}
+.benefits {
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+.benefits div {
+    display: inline-block;
+    height: 40px;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 2.5em;
+}
+.benefits span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 39px;
+}
+.benefits--shipping span::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('img/Forma 5.png');
+    top: 0;
+    left: -45px;
+}
+.benefits--support span::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('img/Forma 6.png');
+    top: 0;
+    left: -45px;
+}
+.benefits--moneyback span::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('img/Forma 7.png');
+    top: 0;
+    left: -45px;
+}
+.benefits--help span::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('img/Forma 9.png');
+    top: 0;
+    left: -45px;
+}
+.summary-info {
+    height: 245px;
+    background: #fff;
+    vertical-align: top;
+}
+.summary-info .centrifier > div {
+    display: inline-block;
+}
+.summary-info--callus,
+.summary-info--location,
+.summary-info--mail {
+    width: calc((100% / 3) - 5px);
+    height: 245px;
+    vertical-align: middle;
+}
+.callus-phone {
+    height: 105px;
+    background: url("img/iPhone.png") 50% 70% no-repeat;
+}
+.summary-info--callus span,
+.summary-info--location span,
+.summary-info--mail span {
+    display: block;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+.summary-info--callus a {
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #232323;
+    font-weight: 600;
+    margin: 25px 0 0 0;
+    text-align: center;
+}
+.location-check {
+    height: 105px;
+    background: url("img/Location.png") 50% 50% no-repeat;
+}
+.summary-info--location address {
+    display: block;
+    font-size: 0.875em;
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+.summary-mail {
+    height: 105px;
+    background: url("img/Mail.png") 50% 50% no-repeat;
+}
+.summary-info--mail a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.875em;
+    color: #be926f;
+    margin: 25px 0 0 0;
+}
+footer {
+    background: #fff;
+    height: 75px;
+    margin: 2px 0 0 0;
+}
+footer span {
+    display: inline-block;
+    font-size: 0.812em;
+    color: #999;
+    vertical-align: middle;
+    padding: 31px 0 31px 0;
+}
+footer span:first-child {
+    float: left;
+}
+footer span > a {
+    text-decoration: none;
+    color: #999;
+    margin: 0 0 0 28px;
+}
+footer span > a:hover {
+    color: #232323;
+}
+footer span:nth-child(2) {
+    margin: 0 0 0 135px;
+}
+.footer-social-icons {
+    float: right;
+    padding: 20px 0;
+}
+.footer-social-icons a:first-child {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("img/twitter.png") 50% 50% no-repeat;
+}
+.footer-social-icons a:nth-child(2) {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("img/google+.png") 50% 50% no-repeat;
+}
+.footer-social-icons a:nth-child(3) {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("img/facebook.png") 50% 50% no-repeat;
+}
