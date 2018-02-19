@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .centrifier {
-    width: 1170px;
+    width: 61%;
     margin: 0 auto;
 }
 .header {
@@ -50,6 +50,9 @@ body {
 .logo {
     position: absolute;
     top: 65px;
+}
+.logo-search {
+    position: relative;
 }
 .logo-search .centrifier {
     position: relative;
@@ -173,4 +176,11 @@ body {
     font-size: 14px;
     color: #999999;
     margin: 0 7px;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
