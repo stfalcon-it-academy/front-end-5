@@ -1,0 +1,33 @@
+body {
+    font-size: 14px;
+    counter-reset: pages; /* ініціалізація лічильника */
+    width: 920px;
+    }
+ p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    counter-increment: pages; /* збільшення лічильника */
+     margin: 0;
+     position: relative;
+     padding-left: 50px;
+ }
+
+p::before {                   /*нумерацію в середині клітинки не вирівнював так як вказувалось що це не є обов'зковим*/
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: counter(pages); /* відображення лічильника */
+    color: #ffffff;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    left: 0;
+}
+
+p:nth-child(odd) {
+    background-color: #cccccc;
+}
+p:nth-child(odd)::before {
+     background-color: #cc4242;
+ }
+p:nth-child(even)::before {
+    background-color: #ff5353;
+}
