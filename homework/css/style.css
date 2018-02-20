@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/*-------------------------------------------------*/
+.some-container-1 {
+    height: 35px;
+    width: 100%;
+    background-color: #2b2b2b;
+    font-size: 14px;
+    line-height: 35px;
+    position: relative;
+    display: block;
+}
+.tel {
+    display: inline-block;
+    color: #7f7f7f;
+    font-family: 'Montserrat:200', sans-serif;
+    position: absolute;
+    text-decoration: none;
+}
+.wrap-1 {
+    font-family: 'Montserrat:200', sans-serif;
+    position: absolute;
+    float: right;
+    right: 0;
+}
+.wrap-1 a {
+    color: #666666;
+    text-decoration: none;
+}
+.tel a {
+    color: #666666;
+    text-decoration: none;
+}
+.or{
+    color: #3b3b3b;
+}
+/*-------------------------------------------------*/
+.some-container-2 {
+    position: relative;
+    height: 167px;
+    width: 100%;
+    background-color: #232323;
+}
+.logo img {
+    position: absolute;
+    float: left;
+    margin-top: 30px;
+}
+ul{
+    position: absolute;
+    margin-left: 0;
+    padding: 0 0 35px;
+    bottom: 0;
+    margin-bottom: 0;
+}
+.nav li{
+    font-family: 'Montserrat:200', sans-serif;
+    position: relative;
+    margin-right: 50px;
+    margin-top: 20px;
+    float: left;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px}
+.nav li a{
+    position: relative;
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav li a:hover{
+     color: #be926f;
+}
+.search_box {
+    border: 1px solid #666666;
+    padding: 5px;
+    width: 250px;
+    height: 20px;
+    margin-top: 30px;
+    margin-right: 0;
+    float: right;
+}
+input {
+    font-family: 'Montserrat:200', sans-serif;
+    vertical-align: middle;
+    border: none;
+    background-color: #232323;
+    font-size: 13px;
+    width: 232px;
+    color: #666666;
+}
+input [type=image]{
+    width: 21px;
+    height: 21px;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+/*-------------------------------------------------*/
+.some-container-3 {
+    position: relative;
+    margin: 0;
+    height: 177px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.wrap-2 {
+    position: absolute;
+    background-color: #e7e7e7;
+    height: 117px;
+    width: 100%;
+    margin-top: 30px;
+}
+.contact {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 117px;
+    margin-left: 45px;
+    float: left;
+    color: #232323;
+}
+.home_contact {
+    float: right;
+    line-height: 117px;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.wrap-2 a {
+    text-decoration: none;
+    color: #999999;
+}
+.wrap-2 a:hover {
+    color: #232323
+}
