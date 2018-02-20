@@ -21,16 +21,16 @@ body {
     display: block;
     background: #cc4242;
     width: 50px;
-	height: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: -50px;
     color: #fff;
     font-size: 24px;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     font-family: "Times New Roman", serif;
-	display: flex;
+    display: flex;
 }
 .text p:nth-child(2n) {
     background: #fff;
