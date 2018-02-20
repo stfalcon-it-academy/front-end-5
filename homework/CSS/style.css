@@ -20,8 +20,20 @@ h1 {
     font-weight: 400;
 
 }
+ul {
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+a {
+	text-decoration: none;
+	color: #666666;
+}
 span {
-    font-size: 14px;
     color: #999999;
 }
 .text {
@@ -31,6 +43,5 @@ span {
 p{
     font-size: 15px;
     color: #333333;
-
 
 }
