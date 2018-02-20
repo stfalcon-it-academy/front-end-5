@@ -83,6 +83,17 @@ ul{
     margin-right: 0;
     float: right;
 }
+.bag {
+    position: absolute;
+    right: 5px;
+    bottom: 35px;
+}
+button {
+    position: absolute;
+    right: 10px;
+    background-color: #232323;
+    border: none;
+}
 input {
     font-family: 'Montserrat:200', sans-serif;
     vertical-align: middle;
@@ -91,12 +102,6 @@ input {
     font-size: 13px;
     width: 232px;
     color: #666666;
-}
-input [type=image]{
-    width: 21px;
-    height: 21px;
-    padding-right: 1px;
-    padding-left: 1px;
 }
 /*-------------------------------------------------*/
 .some-container-3 {
