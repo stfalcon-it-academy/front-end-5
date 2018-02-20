@@ -29,6 +29,10 @@ p::before {
     background: #cc4242;
     text-align: center;
     position: absolute;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 p:nth-child(2n) {
