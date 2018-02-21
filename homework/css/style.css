@@ -8,18 +8,24 @@ h1{
     color: #000000;
 }
 div{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-span.some-class_1{
+ul {
+    padding: 0;
+}
+li {
+    display: inline;
+}
+.some-class_1{
     color: #999999
 }
-span.some-class_2{
+.some-class_2{
     color: #666666;
 }
 P{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    line-height: 26px;
+    line-height: 1.733;
     color: #333333
 }
