@@ -1,13 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport"
+	<meta charset="UTF-8">
+	<meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Document</title>
+	<title>Document</title>
 </head>
-<body>
+<body> <!--body, html body, html:nth-child(2) -->
+		<h1>Основи HTML</h1> <!--body h1 , body:first-child; -->
+		<h3>Контент і сематика</h3> <!-- body h3, body:nth-child(2),  -->
+		<blockquote> <!--body blockquote, blockquote, body:nth-child(3); -->
+				<p>Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої)<br> слів і їх складових частин, словосполук і фразеологізмів.</p> <!--body p , body blockquote p , body blockquote:first-child, -->
+		</blockquote>
+		<h3>Теги і атрибути</h3>
+		<h3>Атрибути</h3>
+		<ol type="1"> <!-- body ol, ol, body h3+ol, body h3~ol -->
+				<li>id</li> <!--body ol li, body li, li , ol li:only-child -->
+				<li>class</li>
+				<li>title</li>
+				<li>lang</li>
+				<li>style</li>
+		</ol>
+		<h3>Документ і метаданні</h3>
+		<ol type="1">
+			<li>&lt;!DOCTYPE&gt;</li>
+			<li>&lt;html&gt;</li>
+			<li>&lt;meta&gt;</li>
+			<li>&lt;title&gt;</li>
+			<li>&lt;head&gt;</li>
+		</ol>
+		<h3>Структура контенту</h3>
+		<ol>
+			<li>&lt;body&gt;</li>
+			<li>&lt;article&gt;</li>
+			<li>&lt;section&gt;</li>
+			<li>&lt;nav&gt;</li>
+			<li>&lt;aside&gt;</li>
+			<li>&lt;h1 &gt;, &lt;h2 &gt;, &lt;h3 &gt;, &lt;h4> &gt;, &lt;h5 &gt;,&lt;h6&gt; </li>
+			<li>&lt;header&gt;</li>
+			<li>&lt;footer&gt;</li>
+			<li>&lt;address&gt;</li>
+		</ol>
+<h3>Групування контенту</h3>
+	<ol>
+		<li>&lt;p&gt;</li>
+		<li>&lt;hr&gt;</li>
+		<li>&lt;pre&gt;</li>
+		<li>&lt;blockquote&gt;</li>
+		<li>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt; <a href="#">?</a></li> <!-- <body a, body ol li a , ol li a, li a , a,-->
+		<li>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; <a href="#">?</a></li>
+		<li>&lt;figure&gt;, &lt;figcaption&gt; <a href="#">?</a></li>
+		<li>&lt;div&gt;</li>
+		<li>&lt;main&gt;</li>
+		
+	</ol>
+<h3>Семантика на рівні тексту</h3>
+<ol>
+	<li>&lt;a&gt;</li>
+	<li>&lt;em&gt;</li>
+	<li>&lt;i&gt;</li>
+	<li>&lt;strong&gt;</li>
+	<li>&lt;b&gt;</li>
+	<li>&lt;u&gt;</li>
+	<li>&lt;s&gt;</li>
+	<li>&lt;del&gt;</li>
+	<li>&lt;ins&gt; <a href="#">?</a></ins></li>
+	<li>&lt;q&gt;</li>
+	<li>&lt;cite&gt; <a href="#">?</a></li>
+	<li>&lt;abbr&gt;</li>
+	<li>&lt;time&gt;</li>
+	<li>&lt;var&gt;</li>
+	<li>&lt;sub&gt; , &lt;sup&gt; <a href="#">?</a></li>
+	<li>&lt;span&gt;</li>
+	<li>&lt;br&gt;</li>
+	<li>&lt;wbr&gt; <a href="#">?</a> </li>
+</ol>
+
+<h3>Вбудований контент</h3>
+	<ol>
+		<li>&lt;img&gt; <a href="#">?</a></li>
+		<li>&lt;inframe &gt;</li>
+		<li>&lt;emded&gt; <span><</span> object></li>
+		<li>&lt;video&gt; <a href="#">?</a></li>
+		<li>&lt;audio&gt;</li>
+	</ol>
+<h3>Табличні дані</h3>
+	<ol type="1">
+		<li>&lt; table &gt; <a href="#">?</a></li>
+		<li>&lt; caption &gt;</li>
+		<li>&lt; tbody &gt;</li>
+		<li>&lt; thread &gt;</li>
+		<li>&lt; tfoot &gt;</li>
+		<li>&lt; tr &gt;</li>
+		<li>&lt; td &gt;</li>
+		<li>&lt; th &gt;</li>
+	</ol>
+
+<h3>Форми</h3>
+	<ol>
+		<li> &lt; form &gt; <a href="#">?</a></li>
+		<li> &lt; label &gt; </li>
+		<li> &lt; input &gt; </li>
+		<li> &lt; button &gt; </li>
+		<li> &lt; select &gt; option </li>
+		<li> &lt; textarea &gt; </li>
+		<li> &lt; fieldset &gt; &lt; legent &gt; </li>
+	</ol>
+<h3>Валідація</h3>
+<hr>
+<h1>Домашнє завдання</h1>
+<ol>
+	<li>Відтворити даний зміст уроку на HTML.</li>
+	<li>Роботу виконати в файлі homework/index.html.</li>
+</ol>
+<h1>Лінки</h1>
+<ul>
+	<li><a href="#">Самоучитель HTML</a></li>
+	<li><a href="#">Справочник по HTML﻿</a></li>
+	<li><a href="#">HTML5﻿</a></li>
+	<li><a href="#">Это — грёбаный сайт.</a></li>
+	<li><a href="#">Недоступный веб: как мы развели такой бардак</a></li>
+	<li><a href="#">Что такое DOM?</a></li>
+	<li><a href="#">Искусство семантики HTML</a></li>
+	<li><a href="#">Понимание семантики</a></li>
+</ul>
 
 </body>
 </html>
