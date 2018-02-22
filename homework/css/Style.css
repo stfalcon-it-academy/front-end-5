@@ -1,0 +1,31 @@
+body {
+    counter-reset: text;
+}
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.2857;
+    counter-increment: text;
+    position: relative;
+    padding-left: 50px;
+    margin: 0;
+}
+p::before {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 24px;
+    content: counter(text);
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    left: 0;
+    color: #ffffff;
+}
+p:nth-child(odd) {
+    background-color: #cccccc;
+}
+p:nth-child(odd)::before {
+    background-color: #cc4242;
+}
+p:nth-child(even)::before {
+    background-color: #ff5353;
+}
