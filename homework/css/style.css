@@ -17,11 +17,12 @@ ul {
 li {
     display: inline;
 }
-.some-class_1{
+span{
     color: #999999
 }
-.some-class_2{
+a {
     color: #666666;
+    text-decoration: none;
 }
 P{
     font-family: 'Montserrat', sans-serif;
