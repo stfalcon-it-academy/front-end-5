@@ -1,6 +1,7 @@
 /*font-family: 'Montserrat', sans-serif;*/
 .wrapper {
-	padding: 0 250px;
+	width: 1170px;
+	margin: 0 auto;
 
 }
 body {
@@ -42,6 +43,9 @@ padding: 15px 0;
 	font-family: 'Montserrat:400', sans-serif;
 	color: #666666;
 	display: inline-block;
+}
+.header-register  a:hover {
+	text-decoration: underline;
 }
 .header-register  span {
 	color: #363636;
@@ -93,7 +97,7 @@ padding: 15px 0;
     	font-family: 'Montserrat:400', sans-serif;
     	color: #d3d3d3;
     }
-    nav ul li a:active{
+    nav ul li a:hover{
     	color: #be926f;
     }
     .active {
@@ -217,6 +221,7 @@ padding: 15px 0;
 	font-family: 'Montserrat:400', sans-serif;
 	margin: 60px 0;
 	background-color: #fff;
+	padding-top: 20px;
 }
 .letter-r a i{
 	color: #be926f;
@@ -323,5 +328,7 @@ display: inline-block;
 .footer-r ul li a {
 	margin-right: 15px;
 }
+.footer-r ul li a i:hover {
+	opacity: 0.6;
 
     
