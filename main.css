@@ -1,0 +1,48 @@
+html {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.733em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+}
+.article-nav {
+    padding: 0;
+    list-style: none;
+}
+.article-nav {
+    display: table;
+    clear: both;
+    content: "";
+}
+.article-nav li{
+    float: left;
+    color: #999;
+}
+
+.article-nav li+li:before {
+    display: inline-block;
+    margin: 0 20px;
+    width: 1px;
+    height: 16px;
+    vertical-align: middle;
+    background-color: #999;
+    content: "";
+}
+.article-nav li:first-child: before{
+    display: none;
+}
+.article-nav a{
+    color: #666;
+    text-decoration: none ;
+}
+.article-nav a:hover{
+text-decoration: underline;
+
+}
+
+p {
+    color: #333333
+}
