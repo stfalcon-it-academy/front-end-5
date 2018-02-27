@@ -14,8 +14,8 @@
 <header>
     <div class="head-top">
         <div class="site-center">
-            <address><a href="tel:">(+123) 456 789</a></address>
-            <span><a href="#">Log in</a> or <a href="#">Register</a></span>
+            <div class="head-tel"><a href="tel:">(+123) 456 789</a></div>
+            <div class="head-login"><a href="#">Log in</a><span>or</span><a href="#">Register</a></div>
         </div>
     </div>
     <div class="head-main">
@@ -29,18 +29,16 @@
                     <button type="submit"></button>
                 </form>
             </div>
-            <div class="head-menu">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Living room</a></li>
-                        <li><a href="#">Office</a></li>
-                        <li><a href="#">Bedroom</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="clear-fix">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Living room</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
             <div class="head-bag">
                 <div class="counter" id="2"></div>
                 <button type="button"></button>
@@ -51,7 +49,7 @@
 <div class="site-center">
     <div class="content-top">
         <h1>contact us</h1>
-        <span><a href="#">home</a> / <a href="#">contact</a></span>
+        <span><a href="#" class="active">home</a> / <a href="#">contact</a></span>
     </div>
 </div>
 </body>

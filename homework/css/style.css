@@ -3,6 +3,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    min-width: 1170px;
+}
+
+.clear-fix {
+    display: table;
+    content: "";
+    clear: both;
 }
 
 .site-center {
@@ -18,22 +25,29 @@ body {
     height: 35px;
 }
 
-.head-top address {
-    color: #7f7f7f;
-    font-style: normal;
+.head-tel {
     float: left;
 }
 
-.head-top span {
-    color: #3b3b3b;
-    font-size: 12px;
+.head-tel a {
+    color: #7f7f7f;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.head-login {
     float: right;
 }
 
-.head-top a {
-    font-size: 14px;
+.head-login a {
     color: #666666;
     text-decoration: none;
+}
+
+.head-login span {
+    color: #3b3b3b;
+    font-size: 12px;
+    padding: 0 10px;
 }
 
 .head-main {
@@ -45,7 +59,6 @@ body {
 }
 
 .head-logo {
-    clear: both;
     float: left;
 }
 
@@ -74,8 +87,7 @@ body {
     cursor: pointer;
 }
 
-.head-menu {
-    clear: both;
+.head-main nav {
     float: left;
 }
 
@@ -97,6 +109,10 @@ body {
 }
 
 .head-main ul li a:hover {
+    color: #be926f;
+}
+
+.head-main .active {
     color: #be926f;
 }
 
@@ -127,6 +143,7 @@ body {
     content: attr(id);
     font-size: 12px;
     padding: 6px;
+    vertical-align: middle;
 }
 
 .content-top {
@@ -140,7 +157,6 @@ body {
     font-size: 30px;
     padding: 20px;
     text-transform: uppercase;
-    clear: both;
     float: left;
 }
 
@@ -157,5 +173,9 @@ body {
 }
 
 .content-top a:hover {
+    color: #999999;
+}
+
+.content-top .active {
     color: #999999;
 }
