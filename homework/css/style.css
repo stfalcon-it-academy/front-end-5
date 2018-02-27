@@ -17,6 +17,9 @@ ul {
 li {
     display: inline;
 }
+li::after {
+    content: '|';
+}
 span{
     color: #999999
 }
