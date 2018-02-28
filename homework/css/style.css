@@ -1,0 +1,81 @@
+html{
+   font-family: "Montserrat", sans-serif;
+}
+body{
+    width: 1170px;
+}
+.clear-fix:after{
+    display: table;
+    clear: both;
+    content:'';
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #232323;
+}
+.header-top{
+    background-color:#232323;
+}
+.header-phone{
+    float: left;
+    text-decoration: none;
+}
+.header-phone,
+.header-user-menu a{
+    font-size: 14px;
+    font-weight: 300;
+    line-height:1.7142 ;
+    color: #7f7f7f;
+}
+.header-user-menu{
+   float: right;
+}
+.header-phone,
+.header-user-menu{
+    padding: 6px 0;
+}
+.header-user-menu a{
+    color: #666666;
+    text-decoration: none;
+}
+.header-user-menu a:hover{
+    text-decoration: underline;
+}
+.header-user-menu span{
+    color: #3b3b3b;
+    margin: 10px;
+}
+.header-form{
+    float: right;
+}
+.header-form input{
+    border:1px solid #323232;
+    background-color: transparent;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.84;
+}
+}
+.header-form input::placeholder{
+    color: #666;
+    font-size: 13px;
+    line-height: 1.84;
+}
+.header-form button{
+    width: 56px;
+    height:44px ;
+    border:1px solid #323232;
+    background-color: transparent;
+    background-image: url(../imeges/heder-search.png) center center no-repeat;
+}
+.header-bottom{
+    height: 60px;
+    background-color:#232323 ;
+}
+.header-middle{
+    height: 100px;
+    background-color:#232323 ;
+}
