@@ -1,0 +1,247 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f7f7;
+    counter-reset: goods;
+    counter-increment: goods 2;
+}
+@media (max-width: 1200px) {
+    body {
+        background: indianred;
+    }
+}
+@media (max-width: 750px) {
+    body {
+        background: aquamarine;
+    }
+}
+@media (max-width: 350px){
+    body {
+        background: darkcyan;
+        min-width: 275px;
+    }
+}
+.header {
+    width: 100%;
+    background: #232323;
+}
+.header-stripe {
+    background: #2b2b2b;
+    height: 35px;
+}
+.centrifier {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+@media (max-width: 1200px){
+    .centrifier {
+        padding: 0 10px;
+        margin: 0;
+    }
+}
+.tel-log-reg a {
+    display: inline-block;
+    color: #7f7f7f;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 0.875em;
+    font-weight: 400;
+}
+.tel-log-reg--log-reg {
+    display: inline-block;
+    float: right;
+    color: #666;
+}
+.tel-log-reg--log-reg span {
+    color: #be926f;
+    font-size: 0.75em;
+    margin: 0 12px;
+}
+.tel-log-reg--log-reg a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.logo-search {
+    height: 50px;
+    margin: 30px 0 0 0;
+}
+#logo-search--search {
+       display: inline-block;
+       float: right;
+}
+@media (max-width: 750px) {
+    #logo-search--search {
+        width: calc(100% - 180px);
+        float: right;
+    }
+}
+@media (max-width: 350px) {
+    #logo-search--search {
+        width: 100%;
+        float: none;
+    }
+}
+.logo {
+    display: inline-block;
+    width: 166px;
+    height: 49px;
+    background: url("img/Logo.png");
+}
+@media (max-width: 350px) {
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+#logo-search--search input {
+    color: #666666;
+    background: #232323;
+    border: 1px solid #323232;
+    box-sizing: border-box;
+    font-size: 0.812em;
+    font-weight: 300;
+    font-style: normal;
+    padding: 25px 17px;
+    outline: none;
+    height: 46px;
+    width: 276px;
+}
+#logo-search--search input:focus {
+    color: #fff;
+    outline: 1px solid #fff;
+}
+#logo-search--search button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    background: url("img/Search.svg") no-repeat;
+    background-size: contain;
+    border: none;
+    outline: none;
+    margin: -33px 0 0 240px;
+}
+@media (max-width: 750px) {
+    #logo-search--search input {
+        width: 100%;
+    }
+    #logo-search--search button {
+        display: inline-block;
+        float: right;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 350px) {
+    #logo-search--search {
+        display: block;
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+}
+.header ul {
+    font-size: 1em;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.header li {
+    display: inline-block;
+    margin: 0 0 0 50px;
+}
+.header li:first-child {
+    margin: 0;
+}
+.header nav {
+    padding-bottom: 40px;
+}
+.header nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header nav a:hover,
+.header nav .active{
+    color: #be926f;
+}
+@media (max-width: 750px) {
+    .header li {
+        display: block;
+        margin: 0;
+    }
+    .header li a {
+        display: block;
+        padding: 10px 10px 10px 0;
+    }
+}
+@media (max-width: 350px) {
+    .header nav {
+    margin-top: 100px;
+    }
+}
+.shopping-bag {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.shopping-bag-img {
+    background: transparent url("img/Bag.svg") no-repeat;
+    background-size: contain;
+    height: 22px;
+    width: 18px;
+    display: inline-block;
+    float: right;
+    margin: -15px 13px 0 0;
+    position: relative;
+}
+.shopping-bag-img:before {
+    content: counter(goods);
+    color: #232323;
+    display: block;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    background: #be926f;
+    position: absolute;
+    text-align: center;
+    line-height: 18px;
+    right: -11px;
+    top: -6px;
+}
+@media (max-width: 750px) {
+    .shopping-bag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .shopping-bag-img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url("img/bag.svg") no-repeat;
+        background-size: contain;
+    }
+    .shopping-bag-img:before {
+        content: counter(goods);
+        color: #232323;
+        display: block;
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        background: #be926f;
+        position: absolute;
+        text-align: center;
+        line-height: 18px;
+        right: -3px;
+        top: -6px;
+    }
+}
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
