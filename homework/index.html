@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalyze.css">
-	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -16,12 +16,12 @@
 	 					<div class="wrapper">
 		 						<div class="tel"><a href="tel:(+123) 456 789">(+123) 456 789</a></div>
 		 						<div class="header-register">
-		 								
 		 									<a href="#">Log in</a>
 		 									<span>or</span>
 		 									<a href="#">Register</a>
 		 								</ul>
 		 						</div>
+		 						<div class="clearfix"></div>
 		 				</div>
 	 				</div>
 	 				<div class="head-menu">
@@ -30,16 +30,18 @@
 	 										<div class="logo-left">
 	 												<a href="#"><img src="img/Logo.png" alt="logo"></a>
 	 										</div>
+
 	 										<div class="search">
 	 											<form method="post" action="#">
 	 												<input type="search" name="q" placeholder="Search products..." style="color: #fff;">
-     											
      											<button type="submit"><i class="fas fa-search f002"></i></button>
+     											<div class="clearfix"></div>
 	 											</form>
 	 										</div>
+	 										<div class="clearfix"></div>
 	 								</div>
 	 								<div class="head-nav">
-	 										<nav>
+	 										<nav class="nav-menu">
 	 												<ul>
 	 													<li ><a href="#" class="active">Home</a></li>
 	 													<li><a href="#">Living room</a></li>
@@ -49,9 +51,10 @@
 	 													<li><a href="#">Contact</a></li>
 	 												</ul>
 	 										</nav>
-	 										<div class="head-nav-right" data-count='2'>
-	 												<a href="#" ><i class="fas fa-shopping-bag"></i></a>
-	 												
+	 										<div class="head-nav-right-center">
+		 										<div class="head-nav-right" data-count='2'>
+		 												<a href="#" ><i class="fas fa-shopping-bag"></i></a>
+		 										</div>
 	 										</div>
 	 								</div>
 	 						</div>
@@ -69,6 +72,7 @@
 		 							<li><a href="#">CONTACT</a></li>
 		 						</ul>
 		 				</div>
+		 				<div class="cleafix"></div>
 	 			</div>
 	 		</div>
 	 		<div class="wrapper">
@@ -99,17 +103,18 @@
 	 						</div>
 	 						<div class="info-right">
 	 								<h3>WRITE US A MESSAGE</h3>
-	 								<p>Your email address will not be published.</p>
+	 								<p class="info-right-p">Your email address will not be published.</p>
 	 								<div class="register">
 	 									<form action="#" method="post">
-	 										<p>
-	 											<input type="text" name="message" placeholder="Your Message" style="width: 100%">
+	 										<p class="register-sms">
+	 											<input type="text" name="message" placeholder="Your Message" >
 	 										</p>
 	 										<p>
 	 											<span>
 	 												<input type="text" name="Your Subject" placeholder="Your Subject">
 	 											</span>
-	 											<span class="right">
+	 											<span class="register-right">
+	 												<span class="clearfix"></span>
 	 												<input type="text" name="Email" placeholder="Email(*)">
 	 											</span>
 	 										</p>
@@ -117,7 +122,8 @@
 	 											<span>
 	 												<input type="text" name="Name" placeholder="Name">
 	 											</span>
-	 											<span class="right">
+	 											<span class="register-right">
+	 												<span class="clearfix"></span>
 	 												<input type="text" name="Website" placeholder="Website">
 	 											</span>
 	 										</p>
@@ -128,6 +134,7 @@
 	 																					
 	 								</div>
 	 						</div>
+	 						<div class="clearfix"></div>
 	 					</div>
 	 				</div>
 	 		
@@ -141,17 +148,19 @@
 		 						<div class="letter-r">
 		 								<form action="#" method="post">
 		 								<input type="text" name="email" placeholder="Email address">
-		 								<a href="#"><i class="fas fa-paper-plane"></i> SUBSCRIBE</a>
+		 								<button type="button"><i class="fas fa-paper-plane"></i> SUBSCRIBE</a></button>
 		 							</form>
+		 							<div class="clearfix"></div>
 		 						</div>
+		 						<div class="clearfix"></div>
 		 						<hr>
 	 				</div>
 	 			</div>
 	 			<div class="icon-one">
 	 					<div class="wrapper">
 	 							<ul>
-	 								<li><a href="#"><i class="fas fa-plane"></i></a><span> FREE SHIPING</span></li>
-	 								<li><a href="#"><i class="fas fa-undo-alt"></i></a><span>15 DAYS MONEY BACK</span> </li>
+	 								<li class="icon-one-left"><a href="#"><i class="fas fa-plane"></i></a><span>FREE SHIPING</span></li>
+	 								<li ><a href="#"><i class="fas fa-undo-alt"></i></a><span>15 DAYS MONEY BACK</span> </li>
 	 								<li><a href="#"><i class="fas fa-user"></i></a> <span>CUSTOMER SUPPORT</span></li>
 	 								<li><a href="#"><i class="fas fa-phone-volume"></i></a> <span>24/7 HELP CENTER</span> </li>
 	 							</ul>
