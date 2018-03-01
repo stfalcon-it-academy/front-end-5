@@ -4,9 +4,9 @@
 }
 html,
 body {
+  min-width: 360px;
   padding: 0;
   margin: 0;
-  line-height: 1;
   background-color: #f7f7f7;
 }
 img {
@@ -32,11 +32,11 @@ button {
   border: 0;
 }
 .container {
-  max-width: 1170px;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 10px;
   box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 1170px;
+  overflow: hidden;
 }
 /*---End Base Style---*/
 /*---Start Header Style---*/
@@ -94,8 +94,19 @@ button {
 .header-row-mid {
   padding-top: 30px;
 }
+@media screen and (max-width: 620px) {
+
+  .header-row-mid .header-col-right,
+  .header-row-mid .header-col-left {
+    float: none;
+    text-align: center;
+  }
+  .header-search-form {
+    margin: 30px 0 0
+  }
+}
 .header-row-mid .header-col-right {
-  width: 272px;
+  min-width: 272px;
 }
 .header-search-form {
   position: relative;
@@ -136,7 +147,13 @@ button {
   display: none;
 }
 .header-row-bottom {
-  padding: 26px 0 38px;
+  padding: 12px 0 6px;
+}
+@media screen and (min-width: 768px) {
+  .header-row-bottom {
+    padding-top: 26px;
+    padding-bottom: 38px;
+  }
 }
 .main-nav-list {
   padding: 0;
@@ -144,10 +161,20 @@ button {
   list-style: none;
 }
 .main-nav-list li {
-  float: left;
+  float: none;
+  padding: 6px 0;
 }
 .main-nav-list li + li {
-  margin-left: 48px;
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .main-nav-list li {
+    float: left;
+    padding: 0;
+  }
+  .main-nav-list li + li {
+    margin-left: 48px;
+  }
 }
 .main-nav-list li:last-child {
   padding-right: 0;
@@ -196,6 +223,11 @@ button {
   color: #232323;
   background-color: #e7e7e7;
 }
+@media screen and (max-width: 520px) {
+  .breadcrumbs {
+    padding: 21px 42px;
+  }
+}
 .breadcrumbs h1 {
   margin: 0;
   padding: 0;
@@ -212,6 +244,15 @@ button {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+@media screen and (max-width: 520px) {
+  .breadcrumbs-label,
+  .breadcrumbs-links {
+    float: none;
+  }
+  .breadcrumbs-label {
+    margin-bottom: 8px;
+  }
 }
 .breadcrumbs-links li {
   float: left;
@@ -239,19 +280,42 @@ button {
   font-size: .9375rem;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 920px) {
+  .contacts {
+    margin-bottom: 16px;
+  }
+}
 .contacts iframe {
   width: 100%;
   display: block;
 }
+
+@media screen and (max-width: 620px) {
+  .contacts iframe {
+    height: 100vh;
+  }
+}
+
 .contacts-details {
   padding: 60px 18px;
   background-color: #fff;
+}
+@media screen and (max-width: 920px) {
+  .contacts-details {
+    padding: 18px;
+  }
 }
 .contacts-info {
   float: left;
   width: 34%;
   color: #333;
   font-weight: 500;
+}
+@media screen and (max-width: 920px) {
+  .contacts-info {
+    float: none;
+    width: 100%;
+  }
 }
 .contacts-details h3 {
   padding: 0 0 7px;
@@ -268,6 +332,11 @@ button {
   font-weight: 600;
   padding: 0;
 }
+@media screen and (max-width: 920px) {
+  .contacts-info h3 {
+    text-align: center;
+  }
+}
 .contacts-info ul {
   margin: 0;
   padding: 0;
@@ -281,6 +350,27 @@ button {
 }
 .contacts-info > div + div {
   padding: 30px 0 0;
+}
+.contacts-info > div {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 920px) {
+  .contacts-info > div {
+    float: left;
+    width: 33%;
+  }
+  .contacts-info > div + div {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .contacts-info > div {
+    float: none;
+    width: 100%;
+  }
+  .contacts-info > div + div {
+    padding: 0;
+  }
 }
 .contacts-info address {
   line-height: 1.625;
@@ -323,10 +413,34 @@ button {
   float: right;
   width: 65%;
 }
+@media screen and (max-width: 920px) {
+  .contacts-form {
+    float: none;
+    width: 100%;
+  }
+  .contacts-form h3 {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .contacts-form h3 {
+    text-align: center;
+  }
+}
 .contacts-form p {
   padding: 0 0 72px;
   margin: 0;
   font-weight: 300;
+}
+@media screen and (max-width: 920px) {
+  .contacts-form p {
+    padding: 0 0 22px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .contacts-form p {
+    text-align: center;
+  }
 }
 .contacts-form textarea {
   display: block;
@@ -354,6 +468,13 @@ button {
   float: right;
   width: 49%;
 }
+@media screen and (max-width: 520px) {
+  .contacts-form .left-col,
+  .contacts-form .right-col {
+    float: none;
+    width: 100%;
+  }
+}
 .contacts-form input {
   display: block;
   box-sizing: border-box;
@@ -375,19 +496,43 @@ button {
   color: #333;
   background-color: #fff;
 }
+@media screen and (max-width: 520px) {
+  .contacts-form .btn {
+    margin: 48px auto 0;
+    display: block;
+  }
+}
 /*---End Main Style---*/
 /*---Start Footer Style---*/
 .subscribe-block {
   background-color: #fff;
   padding: 60px 0;
 }
+@media screen and (max-width: 920px) {
+  .subscribe-block {
+    background-color: #fff;
+    padding: 0;
+  }
+}
 .subscribe-block .container {
   font-size: 0;
+}
+@media screen and (max-width: 920px) {
+  .subscribe-block .container {
+    padding: 18px;
+  }
 }
 .subscribe-message {
   display: inline-block;
   vertical-align: middle;
   width: 44%;
+}
+@media screen and (max-width: 920px) {
+  .subscribe-message {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
 }
 .subscribe-message h2 {
   margin: 0 0 2px;
@@ -413,10 +558,17 @@ button {
   width: 56%;
   font-size: 0;
 }
+@media screen and (max-width: 920px) {
+  .subscribe-block form {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
 .subscribe-block input[type="email"] {
   box-sizing: border-box;
   padding-left: 16px;
-  width: 64.68%;
+  width: 62.68%;
   height: 52px;
   border: 1px solid #e8e8e8;
   display: inline-block;
@@ -424,14 +576,40 @@ button {
   font-size: 1rem;
   line-height: 2rem;
 }
+@media screen and (max-width: 920px) {
+  .subscribe-block input[type="email"] {
+    float: left;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .subscribe-block input[type="email"] {
+    float: none;
+    width: 100%;
+  }
+}
 .subscribe-block input[type="email"]::placeholder {
   color: #ccc;
 }
 .subs-btn {
-  width: 30%;
+  width: 33%;
   padding: 0;
   margin-left: 2.47%;
   background-color: #f8f8f8;
+}
+@media screen and (max-width: 920px) {
+  .subscribe-block .subs-btn {
+    float: right;
+    margin-left: 1%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .subscribe-block .subs-btn {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
 }
 .subs-btn span {
   position: relative;
@@ -457,6 +635,11 @@ button {
   font-size: 0;
   list-style: none;
 }
+@media screen and (max-width: 1020px) {
+  .feachers ul {
+    text-align: center;
+  }
+}
 .feachers li {
   display: inline-block;
   vertical-align: middle;
@@ -465,6 +648,30 @@ button {
   padding: 32px 0;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1080px) {
+  .feachers li {
+    width: 50%;
+    text-align: left;
+    padding-left: 13%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feachers li {
+    display: block;
+    width: 100%;
+    padding-left: 31%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .feachers li {
+    padding-left: 24%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .feachers li {
+    padding-left: 16%;
+  }
 }
 .feachers span {
   display: inline-block;
@@ -503,6 +710,13 @@ button {
   float: left;
   width: 33%;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container > div[class^='contacts'] {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 }
 .contacts-icon {
   padding: 48px 0 16px;
@@ -555,10 +769,10 @@ button {
   color: #666;
 }
 .bottom-nav {
-  padding: 30px 0 24px;
-  height: 20px;
+  padding: 14px 0;
   background-color: #fff;
   font-size: 0;
+  text-align: center;
 }
 .bottom-nav .container > div {
   display: inline-block;
@@ -566,11 +780,31 @@ button {
   width: 33%;
   text-align: center;
 }
+@media screen and (max-width: 760px) {
+  .bottom-nav .container > div {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 .bottom-nav .container div:first-child {
   text-align: left;
+  padding: 16px 0;
+}
+@media screen and (max-width: 760px) {
+  .bottom-nav .container div:first-child {
+    text-align: center;
+  }
 }
 .bottom-nav .container div:last-child {
   text-align: right;
+}
+@media screen and (max-width: 760px) {
+  .bottom-nav .container div:last-child {
+    text-align: center;
+  }
 }
 .bottom-nav span {
   font-size: .8125rem;
@@ -579,18 +813,34 @@ button {
 .bottom-nav li {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 14px;
+  padding: 16px 9px;
+}
+@media screen and (max-width: 960px) {
+  .bottom-nav li {
+    display: block;
+  }
 }
 .social li {
-  margin: 0 21px;
+  padding: 16px 22px;
+}
+@media screen and (max-width: 760px) {
+  .social li {
+    display: inline-block;
+  }
 }
 .social li:last-child {
-  margin: 0 0 0 19px;
+  padding-right: 0;
+}
+@media screen and (max-width: 960px) {
+  .social li:last-child {
+    padding-right: 22px;
+  }
 }
 .bottom-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
 }
 .bottom-nav a {
   text-decoration: none;
