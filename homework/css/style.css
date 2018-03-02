@@ -1,0 +1,35 @@
+body{
+    margin: 30px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #000000;
+}
+div{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+ul {
+    padding: 0;
+}
+li {
+    display: inline;
+}
+li::after {
+    content: '|';
+}
+span{
+    color: #999999
+}
+a {
+    color: #666666;
+    text-decoration: none;
+}
+P{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.733;
+    color: #333333
+}
