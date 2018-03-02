@@ -74,7 +74,7 @@ body {
     border: 1px solid #323232;
     width: 275px;
     height: 45px;
-    padding-left: 25px;
+    padding: 0 40px 0 25px;
 }
 
 .head-search button {
