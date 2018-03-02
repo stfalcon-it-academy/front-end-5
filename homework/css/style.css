@@ -104,6 +104,8 @@ input::-webkit-search-results-decoration {
     width: 56px;
     display: inline-block;
     vertical-align: top;
+    outline: none;
+    cursor: pointer;
 }
 
 .bottom_header ul {
