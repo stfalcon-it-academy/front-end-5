@@ -17,103 +17,148 @@ a:hover {
 /*------------------------------------------------*/
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f7f7f7;
-    font-weight: 400;
+    min-width: 1170px;
+    }
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: "";
 }
-
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+header {
+    background-color: #232323;
+}
 .top_header {
     background-color: #2b2b2b;
-    font-size: 14px;
-    height: 34px;
 }
-
-.phonenumber a {
+.header_phone {
+    line-height: 1.714;
     font-weight: 300;
+    font-size: 14px;
     float: left;
-    padding-top: 10px;
+    padding: 5px 0;
 }
 
-.register {
+.top_header_menu a {
+   color: #666666;
+}
+
+.top_header_menu a:hover  {
+    text-decoration: underline;
+}
+.top_header_menu {
+    font-weight: 400;
     float: right;
-    padding-top: 10px;
-
+    padding: 7px 0 3px;
+}
+.middle_header {
+height: 100px;
 }
 
-span {
-    color: #7f7f7f;
+.main_logo {
+    display: inline-block;
+    padding: 30px 0 20px 0;
+}
+.form {
+    margin: 30px 0 20px 0;
+    float: right;
+    border: 1px solid #666666;
+}
+.form input {
+    background: transparent;
+    color: #666666;
+    padding: 11px 8px 12px 24px;
+    border: none;
+    outline: none;
+    }
+
+.form input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,                 /*забрали хрестик в input*/
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+.form input::placeholder {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.84;
+    font-weight: 300;
+}
+.bottom_header {
+    height: 68px;
+
+}
+.or {
+    color: #3b3b3b;
     padding: 0 10px;
 }
 
-.middle_header {
-    background-color: #232323;
-    padding: 34px 0;
-}
-
-.logo {
-    float: left;
-}
-
-.search {
-    float: right;
-}
-
-.search input {
-    border: 1px solid #323232;
-    background-color: #232323;
-    color: #7f7f7f;
-    width: 275px;
-    height: 45px;
-    padding-left: 25px;
-}
-
-.search button {
-    background: url("../img/Search.png") no-repeat;
-    height: 18px;
-    width: 18px;
+.form button {
     border: none;
-    margin-left: -40px;
-    cursor: pointer;
+    background: transparent url("../img/search.png") center center no-repeat;
+    height: 44px;
+    width: 56px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-nav {
-    margin-top: 90px;
-}
-
-nav ul li {
-    float: left;
-    display: inline;
+.bottom_header ul {
+    list-style: none;
+    font-weight: 400;
     font-size: 16px;
-    padding-right: 75px;
-    margin-left: -40px;
+    line-height: 1.5;
+    margin-left: -54px;
+    display: inline-block;
 }
 
-.bag a {
-    background: url(../img/Bag.png) no-repeat;
+.bottom_header a{
+   color: #ffffff;
+    padding: 10px;
+}
+.bottom_header a:active {
+    color: #be926f;
+}
+.bottom_header a:hover {
+    text-decoration: underline;
+}
+.bottom_header li {
+    display: inline-block;
+}
+.bottom_header li+li {
+    margin-left: 29px;
+}
+.bag {
+    background: transparent url("../img/bag.png") center center no-repeat;
+    display: inline-block;
+    float: right;
     height: 22px;
     width: 17px;
-    float: right;
-    padding-right: 11px;
     position: relative;
 }
-
-.bag::before {
-    content: attr(data-count);
-    color: #232323;
-    font-size: 12px;
-    border-radius: 50%;
+.bag:before {
+    display: inline-block;
+    content: attr(data-counter);
+    top: 3px;
+    right: 1px;
+    line-height: 18px;
+    width: 18px;
+    border-radius: 100%;
     background-color: #be926f;
+    color:#232323;
+    font-size: 12px;
     position: absolute;
-    top: 152px;
-    right: 3px;
-    width: 14px;
-    height: 14px;
+    font-weight: 300;
     text-align: center;
 }
 
-.contact_us {
-    margin-top: 34px;
+.main {
+    margin: 34px auto 0;
     height: 117px;
-    width: 100vw;
+    width: 1170px;
     background-color: #e7e7e7;
     text-transform: uppercase;
 
@@ -124,10 +169,10 @@ h1 {
     padding-left: 28px;
     font-size: 30px;
     float: left;
-
+    line-height: 1.25;
 }
 
-.home {
+.home_contact {
     float: right;
     font-size: 14px;
     padding-right: 15px;
@@ -135,11 +180,11 @@ h1 {
 
 }
 
-.home a {
+.home_contact a {
     color: #666666;
 
 }
 
-.home a:hover {
+.home_contact a:hover {
     color: #999999;
 }
