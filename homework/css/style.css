@@ -1,0 +1,33 @@
+/*---Sart Base Style---*/
+:root {
+  font-family: Montserrat, sans-serif;
+}
+html,
+body {
+  min-width: 360px;
+  padding: 0;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*---End Base Style---*/
+/*---Start Header Style---*/
+/*---End Header Style---*/
