@@ -5,192 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="Max length 150 symbols">
-  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lesson 6</title>
+  <title>Lesson 10</title>
 </head>
 <body>
   <header class="main-header">
-    <div class="header-row-top">
-      <div class="container clearfix">
-        <div class="header-col-left">
-          <a href="tel:+123456789" class="tel">(+123) 456 789</a><!-- /.tel -->
-        </div><!-- /.header-col-left -->
-        <div class="header-col-right">
-          <ul class="user-block clearfix">
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Register</a></li>
-          </ul><!-- /.user-block -->
-        </div><!-- /.header-col-right -->
-      </div><!-- /.container -->
-    </div><!-- /.header-row-top -->
+    <div class="container-fluid header-row-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-5 header-col-left">
+            <a href="tel:+123456789" class="tel">(+123) 456 789</a>
+          </div>
+          <div class="col-lg-4 col-7 header-col-right">
+            <ul class="user-block">
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
     <div class="container">
-      <div class="header-row-mid clearfix">
-        <div class="header-col-left">
+      <div class="row header-row-mid">
+        <div class="col-xl-9 col-lg-8 col-md-6 header-col-left">
           <a href="#" class="main-logo">
             <img src="img/Logo.png" alt="Main logo" width="166" height="49">
           </a><!-- /.main-logo -->
         </div><!-- /.header-col-left -->
-        <div class="header-col-right">
+        <div class="col-xl-3 col-lg-4 col-md-6 header-col-right">
           <form class="header-search-form" action="#" method="post">
             <input type="search" placeholder="Search Products&hellip;" name="header-search-field" class="header-search-field">
             <button type="submit" name="header-search-btn" class="header-search-btn"></button>
           </form>
         </div><!-- /.header-col-right -->
-      </div><!-- /.header-row-mid -->
-      <div class="header-row-bottom clearfix">
-        <div class="header-col-left">
-          <nav class="main-nav">
-            <ul class="main-nav-list clearfix">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Living room</a></li>
-              <li><a href="#">Office</a></li>
-              <li><a href="#">Bedroom</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#" class="active-nav-item">Contact</a></li>
-            </ul><!-- /.main-nav-list -->
-          </nav><!-- /.main-nav -->
-        </div><!-- /.header-col-left -->
-        <div class="header-col-right">
-          <a href="#" class="header-bag-icon" data-count="2"></a>
-        </div><!-- /.header-col-right -->
-      </div><!-- /.header-row-bottom -->
-    </div><!-- /.container -->
-  </header><!-- /.main-header -->
-  <main class="container">
-    <div class="breadcrumbs clearfix">
-      <span class="breadcrumbs-label">
-        <h1>contact us</h1>
-      </span><!-- /.breadcrumbs-label -->
-      <ul class="breadcrumbs-links">
-        <li><a href="/">home</a></li>
-        <li><a>contact</a></li>
-      </ul><!-- /.breadcrumbs-links -->
-    </div><!-- /.breadcrumbs -->
-    <section class="contacts">
-      <h2 class="visually-hidden">Coordinats information</h2>
-      <div class="map-info">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2594.7460477906134!2d26.99775331575516!3d49.43261497934789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1518854367973" height="629" frameborder="0" style="border:0"></iframe>
-      </div><!-- /.map-info -->
-      <div class="contacts-details clearfix">
-        <div class="contacts-info clearfix">
-          <h3>Contacts information</h3>
-          <div class="contacts-address">
-              <h4>Address</h4>
-              <ul>
-                <li>
-                  <address>Head: 12 W 1st St, 90001 Los<br>
-                  Angeles, California, US</address>
-                </li>
-                <li>
-                  <address>Agency: 15 RuePernele, 5651 Paris,<br>
-                  France</address>
-                </li>
-              </ul>
-          </div>
-          <div class="contacts-tel">
-            <h4>Call Us</h4>
-            <ul>
-              <li><a href="tel:+190012345678">+1 – 900 – 1234 -5678</a></li>
-              <li><a href="tel:+190012345678">+1 – 900 – 1234 -5678</a></li>
-            </ul>
-          </div>
-          <div class="contacts-email">
-            <h4>Email</h4>
-            <ul>
-              <li><a href="mailto:info@templaza.com">info@templaza.com</a></li>
-              <li><a href="mailto:support@templaza.com">support@templaza.com</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="contacts-form">
-          <h3>Write us a message</h3>
-          <p>Your email address will not be published.</p>
-          <form action="#" method="post">
-            <textarea name="name" wrap="hard" placeholder="Your Message"></textarea>
-            <div class="left-col">
-              <input type="text" placeholder="Your Subject" name="message">
-              <input type="text" placeholder="Name" name="name">
-            </div><!-- /.left-col -->
-            <div class="right-col">
-              <input type="text" placeholder="Email(*)" name="email">
-              <input type="text" placeholder="Website" name="site">
-            </div><!-- /.right-col -->
-            <button class="btn" type="submit" name="send-btn">Send Now</button>
-          </form>
-        </div><!-- /.contacts-form -->
-      </div><!-- /.contacts-details -->
-    </section><!-- /.contacts -->
-  </main><!-- /.container -->
-  <footer>
-      <div class="subscribe-block">
-        <div class="container">
-          <div class="subscribe-message">
-            <h2>Newsletter</h2>
-            <p>
-              Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.
-            </p>
-          </div>
-          <form class="clearfix" action="index.html" method="post">
-            <input type="email" name="subscribe-email" placeholder="Email address">
-            <button class="btn subs-btn" type="submit" name="subs-btn">
-              <span>subscribe</span>
-            </button><!-- /.subs-btn -->
-          </form>
-        </div><!-- /.container -->
-      </div><!-- /.subscribe-block -->
-      <div class="feachers">
-        <div class="container">
-          <ul>
-            <li class="ship"><span>free shipping</span></li>
-            <li class="supp"><span>customer support</span></li>
-            <li class="money-back"><span>15 days money back</span></li>
-            <li class="help-center"><span>24/7 help center</span></li>
+      </div>
+      <div class="row header-row-bot">
+        <nav class="col-12 col-sm-11 main-nav header-col-left">
+          <ul class="main-nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Living room</a></li>
+            <li><a href="#">Office</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="active-nav-item">Contact</a></li>
           </ul>
-        </div><!-- /.container -->
-      </div><!-- /.feachers -->
-      <div class="contacts-logo">
-        <div class="container clearfix">
-          <div class="contacts-left">
-            <div class="contacts-icon"><img src="img/iPhone.jpg" alt="Phome icon"></div>
-            <div class="contacts-title"><span>Call us</span></div>
-            <div class="contacts-link"><a href="tel:18002777766">1-800-277-7766</a></div>
-          </div><!-- /.contacts-left -->
-          <div class="contacts-center">
-            <div class="contacts-icon"><img src="img/Location-Large.jpg" alt="Location icon"></div>
-            <div class="contacts-title"><span>Location</span></div>
-            <div class="contacts-link"><a href="#"><address>Moscow, Pushkin str. 32/A</address></a></div>
-          </div><!-- /.contacts-center -->
-          <div class="contacts-right">
-            <div class="contacts-icon"><img src="img/Mail.jpg" alt="Mail icon"></div>
-            <div class="contacts-title"><span>Mail</span></div>
-            <div class="contacts-link"><a href="mailto:info@domain.com">info@domain.com</a></div>
-          </div><!-- /.contacts-right -->
+        </nav>
+        <div class="col-12 col-sm-1 header-col-right">
+          <a href="#" class="header-bag-icon" data-count="2"></a>
         </div>
       </div>
-      <div class="bottom-nav">
-        <div class="container">
-          <div>
-            <span>2016 Domain.com. All rights reserved</span>
-          </div>
-          <div>
-            <ul class="pol"> 
-              <li><a href="#"><span>Terms & Conditions</span></a></li>
-              <li><a href="#"><span>Privacy</span></a></li>
-              <li><a href="#"><span>Downloads</span></a></li>
-            </ul>
-          </div>
-          <div class="social">
-            <ul>
-              <li><a href="#"><img src="img/twitter.png" alt="Twitter icon"></a></li>
-              <li><a href="#"><img src="img/google+.png" alt="Google plus icon"></a></li>
-              <li><a href="#"><img src="img/facebook.png" alt="Facebook icon"></a></li>
-            </ul>
-          </div><!-- /.social -->
-        </div><!-- /.container -->
-      </div><!-- /.bottom-nav -->
-  </footer>
+    </div><!-- /.container-->
+  </header>
 </body>
+
 </html>
