@@ -6,6 +6,15 @@ body {
     min-width: 320px;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
 .clear-fix {
     display: table;
     content: "";
@@ -33,7 +42,6 @@ body {
 .head-tel a {
     color: #7f7f7f;
     font-weight: 300;
-    text-decoration: none;
 }
 
 .head-login {
@@ -42,7 +50,10 @@ body {
 
 .head-login a {
     color: #666666;
-    text-decoration: none;
+}
+
+.head-login a:hover {
+    text-decoration: underline;
 }
 
 .head-login span {
@@ -82,6 +93,7 @@ body {
 }
 
 .head-search input {
+    position: relative;
     background: #232323;
     font-size: 13px;
     font-weight: 300;
@@ -90,16 +102,24 @@ body {
     width: 275px;
     height: 45px;
     padding: 0 40px 0 25px;
+    left: 20px;
+}
+
+@media (max-width: 350px) {
+    .head-search input {
+        width: 265px;
+    }
 }
 
 .head-search button {
+    position: relative;
     border: none;
     background: url(../img/search.png) no-repeat;
     width: 18px;
     height: 18px;
-    margin-left: -40px;
-    padding: 15px 20px;
+    right: 20px;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 .head-main nav {
@@ -108,12 +128,10 @@ body {
 
 .head-main ul {
     margin-top: 30px;
-    list-style: none;
     padding: 0;
 }
 
 .head-main ul li {
-    display: inline-block;
     margin-right: 40px;
 }
 
@@ -125,47 +143,39 @@ body {
 }
 
 .head-main ul li a {
-    text-decoration: none;
     font-size: 16px;
     color: #ffffff;
 }
 
-.head-main ul li a:hover {
-    color: #be926f;
-}
-
+.head-main ul li a:hover,
 .head-main .active {
     color: #be926f;
 }
 
 .head-bag {
     float: right;
-    padding: 20px 0;
+
 }
 
-.head-bag button {
-    border: none;
-    background: url(../img/bag.png) no-repeat;
-    width: 17px;
-    height: 22px;
-    cursor: pointer;
-    margin-left: -8px;
-}
-
-.head-bag div {
-    background: #be926f;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    margin-bottom: -10px;
+.head-bag a {
     position: relative;
+    right: 10px;
+    top: 30px;
 }
 
-.counter::after {
-    content: attr(id);
+.head-bag a::after {
+    position: absolute;
+    left: 10px;
+    top: -14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
     font-size: 12px;
-    padding: 6px;
-    vertical-align: middle;
+    line-height: 1.5;
+    text-align: center;
+    color: #232323;
+    background-color: #be926f;
+    content: attr(data-counter);
 }
 
 .content-top {
@@ -182,22 +192,24 @@ body {
     float: left;
 }
 
-.content-top span {
-    padding: 50px 20px;
-    color: #999999;
+.content-nav {
+    padding: 40px 20px;
     float: right;
 }
 
-.content-top a {
+.content-nav li:nth-child(1)::after {
+    content: '/';
+    color: #999999;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.content-nav a {
     color: #666666;
-    text-decoration: none;
     text-transform: uppercase;
 }
 
-.content-top a:hover {
-    color: #999999;
-}
-
-.content-top .active {
+.content-nav a:hover,
+.content-nav .active {
     color: #999999;
 }
