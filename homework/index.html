@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Lesson-6</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
@@ -18,13 +17,13 @@
             <div class="head-login"><a href="#">Log in</a><span>or</span><a href="#">Register</a></div>
         </div>
     </div>
-    <div class="head-main">
+    <div class="head-main clear-fix">
         <div class="site-center">
             <div class="head-logo">
                 <a href="/"><img src="img/logo.png" alt="logo"></a>
             </div>
             <div class="head-search">
-                <form action="" method="get">
+                <form action="#" method="get">
                     <input type="search" placeholder="Search Products..." name="search" value="">
                     <button type="submit"></button>
                 </form>
@@ -40,8 +39,7 @@
                 </ul>
             </nav>
             <div class="head-bag">
-                <div class="counter" id="2"></div>
-                <button type="button"></button>
+                <a href="#" data-counter="2"><img src="img/bag.png" alt="bag"></a>
             </div>
         </div>
     </div>
@@ -49,7 +47,12 @@
 <div class="site-center">
     <div class="content-top">
         <h1>contact us</h1>
-        <span><a href="#" class="active">home</a> / <a href="#">contact</a></span>
+        <div class="content-nav">
+            <ul>
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 </body>
