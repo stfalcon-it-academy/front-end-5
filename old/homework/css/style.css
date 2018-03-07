@@ -1,0 +1,621 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.857;
+    background-color: #f7f7f7;
+    min-width: 1170px;
+}
+
+.header_top {
+    width: 100%;
+    background: #2b2b2b;
+}
+
+.tel_and_registration {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.tel_and_registration div{
+    display: inline-block;
+    margin: 4px 0;
+    width: 50%;
+    font-size: 14px;
+}
+
+.tel a {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+.registration {
+    text-align: right;
+}
+
+.registration span {
+    color: #3a3a3a;
+    margin: 0 12px;
+}
+
+.registration a {
+    text-decoration: none;
+    color: #666666;
+}
+
+header {
+    width: 100%;
+    background: #232323;
+}
+
+.logo_and_form {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 30px 0 20px;
+
+}
+
+.logo_and_form div {
+    display: inline-block;
+    width: 50%;
+
+}
+
+.search form {
+    width: 275px;
+    float: right;
+    border: 1px solid #323232;
+    position: relative;
+}
+
+.search input[type="text"]{
+    background: #232323;
+    border: 0;
+    outline: 0;
+    color: #545454;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.846;
+    padding: 16px 90px 15px 25px;
+    width: 160px;
+}
+
+.search button {
+    width: 19px;
+    height: 19px;
+    background: url("../img/search.png") no-repeat;
+    border: 0;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu_and_bag {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 0 0 35px;
+}
+
+.menu_and_bag div {
+    display: inline-block;
+
+}
+
+.menu,
+.menu li {
+    display: inline-block;
+}
+ .menu li + li {
+     margin-left: 50px;
+ }
+
+.menu ul{
+    padding: 0;
+}
+
+.menu a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.bag {
+    float: right;
+    width: 17px;
+    height: 22px;
+    margin: 12px;
+}
+
+.menu li a:active {
+    color: #b48b6a;
+}
+
+.menu li a:hover {
+    color: #b48b6a;
+}
+
+.bag a {
+    background: url("../img/bag.png") center center no-repeat;
+    position: relative;
+    padding: 20px 20px;
+}
+
+.bag a::before {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    background-color: #be926f;
+    border-radius: 100%;
+    content: '2';
+    font-size: 12px;
+    color: #232323;
+    width: 17px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0;
+    background-color: #f7f7f7;
+}
+
+.contact_and_home div {
+    display: inline-block;
+    width: 50%;
+}
+
+.contact_and_home {
+    background-color: #e7e7e7;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.contact {
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.contact h1 {
+    font-size: 30px;
+    color: #232323;
+    padding: 11px 0;
+}
+
+.home {
+    font-size: 14px;
+    color: #999999;
+    text-align: right;
+    padding-right: 18px;
+    box-sizing: border-box;
+    vertical-align: center;
+}
+
+.home span {
+    font-size: 14px;
+    color: #999999;
+    margin: 0 8px;
+}
+
+.home a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.home a:active {
+    color: #666666;
+}
+
+.home a:hover {
+    color: #666666;
+}
+
+
+.map {
+    width: 1170px;
+    height: 630px;
+}
+
+.contact_information {
+    width: 100%;
+    padding: 60px 25px 0;
+    background-color: #ffffff;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.address {
+    width: 28%;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 15px;
+    line-height: 1.733;
+    color: #000000;
+    margin: 0;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 1.857;
+    color: #333333;
+    margin: 10px 0 0 0;
+}
+
+.city {
+    font-size: 15px;
+    line-height: 2.333;
+    color: #333333;
+    font-style: normal;
+}
+
+.city i,
+.call i,
+.mail i {
+    font-size: 20px;
+    color: #999999;
+}
+
+.call,
+.mail {
+    margin: 25px 0 ;
+}
+
+.call a,
+.mail a {
+    display: block;
+    line-height: 2.333;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.write_message {
+    width: 72%;
+    padding-left: 70px;
+    box-sizing: border-box;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 {
+    font-size: 15px;
+    line-height: 1.733;
+    color: #000000;
+    margin: 0;
+}
+
+.write_message span {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.your_message {
+    font-size: 14px;
+    font-weight: 300;
+    color: #d5d1cd;
+    margin-top: 60px;
+}
+
+.input-txt {
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    background: #ffffff;
+    border: none;
+    font-size: 15px;
+    color: #000000;
+    border-bottom: 1px solid #d5d1cd;
+    box-sizing: border-box;
+}
+
+
+
+.subject-txt,
+.name-txt,
+.email-txt,
+.website-txt {
+    width: 47%; /*не знаю чому 50% не ставиться, хоча батьківськй блок 100% і font-size: 0;*/
+    height: 50px;
+    padding: 5px 0;
+    background: #ffffff;
+    border: none;
+    font-size: 15px;
+    color: #000000;
+    border-bottom: 1px solid #d5d1cd;
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+.subject-txt,
+.name-txt {
+    margin-right: 30px;
+}
+
+.name-txt::-webkit-input-placeholder {color:#d4d4d4;}
+.name-txt::-moz-placeholder          {color:#d4d4d4;}
+.name-txt:-moz-placeholder           {color:#d4d4d4;}
+.name-txt:-ms-input-placeholder      {color:#d4d4d4;}
+
+.subject-txt::-webkit-input-placeholder {color:#d4d4d4;}
+.subject-txt::-moz-placeholder          {color:#d4d4d4;}
+.subject-txt:-moz-placeholder           {color:#d4d4d4;}
+.subject-txt:-ms-input-placeholder      {color:#d4d4d4;}
+
+.email-txt::-webkit-input-placeholder {color:#d4d4d4;}
+.email-txt::-moz-placeholder          {color:#d4d4d4;}
+.email-txt:-moz-placeholder           {color:#d4d4d4;}
+.email-txt:-ms-input-placeholder      {color:#d4d4d4;}
+
+.website-txt::-webkit-input-placeholder {color:#d4d4d4;}
+.website-txt::-moz-placeholder          {color:#d4d4d4;}
+.website-txt:-moz-placeholder           {color:#d4d4d4;}
+.website-txt:-ms-input-placeholder      {color:#d4d4d4;}
+
+.btn_send_now {
+    width: 200px;
+    height: 50px;
+    margin: 30px 0 90px 0;
+    border: 1px solid #be926f;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.newsletter_wrap {
+    margin-top: 60px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.newsletter_block {
+    margin: 0 auto;
+    width: 1170px;
+    font-size: 0;
+}
+
+.newsletter_text {
+    width: 45%;
+    display: inline-block;
+    margin: 0;
+    padding: 60px 0;
+}
+
+.newsletter_text span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.333;
+}
+
+.newsletter_text p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.newslatter_form {
+    width: 55%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 70px 0;
+    text-align: right;
+    vertical-align: top;
+}
+
+.email_address-txt {
+    font-size: 15px;
+    height: 50px;
+    width: 390px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.substribe {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #be926f;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.722;
+    font-weight: 400;
+    margin-left: 15px;
+    text-align: right;
+    background: #f8f8f8 url('../img/air.png') 12% 50%  no-repeat;
+    padding: 0 15px;
+}
+
+.links_wrap {
+    width: 1170px;
+    margin: 0 auto;
+    display: block;
+}
+
+.links_wrap a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 16px;
+}
+
+.free_air {
+    background: url(../img/free_air.png) left center no-repeat;
+    padding: 30px 70px 30px 50px;
+    margin-left: 20px;
+    vertical-align: center;
+}
+
+.customer {
+    background: url(../img/customer.png) left center no-repeat;
+    padding: 30px 70px 30px 50px;
+    margin: 0 10px;
+}
+
+.money_back {
+    background: url(../img/money_back.png) left center no-repeat;
+    padding: 30px 70px 30px 50px;
+    margin: 0 10px;
+}
+
+.help_center {
+    background: url(../img/help_center.png) left center no-repeat;
+    padding: 30px 0 30px 50px;
+    margin-right: 20px;
+}
+
+.communicate_wrap {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.communicate {
+    display:block;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 25px 0 50px;
+}
+
+.phone a {
+    background: url(../img/phone.png) top center no-repeat;
+    padding-top: 129px;
+    margin: 0 50px 0 105px;
+}
+
+
+.location {
+    margin: 0 50px 0 135px;
+
+}
+
+.location_text {
+    background: url(../img/location.png) top center no-repeat;
+    margin: 20px 0 0;
+    padding-top: 80px;
+}
+
+.street{
+    margin-top: 10px;
+}
+.post {
+    background: url(../img/post.png) top center no-repeat;
+    padding-top: 60px;
+    margin: 0 0 0 200px;
+}
+
+.phone,
+.location,
+.post {
+    display: inline-block;
+   text-align: center;
+}
+
+.phone_text,
+.location_text,
+.post_name {
+    font-size: 20px;
+    color: #000000;
+}
+
+.phone a,
+.location a,
+.post a {
+    text-decoration: none;
+}
+
+.post_link a{
+    text-decoration: underline;
+    color: #be926f;
+}
+
+.phone span {
+    font-size: 24px;
+    line-height: 1.291;
+    color: #232323;
+}
+
+.phone_text {
+    margin-bottom: 15px;
+}
+
+.street {
+    color: #666666;
+    font-size: 14px;
+    line-height: 2.142;
+}
+
+.post_name {
+    margin: 15px 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.footer_wrap {
+    margin: 0 auto;
+    width: 1170px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.footer_wrap span {
+    font-size: 13px;
+    color: #999999;
+}
+
+footer hr {
+    margin: 0;
+    color: #999999;
+}
+
+.footer_menu {
+    display: inline-block;
+}
+
+.footer_menu ul {
+    margin: 0;
+}
+
+.footer_menu li {
+    display: inline-block;
+}
+
+.footer_menu li+li {
+    margin-left: 28px;
+}
+
+.social_net {
+    display: inline-block;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #999999;
+}
+
+.social_net i {
+    font-size: 18px;
+    color: #999999;
+}
+
+.social_net a+a {
+    margin-left: 35px;
+
+}
+
+
+
+
