@@ -168,16 +168,20 @@ li {
 
 .head-bag a {
     position: relative;
+    display: inline-block;
+    background: url(../img/bag.png) no-repeat;
+    width: 17px;
+    height: 22px;
     right: 10px;
     top: 30px;
 }
 
 .head-bag a::after {
     position: absolute;
-    left: 10px;
-    top: -14px;
     width: 18px;
     height: 18px;
+    left: 8px;
+    top: -8px;
     border-radius: 100%;
     font-size: 12px;
     line-height: 1.5;
