@@ -54,6 +54,10 @@ header {
     float: right;
     padding: 7px 0 3px;
 }
+.or {
+    color: #3b3b3b;
+    padding: 0 10px;
+}
 .middle_header {
 height: 100px;
 }
@@ -89,12 +93,7 @@ input::-webkit-search-results-decoration {
     font-weight: 300;
 }
 .bottom_header {
-    height: 68px;
-
-}
-.or {
-    color: #3b3b3b;
-    padding: 0 10px;
+    min-height: 68px;
 }
 
 .form button {
@@ -115,21 +114,28 @@ input::-webkit-search-results-decoration {
     line-height: 1.5;
     margin-left: -54px;
     display: inline-block;
+    float: left;
 }
 
 .bottom_header a{
    color: #ffffff;
     padding: 10px;
 }
+.active_menu a {
+    color: #be926f;
+}
+
 .bottom_header a:active {
     color: #be926f;
 }
 .bottom_header a:hover {
     text-decoration: underline;
+    color: #be926f;
 }
 .bottom_header li {
     display: inline-block;
 }
+
 .bottom_header li+li {
     margin-left: 29px;
 }
