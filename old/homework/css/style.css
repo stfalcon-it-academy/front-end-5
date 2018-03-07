@@ -52,7 +52,7 @@ header {
     width: 1170px;
     margin: 0 auto;
     font-size: 0;
-    padding: 30px 0;
+    padding: 30px 0 20px;
 
 }
 
@@ -99,21 +99,23 @@ header {
     width: 1170px;
     margin: 0 auto;
     font-size: 0;
-    padding: 0 0 45px;
+    padding: 0 0 35px;
 }
 
 .menu_and_bag div {
     display: inline-block;
-    width: 50%;
+
 }
 
+.menu,
 .menu li {
     display: inline-block;
 }
+ .menu li + li {
+     margin-left: 50px;
+ }
 
-.menu ul {
-    display: flex;
-    justify-content: space-between;
+.menu ul{
     padding: 0;
 }
 
@@ -124,9 +126,10 @@ header {
 }
 
 .bag {
-    text-align: right;
+    float: right;
     width: 17px;
     height: 22px;
+    margin: 12px;
 }
 
 .menu li a:active {
@@ -138,14 +141,15 @@ header {
 }
 
 .bag a {
+    background: url("../img/bag.png") center center no-repeat;
     position: relative;
-    padding: 18px 13px;
+    padding: 20px 20px;
 }
 
 .bag a::before {
     position: absolute;
-    top: -14px;
-    right: 6px;
+    top: 0;
+    right: -6px;
     background-color: #be926f;
     border-radius: 100%;
     content: '2';
@@ -182,7 +186,7 @@ header {
 .contact h1 {
     font-size: 30px;
     color: #232323;
-    vertical-align: center;
+    padding: 11px 0;
 }
 
 .home {
@@ -314,11 +318,7 @@ h2 {
     box-sizing: border-box;
 }
 
-.name {
-    font-weight: 300;
-    color: #d5d1cd;
-    box-sizing: border-box;
-}
+
 
 .subject-txt,
 .name-txt,
@@ -436,24 +436,40 @@ h2 {
 .links_wrap {
     width: 1170px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 
 .links_wrap a {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: #333333;
     font-size: 16px;
-    margin: 25px 0;
 }
 
-.links_wrap img {
-    border: 2px solid #be926f;
-    color: #be926f;
-    padding: 7px;
-    vertical-align: middle;
-    margin-right: 14px;
+.free_air {
+    background: url(../img/free_air.png) left center no-repeat;
+    padding: 30px 70px 30px 50px;
+    margin-left: 20px;
+    vertical-align: center;
+}
+
+.customer {
+    background: url(../img/customer.png) left center no-repeat;
+    padding: 30px 70px 30px 50px;
+    margin: 0 10px;
+}
+
+.money_back {
+    background: url(../img/money_back.png) left center no-repeat;
+    padding: 30px 70px 30px 50px;
+    margin: 0 10px;
+}
+
+.help_center {
+    background: url(../img/help_center.png) left center no-repeat;
+    padding: 30px 0 30px 50px;
+    margin-right: 20px;
 }
 
 .communicate_wrap {
@@ -462,16 +478,43 @@ h2 {
 }
 
 .communicate {
+    display:block;
     width: 1170px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
+    padding: 25px 0 50px;
+}
+
+.phone a {
+    background: url(../img/phone.png) top center no-repeat;
+    padding-top: 129px;
+    margin: 0 50px 0 105px;
+}
+
+
+.location {
+    margin: 0 50px 0 135px;
+
+}
+
+.location_text {
+    background: url(../img/location.png) top center no-repeat;
+    margin: 20px 0 0;
+    padding-top: 80px;
+}
+
+.street{
+    margin-top: 10px;
+}
+.post {
+    background: url(../img/post.png) top center no-repeat;
+    padding-top: 60px;
+    margin: 0 0 0 200px;
 }
 
 .phone,
 .location,
 .post {
+    display: inline-block;
    text-align: center;
 }
 
@@ -507,10 +550,6 @@ h2 {
     color: #666666;
     font-size: 14px;
     line-height: 2.142;
-}
-
-.location_text {
-    margin: 10px 0;
 }
 
 .post_name {
