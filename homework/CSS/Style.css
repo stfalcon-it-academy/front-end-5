@@ -1,7 +1,7 @@
 
 .Name {
     font-size: 24px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     left: 0.012px;
     top: 66.984px;
@@ -15,7 +15,7 @@ body {
 }
 
 .author {
-    font-family: "Montserrat ";
+    font-family: "Montserrat", sans-serif;
     height: 66px;
 }
 span {
@@ -27,29 +27,10 @@ span {
     font-size: 14px;
 }
 .paragraph {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     font-size: 15px;
     color: #333333;
     height: 40px;
-}
-.paragraph-1 {
-    font-family: "Montserrat";
-    font-size: 15px;
-    color: #333333;
-    margin: 40px 40px 40px 0px;
-
-}
-.paragraph-2 {
-    font-family:"Montserrat";
-    color: #333333;
-    font-size: 15px;
-    margin: 40px 40px 40px 0px;
-
-
-}
-.paragraph-3 {
-    font-family: "Montserrat";
-    color: #333333;
-    font-size: 15px;
-
+    line-height: 1.73;
 }
