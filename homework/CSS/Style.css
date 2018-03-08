@@ -1,0 +1,36 @@
+
+.Name {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    left: 0.012px;
+    top: 66.984px;
+
+
+}
+body {
+    background: #fafafa;
+    height: 656px;
+    width: 870px;
+}
+
+.author {
+    font-family: "Montserrat", sans-serif;
+    height: 66px;
+}
+span {
+    color: #d0d0d0;
+    font-size: 14px;
+}
+.Grey {
+    color: #666666;
+    font-size: 14px;
+}
+.paragraph {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333333;
+    height: 40px;
+    line-height: 1.73;
+}
