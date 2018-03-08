@@ -1,7 +1,5 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    counter-reset: goods;
-    counter-increment: goods +2;
 }
 
 @media (max-width: 345px) {
@@ -177,7 +175,7 @@ body {
     background-size: contain;
 }
 .shopping-bag a::before {
-    content: counter(goods);
+    content: attr(data-counter);
     display: block;
     width: 18px;
     height: 18px;
