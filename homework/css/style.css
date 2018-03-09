@@ -1,0 +1,250 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-width: 320px;
+}
+
+/*=====================header_top=====================*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media (max-width: 1170px) {
+    .container,
+    .header_middle_bottom_wrap {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+header {
+    background-color: #232323;
+}
+
+.header_top {
+    background-color: #2b2b2b;
+}
+
+.header_phone {
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.header_phone,
+.header_user_menu a {
+    line-height: 1.7142;
+    font-weight: 300;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+.header_phone,
+.header_user_menu {
+    padding: 6px 0;
+}
+
+.header_user_menu {
+    justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+    .header_phone,
+    .header_user_menu {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+}
+
+.header_user_menu a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.header_user_menu a:hover {
+    text-decoration: underline;
+}
+
+.header_user_menu span {
+    margin: 0 10px;
+    color: #3b3b3b;
+}
+
+/*=====================header_middle=====================*/
+
+.header_middle_bottom_wrap {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.header_middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .header_middle {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.header_logo {
+    padding: 30px 0 20px;
+}
+
+@media (max-width: 480px) {
+    .header_logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+}
+
+.header_form {
+    display: flex;
+    margin: 30px 0 20px;
+    border: 1px solid #323232;
+}
+
+@media (max-width: 480px) {
+    .header_form {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+}
+
+.header_form input::-ms-clear {
+    display: none;
+}
+
+.header_form input {
+    background-color: transparent;
+    padding: 9px 10px 10px 24px;
+}
+
+.header_form input,
+.header_form input::placeholder {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.84;
+}
+
+.header_form button {
+    width: 56px;
+    height: 44px;
+    border: 1px solid #323232;
+    background: transparent url(../img/header_search.png) center center no-repeat;
+}
+
+.header_form input,
+.header_form button {
+    border: none;
+   align-items: flex-start;
+}
+
+/*=====================header_bottom=====================*/
+
+.header_bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .header_bottom {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+}
+
+.header_bottom ul {
+    display: flex;
+    margin-left: -5px;
+    padding: 0 0 30px;
+    list-style: none;
+}
+
+@media (max-width: 740px) {
+    .header_bottom ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_bottom  li {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 480px;
+    }
+    .header_bottom a {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.header_bottom a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header_bottom:active,
+.header_bottom a:hover {
+    color: #be926f;
+}
+
+
+.header_cart {
+    display: flex;
+    position: relative;
+    padding: 10px;
+    width: 18px;
+    height: 22px;
+    background: transparent url(../img/header_cart.png) center center no-repeat;
+}
+
+
+.header_cart::before {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 2px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #be926f;
+    font-size: 12px;
+    font-weight: 300;
+    color: #232323;
+    text-align: center;
+    content: attr(data-counter);
+}
