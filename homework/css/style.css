@@ -15,14 +15,9 @@ li {
     display: inline-block;
 }
 
-.head-top,
-.head-top-fluid {
-    background: #2b2b2b;
-}
-
 .head-top {
-    padding: 10px 0;
-    height: 35px;
+    background: #2b2b2b;
+    padding: 10px 15px;
 }
 
 .head-tel {
@@ -48,14 +43,10 @@ li {
     padding: 0 10px;
 }
 
-.head-main,
-.head-main-fluid {
-    background: #232323;
-}
-
 .head-main {
+    background: #232323;
     padding-top: 30px;
-    height: 168px;
+    padding-bottom: 30px;
 }
 
 .head-logo {
@@ -119,16 +110,20 @@ li {
 
 .head-bag a {
     position: relative;
+    display: inline-block;
+    background: url(../img/bag.png) no-repeat;
+    width: 17px;
+    height: 22px;
     right: 10px;
     top: 30px;
 }
 
 .head-bag a::after {
     position: absolute;
-    left: 10px;
-    top: -10px;
     width: 18px;
     height: 18px;
+    left: 8px;
+    top: -8px;
     border-radius: 100%;
     font-size: 12px;
     line-height: 1.5;
@@ -146,13 +141,15 @@ li {
 
 .content-top h1 {
     font-size: 30px;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
     text-transform: uppercase;
     text-align: left;
 }
 
 .content-nav {
-    padding: 50px 30px;
+    padding-top: 50px;
+    padding-right: 30px;
     text-align: right;
 }
 
@@ -171,4 +168,44 @@ li {
 .content-nav a:hover,
 .content-nav .active {
     color: #999999;
+}
+
+@media (max-width: 768px) {
+    .head-main ul li {
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .head-tel {
+        text-align: center;
+    }
+
+    .head-login {
+        text-align: center;
+    }
+
+    .head-logo {
+        text-align: center;
+    }
+
+    .head-search {
+        text-align: center;
+        margin: 20px auto 0;
+    }
+
+    .head-search input {
+        width: 265px;
+    }
+
+    .head-bag {
+        top: -20px;
+        text-align: center;
+    }
+
+    .content-nav {
+        text-align: left;
+        padding: 0;
+    }
 }
