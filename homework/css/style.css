@@ -2,8 +2,29 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-/*--------------------------------------------------------------------*/
-.header_container_1 {
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+header {
+    background-color: #232323;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+/* Header top
+   --------------------------------------------------------------------*/
+.header_top {
     height: 35px;
     width: 100%;
     background-color: #2b2b2b;
@@ -33,118 +54,125 @@ body {
     color: white;
     text-decoration: underline;
 }
-/*/*--------------------------------------------------------------------*/
-.header_container_2 {
-    height: 167px;
+/*Header bottom
+/*--------------------------------------------------------------------*/
+.header_bottom {
     width: 100%;
+    height: 168px;
     background-color: #232323;
 }
 .logo {
+    position: relative;
     display: inline-block;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 .search_box {
     float: right;
-    border: 1px solid #323232;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 .search_box input {
-    font-weight: 400;
-    border: none;
-    background-color: transparent;
+    position: relative;
+    background: transparent;
+    border: 1px solid #666666;
+    width: 275px;
+    height: 45px;
+    padding: 0 40px 0 25px;
+    left: 20px;
     font-size: 13px;
-    width: 250px;
-    height: 30px;
+    font-weight: 300;
     color: #666666;
-    padding: 1px 5px;
-}
-.search_box input::placeholder {
-    color: #666666
 }
 .search_box button {
-    float: right;
-    background: transparent url(../img/Search.png) no-repeat center;
-    width: 57px;
-    height: 30px;
+    position: relative;
     border: none;
+    background: url(../img/Search.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    cursor: pointer;
+    vertical-align: middle;
 }
-.nav ul {
-    font-weight: 400;
-    list-style: none;
-    margin: 30px 0 0;
+.menu {
+    float: left;
+    display: inline-block;
+}
+.header_bottom ul {
+    margin-top: 30px;
     padding: 0;
 }
-.nav ul li {
-    display: block;
-    float: left;
-    padding: 0 30px;
-    margin-left: -30px;
+.header_bottom ul li {
+    margin-right: 40px;
 }
-.nav li a {
-    color: white;
-    text-decoration: none;
+.header_bottom ul li a {
+    font-size: 16px;
+    color: #ffffff;
 }
-.nav li a:hover {
+.header_bottom  ul li a:hover {
     color: #be926f;
 }
 .bag {
     position: relative;
     display: inline-block;
-    float: right;
-    background: transparent url(../img/Bag.png) center center no-repeat;
-    padding: 0 5px;
     width: 18px;
     height: 22px;
+    float: right;
+    margin-top: 15px;
+    padding: 10px;
 }
-.bag::before {
+.bag a::before {
     position: absolute;
     display: inline-block;
-    content: attr(data-counter);
     width: 18px;
-    height: 18px;
+    line-height: 18px;
+    content: attr(data-counter);
     border-radius: 100%;
     background-color: #be926f;
-    top: -9px;
-    right: 0;
-    text-align: center;
     font-size: 12px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: 232323;
+    font-weight: 300;
+    text-align: center;
+    color: #232323;
+    top: -2px;
+    right: -1px;
 }
+/*Contact
 /*--------------------------------------------------------------------*/
-.header_container_3 {
-    position: relative;
-    height: 177px;
+.contact {
+    height: 178px;
     width: 100%;
     background-color: #f7f7f7;
 }
-.wrap {
-    position: absolute;
-    background-color: #e7e7e7;
-    height: 117px;
-    width: 100%;
-    margin-top: 30px;
-}
-.contact {
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 3.9;
-    margin-left: 45px;
-    float: left;
-    color: #232323;
+.container_contact {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1200px;
 }
 .home_contact {
+    height: 117px;
+    width: 100%;
+    background-color: #e7e7e7;
+}
+.contact_us {
+    font-size: 30px;
+    float: left;
+    font-weight: 400;
+    line-height: 3.9;
+    padding-left: 40px;
+}
+.home_contact ul {
     float: right;
+    display: inline-block;
     line-height: 8.357;
-    margin-right: 25px;
     font-size: 14px;
     font-weight: 400;
+    margin: 0;
+    padding: 0 17px;
 }
-.wrap a {
-    text-decoration: none;
+.home_contact ul li {
+    padding: 0 5px;
+}
+.home_contact ul a{
     color: #999999;
 }
-.wrap a:hover {
+.home_contact ul a:hover{
     color: #232323
 }

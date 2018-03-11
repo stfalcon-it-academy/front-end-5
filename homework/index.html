@@ -11,47 +11,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="header_container_1">
-    <div class="phone_numb">
-        <a href="#">(+123) 456 7890</a>
-    </div>
-    <div class="Log_or_Reg">
-        <a href="#">Log in</a> or <a href="#">Register</a>
-    </div>
-</div>
-
-<div class="header_container_2">
-    <div class="logo">
-        <a href="#">
-            <img src="img/Logo.png" alt="Logo">
-        </a>
-    </div>
-    <form action="#" class="search_box">
-        <input type="search" formmethod="get" placeholder="Search Products …">
-        <button type="submit"></button>
-    </form>
-    <div class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Living room</a></li>
-            <li><a href="#">Office</a></li>
-            <li><a href="#">Bedroom</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <a href="#" class="bag" data-counter="2"></a>
-</div>
-
-<div class="header_container_3">
-    <div class="wrap">
-        <span class="contact">CONTACT US</span>
-        <div class="home_contact">
-            <span class="a_home"><a href="#">HOME</a></span> / <span class="a_contact"><a href="#">CONTACT</a></span>
+    <header>
+        <div class="header_top">
+            <div class="container">
+                <div class="phone_numb">
+                    <a href="#">(+123) 456 7890</a>
+                </div>
+                <div class="Log_or_Reg">
+                    <a href="#">Log in</a> or <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="img/Logo.png"></a>
+                </div>
+                <div class="search_box">
+                    <form action="#" method="get">
+                        <input type="search" placeholder="Search products…" name="Search" value="">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="container clearfix">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Living room</a></li>
+                        <li><a href="#">Office</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="bag">
+                    <a href="#" data-counter="2"><img src="img/Bag.png"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contact">
+        <div class="container_contact">
+            <div class="home_contact">
+                <span class="contact_us">CONTACT US</span>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li>/</li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-
 </body>
 </html>
