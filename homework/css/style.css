@@ -125,12 +125,21 @@ header{
         float: right;
         margin-left: -100%;
         z-index: 2;
+        width: 56px;
+        height:44px;
+        background: transparent url(../images/header-search.png) center center no-repeat;
     }
 }
 .header-bottom{
     height: 60px;
     background-color:#232323 ;
 }
+@media (max-width: 480px ) {
+    .header-bottom {
+       height: auto;
+    }
+}
+
 .header-bottom ul{
     display: inline-block;
     margin-left: -10px;
@@ -158,7 +167,6 @@ header{
 .header-bottom span{
     padding: 10px;
     display: inline-block;
-    width: 100% ;
     color: white;
     text-decoration: none;
     font-size: 1rem;
