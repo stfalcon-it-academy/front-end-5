@@ -76,7 +76,9 @@ header{
 }
 @media (max-width: 480px) {
     .header-logo{
+        padding: 30px auto 20px;
         display: block;
+        /*clear: both;*/
     }
 }
 .header-form{
@@ -86,8 +88,8 @@ header{
 }
 @media (max-width: 480px){
     .header-form {
-        float: none;
-        width: 100%;
+        margin: 30px 0 20px;
+        border: 1px solid #323232;
     }
 }
 .header-form input::-ms-clear {
@@ -116,7 +118,8 @@ header{
 }
 @media (max-width: 480px){
     .header-form input{
-        width: 100%;
+        margin: 0 auto;
+        clear: both;
     }
 }
 @media (max-width: 480px){
