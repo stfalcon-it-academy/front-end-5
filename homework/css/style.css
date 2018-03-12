@@ -1,54 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif; /*підключення шрифтів*/
     counter-reset: boxes;
 }
-.wrapper {
-  margin: 100px auto;;
-  max-width: 920px;
+.wrapper { /*головний контейнер для усіх блоків на сторінці */
+  margin: 100px auto;/*Зовнішній відступ, верхній і нижній 100рх, аuto- вирівнює по середині*/
+  max-width: 920px;/*обмеження контейнера по ширині*/
 }
 ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  padding: 0;/*внурійній відступ*/
+  margin: 0;/*зовн. відступ*/
+  list-style: none;/*відключення значків списку*/
   font-size: 0;
 }
 ul li {
-  position: relative;
-  background-color: #cc4242;
-  counter-increment: boxes;
+  position: relative;/*створюємо контекст для позиціонування елементів*/
+  background-color: #cc4242;/*колір фону*/
+  counter-increment: row; /*лічильник щоб зробит список по порядку*/
 }
 ul li:nth-child(2n) {
-  background-color: #ff5353;
+  background-color: #ff5353;/*колір фону*/
 }
 ul p {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-  width: 95%;
-  padding: 12px 2px;
+  box-sizing: border-box;/*width і height враховує значення границь та полів (але не відступів margin)*/
+  display: inline-block;/*показує місце розміщення елемента, відноситься до блочний елементів*/
+  vertical-align: middle;/**/
+  margin: 0;/*Зовнішній відступ*/
+  width: 95%;/*обмеження контейнера по ширині*/
+  padding: 12px 2px;/*внутрішній відступ*/
   font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
+  line-height: 18px;/*міжстроковий інтервал*/
+  font-weight: 500;/*насиченість шрифту*/
   color: #282828;
-  background-color: #ccc;
+  background-color: #ccc;/*колір фону*/
 }
 ul li:nth-child(2n) p {
-  background-color: #fff;
+  background-color: #fff;/*колір фону*/
 }
 ul span {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  width: 5%;
+  display: inline-block;/*показує місце розміщення елемента, відноситься до блочний елементів*/
+  vertical-align: middle;/*вирівнення елементу по вертикалі, відносно свого батька*/
+  position: relative;/*створюємо контекст для позиціонування елементів*/
+  width: 5%;/*обмеження контейнера по ширині*/
   text-align: center;
-  font-family: 'Times New Roman', sans-serif;
 }
 ul span::before {
-  content: counter(boxes);
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
+  content: counter(row);/*лічильник щоб зробит список по порядку*/
+  display: inline-block;/*показує місце розміщення елемента, відноситься до блочний елементів*/
+  vertical-align: middle;/*вирівнення елементу по вертикалі, відносно свого батька*/
+  position: absolute;/*створюємо контекст для позиціонування елементів*/
   top: 50%;
   left: 50%;
   width: 34px;
