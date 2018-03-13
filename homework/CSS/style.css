@@ -6,18 +6,17 @@ div {
     width: 870px;
     height: 608px;
     padding: 30px;
-    line-height: 26px;
     margin-left: 32px;
     margin-right: 32px;
     text-align: justify;
-
+    line-height: 1.733;
 
 
 }
 h1 {
-    font-size: 24;
     color: #000000;
     font-weight: 400;
+    font-size: 0.625;
 
 }
 ul {
