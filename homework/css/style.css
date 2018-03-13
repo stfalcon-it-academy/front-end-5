@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: #555;
+    font-family: 'Arial', sans-serif;
+    counter-reset: number;
+}
+.wrapper {
+    width: 870px;
+    margin: 0 auto;
+}
+.text p{
+    margin: 0;
+    background: #ccc;
+    font-size: 14px;
+    padding: 15px 15px  ;
+    counter-increment: number 1;
+    position: relative;
+    
+}
+.text p::before {
+    content: counter(number);
+    display: block;
+    background: #cc4242;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    color: #fff;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Times New Roman", serif;
+    display: flex;
+}
+.text p:nth-child(2n) {
+    background: #fff;
+}
+.text p:nth-child(2n)::before {
+    background: #ff5353;
+}
