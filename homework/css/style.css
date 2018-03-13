@@ -12,9 +12,10 @@ body {
     margin: 0;
     background: #ccc;
     font-size: 14px;
-    padding: 13px 0 13px 3px;
+    padding: 15px 15px  ;
     counter-increment: number 1;
     position: relative;
+    
 }
 .text p::before {
     content: counter(number);
