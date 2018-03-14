@@ -17,7 +17,6 @@
     left:50%;
     transform: rotate(270deg);
     transform-origin: 0 50%;
-    animation: clock 216000s linear infinite;
     border-radius: 4px 0 0 4px;
 }
 
@@ -25,7 +24,7 @@
     margin-top: -3px;
     height: 6px;
     width: 100px;
-    animation: clock 3600s linear infinite;
+    animation: clock 43200s linear infinite;
     background-color: #000;
 
 }
@@ -36,8 +35,6 @@
     width: 140px;
     animation: clock 3600s linear infinite;
     background-color: #000;
-
-
 }
 
 .arrow_sec {
