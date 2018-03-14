@@ -1,0 +1,166 @@
+/* ----- general-style ----- */
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+.clear-fix:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+header {
+    background-color: #232323;
+}
+
+
+/* ----- header-top ----- */
+
+
+.header-top {
+    background-color: #2b2b2b;
+}
+.header-phone {
+    float: left;
+    /*display: inline-block;*/
+    font-size: 14px;
+    line-height: 1.7142;
+    font-weight: 300;
+    color: #7f7f7f;
+    text-decoration: none;
+}
+.header-phone:hover {
+    color: #be926f;
+}
+.header-user-menu a {
+    font-size: 14px;
+    line-height: 1.7142;
+    font-weight: 400;
+    color: #666666;
+    text-decoration: none;
+}
+.header-user-menu a:hover {
+    color: #be926f;
+}
+.header-user-menu {
+    float: right;
+}
+.header-phone,
+.header-user-menu {
+    padding: 6px 0;
+}
+.header-user-menu span {
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+
+
+/* ----- header-middle ----- */
+
+
+.logo-header {
+    display: inline-block;
+    padding: 30px 0;
+}
+.header-middle {
+    height: 95px;
+    /*background-color: #232323;*/
+}
+.header-form {
+    padding-top: 30px;
+    float: right;
+}
+.header-form input {
+    background-color: transparent;
+    padding: 0 50px 0 25px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #666666;
+    border: 1px solid #323232;
+    width: 275px;
+    height: 45px;
+}
+.header-form input:focus {
+    border: 1px solid #be926f;
+    outline: none;
+}
+.header-form button {
+    border: none;
+    background: url(../images/search-icon.png) center center no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: -40px;
+    padding: 15px 0 15px 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+/* ----- header-bottom ----- */
+
+
+.header-bottom ul {
+    display: inline-block;
+    padding: 0 0 30px;
+    list-style: none;
+    margin-left: -10px;
+}
+.header-bottom li {
+    display: inline-block;
+}
+.header-bottom li + li {
+    margin-left: 28px;
+}
+.header-bottom a {
+    padding: 0 10px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.header-bottom a:hover,
+.header-bottom .active {
+    color: #be926f;
+}
+.header-cart {
+    position: relative;
+    float: right;
+    width: 18px;
+    height: 22px;
+    background: transparent url(../images/bag-icon.png) center center no-repeat;
+    padding: 10px;
+}
+.header-cart::before {
+    position: absolute;
+    display: inline-block;
+    content: attr(data-counter);
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #be926f;
+    font-size: 12px;
+    font-weight: 300;
+    top: -4px;
+    right: 0;
+    color: #232323;
+    text-align: center;
+
+}
+
+
+
+/* ----- remove “X” from search input ----- */
+
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
