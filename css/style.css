@@ -1,0 +1,129 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+}
+.wrapper {
+  margin: 24px auto;
+  text-align: center;
+}
+.clock {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 22px solid #0f0f0f;
+  border-radius: 100%;
+  font-size: 0;
+  background-color: #f7f7f7;
+}
+.hour-arrow,
+.min-arrow,
+.sec-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 50%;
+  transform: rotate(-90deg);
+  animation-name: clock-move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-color: #111;
+}
+
+.hour-arrow {
+  margin-top: -4px;
+  width: 98px;
+  height: 8px;
+  border-radius: 4px;
+  animation-duration: 43200s;
+  background-color: #000;
+}
+.min-arrow {
+  margin-top: -3px;
+  width: 122px;
+  height: 6px;
+  border-radius: 3px;
+  animation-duration: 3600s;
+}
+.sec-arrow {
+  margin-top: -2px;
+  width: 148px;
+  height: 4px;
+  border-radius: 2px;
+  animation-duration: 60s;
+}
+.clock .count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 100%;
+}
+.count [class^=val] {
+  position: absolute;
+  transform-origin: 0 168px;
+  transform: translate(0, -168px);
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 400;
+}
+.count .val-1 {
+  transform: translate(0, -168px) rotate(29deg);
+}
+.count .val-2 {
+  transform: translate(0, -168px) rotate(59deg);
+}
+.count .val-3 {
+  transform: translate(0, -168px) rotate(89deg);
+}
+.count .val-4 {
+  transform: translate(0, -168px) rotate(119deg);
+}
+.count .val-5 {
+  transform: translate(0, -168px) rotate(149deg);
+}
+.count .val-6 {
+  transform: translate(0, -168px) rotate(179deg);
+}
+.count .val-7 {
+  transform: translate(0, -168px) rotate(208deg);
+}
+.count .val-8 {
+  transform: translate(0, -168px) rotate(240deg);
+}
+.count .val-9 {
+  transform: translate(0, -168px) rotate(269deg);
+}
+.count .val-10 {
+  transform: translate(0, -168px) rotate(298deg);
+}
+.count .val-11 {
+  transform: translate(0, -168px) rotate(327deg);
+}
+.count .val-12 {
+  transform: translate(0, -168px) rotate(-3deg);
+}
+@keyframes clock-move {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
