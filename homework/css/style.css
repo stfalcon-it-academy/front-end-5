@@ -1,0 +1,155 @@
+body {
+    background-color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    min-width: 1170px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-top {
+    padding: 10px 0;
+    background: #2b2b2b;
+}
+
+.head-tel a {
+    color: #7f7f7f;
+    font-weight: 300;
+}
+
+.head-login a {
+    color: #666666;
+}
+
+.head-login a:hover {
+    text-decoration: underline;
+}
+
+.head-login span {
+    color: #3b3b3b;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.head-main {
+    padding: 30px 0;
+    background: #232323;
+}
+
+.head-search input {
+    position: relative;
+    background: #232323;
+    font-size: 13px;
+    font-weight: 300;
+    color: #666666;
+    border: 1px solid #323232;
+    width: 275px;
+    height: 45px;
+    padding: 0 40px 0 25px;
+    left: 20px;
+}
+
+.head-search button {
+    position: relative;
+    border: none;
+    background: url(../img/search.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.head-main ul {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.head-main ul li {
+    margin-right: 40px;
+}
+
+.head-main ul li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.head-main ul li a:hover,
+.head-main .active {
+    color: #be926f;
+}
+
+.head-bag a {
+    position: relative;
+    display: inline-block;
+    background: url(../img/bag.png) no-repeat;
+    width: 17px;
+    height: 22px;
+    right: 10px;
+    top: 20px;
+}
+
+.head-bag a::after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 8px;
+    top: -8px;
+    border-radius: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: #232323;
+    background-color: #be926f;
+    content: attr(data-counter);
+}
+
+.content-top {
+    margin: 30px auto;
+    padding: 30px 15px;
+    background: #e7e7e7;
+    max-width: 1170px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-top h1 {
+    font-size: 30px;
+}
+
+.content-nav li:nth-child(1)::after {
+    content: '/';
+    color: #999999;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.content-nav a {
+    color: #666666;
+}
+
+.content-nav a:hover,
+.content-nav .active {
+    color: #999999;
+}
