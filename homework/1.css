@@ -1,0 +1,245 @@
+body {
+    position: relative;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -400px;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(238,238,238,1)
+    0%,rgba(204,204,204,1) 100%);
+    border: 5px solid #6a666a;
+}
+.arrow-sec {
+    width: 10px;
+    height: 350px;
+    background: #ff3e2b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    animation: tick 60s steps(60, end) infinite;
+}
+.arrow-min {
+    width: 16px;
+    height: 300px;
+    background: #484549;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    animation: tick 3600s linear infinite;
+}
+.arrow-hour {
+    width: 20px;
+    height: 280px;
+    background: #484549;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    animation: tick 216000s linear infinite;
+}
+
+[class^='arrow-'] {
+    transform-origin: top;
+    transform: rotate(-180deg);
+}
+
+@keyframes tick {
+    from {
+        transform: rotate(-180deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.sad {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    background: url('img/sad.png') no-repeat;
+    background-size: contain;
+}
+
+/*   12 - 6   */
+
+.napr-12-6 {
+    width: 2px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -1px;
+    margin-top: -350px;
+}
+.napr-12-6::before {
+    content: '12';
+    position: absolute;
+    top:-40px;
+    left:-22.25px;
+    font-size: 2.5rem;
+}
+.napr-12-6::after {
+    content: '6';
+    position: absolute;
+    font-size: 2.5rem;
+    top: 700px;
+    left: -11px;
+}
+
+/*   1  - 7    */
+
+.napr-1-7 {
+    width: 2px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -1px;
+    margin-top: -350px;
+    transform: rotate(30deg);
+}
+.napr-1-7::before {
+    content: '1';
+    position: absolute;
+    top:-40px;
+    left:-11px;
+    font-size: 2.5rem;
+    transform: rotate(-30deg);
+}
+.napr-1-7::after {
+    content: '7';
+    position: absolute;
+    font-size: 2.5rem;
+    top: 700px;
+    left: -11px;
+    transform: rotate(-30deg);
+}
+
+/*   2  - 8   */
+
+.napr-2-8 {
+    width: 2px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -1px;
+    margin-top: -350px;
+    transform: rotate(60deg);
+}
+.napr-2-8::before {
+    content: '2';
+    position: absolute;
+    top:-40px;
+    left:-11px;
+    font-size: 2.5rem;
+    transform: rotate(-60deg);
+}
+.napr-2-8::after {
+    content: '8';
+    position: absolute;
+    font-size: 2.5rem;
+    top: 700px;
+    left: -11px;
+    transform: rotate(-60deg);
+}
+
+/*   3  - 9   */
+
+.napr-3-9 {
+    width: 2px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -1px;
+    margin-top: -350px;
+    transform: rotate(90deg);
+}
+.napr-3-9::before {
+    content: '3';
+    position: absolute;
+    top:-40px;
+    left:-11px;
+    font-size: 2.5rem;
+    transform: rotate(-90deg);
+}
+.napr-3-9::after {
+    content: '9';
+    position: absolute;
+    font-size: 2.5rem;
+    top: 700px;
+    left: -11px;
+    transform: rotate(-90deg);
+}
+
+/*  4  - 10   */
+
+.napr-4-10 {
+    width: 2px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -1px;
+    margin-top: -350px;
+    transform: rotate(120deg);
+}
+.napr-4-10::before {
+    content: '4';
+    position: absolute;
+    top:-40px;
+    left:-11px;
+    font-size: 2.5rem;
+    transform: rotate(-120deg);
+}
+.napr-4-10::after {
+    content: '10';
+    position: absolute;
+    font-size: 2.5rem;
+    top: 700px;
+    left: -22.25px;
+    transform: rotate(-120deg);
+}
+
+/*  5  - 11   */
+
+.napr-5-11 {
+    width: 2px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -1px;
+    margin-top: -350px;
+    transform: rotate(150deg);
+}
+.napr-5-11::before {
+    content: '5';
+    position: absolute;
+    top:-40px;
+    left:-11px;
+    font-size: 2.5rem;
+    transform: rotate(-150deg);
+}
+.napr-5-11::after {
+    content: '11';
+    position: absolute;
+    font-size: 2.5rem;
+    top: 700px;
+    left: -22.25px;
+    transform: rotate(-150deg);
+}
