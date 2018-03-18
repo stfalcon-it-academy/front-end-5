@@ -43,22 +43,22 @@
 }
 .clock-hour {
 	height:20% ;
-	left: 48%;
+	left: 194px;
 	top: 30%;
-	width: 3%;
+	width: 12px;
 	animation: rotate 3600s infinite linear;
 }
 .clock-min {
 	height: 30%;
-	width: 2%;
-	left: 48%;
+	width: 6px;
+	left: 197px;
 	top: 20%;
 	animation: rotate 360s infinite linear;
 }
 .clock-sec {
 	height: 40%;
-	width: 1%;
-	left: 49%;
+	width: 4px;
+	left: 198px;
 	top: 10%;
 	animation: rotate 60s infinite linear;
 }
