@@ -1,0 +1,94 @@
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clock {
+	margin-top: 40px;
+	width: 400px;
+	height: 400px;
+	border: 3px solid black;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+.clock:after{
+	background: #333;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6%;
+  height: 6%;
+  z-index: 10;
+
+}
+.hour-container, .min-container, .sec-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.clock-hour, .clock-min, .clock-sec{
+	color: #333;
+	background-color: #333;
+	position: absolute;
+	transform-origin: 50% 100%;
+	border-radius: 5px;
+}
+.clock-hour {
+	height:20% ;
+	left: 194px;
+	top: 30%;
+	width: 12px;
+	animation: rotate 3600s infinite linear;
+}
+.clock-min {
+	height: 30%;
+	width: 6px;
+	left: 197px;
+	top: 20%;
+	animation: rotate 360s infinite linear;
+}
+.clock-sec {
+	height: 40%;
+	width: 4px;
+	left: 198px;
+	top: 10%;
+	animation: rotate 60s infinite linear;
+}
+@keyframes rotate{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.three, .six,.nine, .twelwe {
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.three {
+	top: 50%;
+	left: 93%;
+}
+.six {
+	top: 93%;
+	left: 50%;
+}
+.nine {
+	top: 50%;
+	left: 7%;
+}
+.twelwe {
+	top: 7%;
+	left: 50%;
+}
+span {
+	font-size: 26px;
+	color: grey;
+	font-weight: bold;
+}
