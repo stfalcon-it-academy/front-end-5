@@ -68,29 +68,32 @@ a {
 }
 .search_box {
     float: right;
-    padding-top: 30px;
+    border: 1px solid #323232;
+    width: 278px;
+    margin-top: 30px;
+    color: #666666;
 }
 .search_box input {
-    position: relative;
+    border: none;
     background: transparent;
-    border: 1px solid #666666;
-    width: 275px;
-    height: 45px;
-    padding: 0 40px 0 25px;
-    left: 20px;
+    line-height: 40px;
+    width: 210px;
+    padding-left: 20px;
+    color: #666666;
+}
+.search_box input::placeholder{
     font-size: 13px;
-    font-weight: 300;
+    line-height: 1.84;
     color: #666666;
 }
 .search_box button {
-    position: relative;
     border: none;
-    background: url(../img/Search.png) no-repeat;
-    width: 18px;
-    height: 18px;
-    right: 20px;
+    width: 56px;
+    height: 44px;
+    background: transparent url(../img/Search.png) center center no-repeat;
     cursor: pointer;
-    vertical-align: middle;
+    display: inline-block;
+    vertical-align: top;
 }
 .menu {
     float: left;
@@ -103,11 +106,11 @@ a {
 .header_bottom ul li {
     margin-right: 40px;
 }
-.header_bottom ul li a {
+.header_bottom li a {
     font-size: 16px;
     color: #ffffff;
 }
-.header_bottom  ul li a:hover {
+.header_bottom li a:hover {
     color: #be926f;
 }
 .bag {
@@ -118,6 +121,7 @@ a {
     float: right;
     margin-top: 15px;
     padding: 10px;
+    background: transparent url(../img/Bag.png) center center no-repeat;
 }
 .bag a::before {
     position: absolute;
@@ -167,8 +171,12 @@ a {
     margin: 0;
     padding: 0 17px;
 }
-.home_contact ul li {
+.home_contact li {
     padding: 0 5px;
+}
+.home_contact li+li::before{
+    content: "/";
+    margin-right: 15px;
 }
 .home_contact ul a{
     color: #999999;
