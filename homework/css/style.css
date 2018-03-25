@@ -94,7 +94,7 @@ height: 100px;
     margin-top: 30px;
     margin-bottom: 20px;
     border: 1px solid #666666;
-    width: 274px;
+    min-width: 294px;
     display: inline-block;
     float: right;
 }
@@ -119,7 +119,7 @@ height: 100px;
 .form input {
     background: transparent;
     color: #666666;
-    padding: 11px 6px 12px 24px;
+    padding: 11px 0 12px 14px;
     border: none;
     outline: none;
     }
@@ -138,16 +138,14 @@ input::-webkit-search-results-decoration {
     font-weight: 300;
 }
 
-
 .form button {
     border: none;
     background: transparent url("../img/search.png") center center no-repeat;
     height: 44px;
-    width: 36px;
+    width: 30px;
     vertical-align: top;
     outline: none;
     cursor: pointer;
-    display: inline-block;
     float: right;
 }
 
@@ -199,10 +197,18 @@ input::-webkit-search-results-decoration {
     @media (max-width: 768px) {
         .bottom_header li {
         display: block;
-
+            padding-left: 13px;
     }
     }
 
+.bottom_header li:first-child {
+    padding-left: 13px;
+}
+@media (max-width: 768px) {
+    .bottom_header li:first-child {
+        padding-left: 0;
+    }
+}
 .bottom_header li+li {
     margin-left: 19px;
 }
@@ -216,6 +222,7 @@ input::-webkit-search-results-decoration {
         margin-left: 0;
     }
 }
+
 .bag {
     background: transparent url("../img/bag.png") center center no-repeat;
     height: 22px;
