@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+header {
+    background-color: #232323;
+}
+a {
+    text-decoration: none;
+}
+/* Header top
+   --------------------------------------------------------------------*/
+.header_top {
+    height: 35px;
+    width: 100%;
+    background-color: #2b2b2b;
+    font-size: 14px;
+    line-height: 2.5;
+    color: #3b3b3b;
+}
+.phone_numb a {
+    font-weight: 300;
+    float: left;
+    color: #666666;
+    text-decoration: none;
+}
+.phone_numb a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.Log_or_Reg {
+    font-weight: 400;
+    float: right;
+}
+.Log_or_Reg a {
+    color: #666666;
+    text-decoration: none;
+}
+.Log_or_Reg a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/*Header bottom
+/*--------------------------------------------------------------------*/
+.header_bottom {
+    width: 100%;
+    height: auto;
+    background-color: #232323;
+}
+.logo {
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+}
+@media (max-width: 720px) {
+    .logo {
+        text-align: center;
+        display: block;
+    }
+}
+.search_box {
+    float: right;
+    border: 1px solid #323232;
+    width: 278px;
+    margin-top: 30px;
+    color: #666666;
+}
+
+.search_box input {
+    border: none;
+    background: transparent;
+    line-height: 40px;
+    width: 210px;
+    padding-left: 20px;
+    color: #666666;
+}
+.search_box input::placeholder{
+    font-size: 13px;
+    line-height: 1.84;
+    color: #666666;
+}
+.search_box button {
+    border: none;
+    width: 56px;
+    height: 44px;
+    background: transparent url(../img/Search.png) center center no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-width: 720px) {
+    .search_box {
+        float: none;
+        width: 100%;
+    }
+    .search_box button {
+        float: right;
+    }
+}
+.menu {
+    float: left;
+    padding: 10px;
+}
+.menu .active_menu {
+    color: #be926f;
+}
+.header_bottom ul {
+    margin-top: 30px;
+    padding: 0;
+}
+.header_bottom li {
+    margin-right: 40px;
+    display: inline-block;
+    list-style: none;
+}
+.header_bottom li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+.header_bottom li a:hover {
+    color: #be926f;
+}
+@media (max-width: 720px) {
+    .menu {
+        margin-left: 10px;
+    }
+    .header_bottom li {
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+.bag {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+    float: right;
+    margin-top: 25px;
+    padding: 10px;
+    background: transparent url(../img/Bag.png) center center no-repeat;
+    cursor: pointer;
+}
+.bag a::before {
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    line-height: 18px;
+    content: attr(data-counter);
+    border-radius: 100%;
+    background-color: #be926f;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    color: #232323;
+    top: -2px;
+    right: -1px;
+}
+@media (max-width: 720px) {
+    .bag {
+        margin-right: -56px;
+    }
+}
+/*Contact
+/*--------------------------------------------------------------------*/
+.contact {
+    height: 178px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+@media (max-width: 460px) {
+    .contact {
+        height: auto;
+    }
+}
+.container_contact {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1200px;
+}
+.home_contact {
+    width: 100%;
+    background-color: #e7e7e7;
+}
+@media (max-width: 460px) {
+    .home_contact {
+        text-align: center;
+    }
+}
+.contact_us {
+    font-size: 30px;
+    float: left;
+    font-weight: 400;
+    line-height: 3.9;
+    padding-left: 40px;
+}
+@media(max-width: 460px) {
+    .contact_us {
+        display: inline;
+        text-align: center;
+        float: none;
+        padding: 0;
+
+    }
+}
+.home_contact ul {
+    display: inline-block;
+    line-height: 8.357;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 17px;
+}
+.home_contact li {
+    padding: 0 5px;
+    display: inline-block;
+    list-style: none;
+}
+.home_contact li+li::before{
+    content: "/";
+    margin-right: 15px;
+}
+.home_contact ul a{
+    color: #999999;
+}
+.home_contact ul a:hover{
+    color: #232323
+}
