@@ -111,6 +111,9 @@ a {
     float: left;
     padding: 10px;
 }
+.menu .active_menu {
+    color: #be926f;
+}
 .header_bottom ul {
     margin-top: 30px;
     padding: 0;
