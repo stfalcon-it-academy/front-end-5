@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+/* Header top
+________________________________________________________________________ */
+.header_top {
+    background-color: #2b2b2b;
+    line-height: 2.5;
+}
+.or {
+    color: #3b3b3b;
+    font-size: 12px;
+    font-weight: 300;
+}
+.header_top a {
+    color: #666666;
+    font-weight: 300;
+    font-size: 14px;
+}
+.header_top a:hover {
+    text-decoration: none;
+    color: white;
+}
+/* Header bottom
+________________________________________________________________________ */
+.header_bottom {
+    background-color: #232323;
+}
+.logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.search_box {
+    height: 45px;
+    border: 1px solid #323232;
+    margin-top: 30px;
+}
+.search_box input {
+    display: inline-block;
+    border: none;
+    height: 45px;
+    background: transparent;
+    font-weight: 300;
+    padding-left: 15px;
+    color: #323232;
+}
+.search_box button {
+    background: transparent url(../img/Search.png) center center no-repeat;
+    height: 45px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+@media (max-width: 575px) {
+    .search_box {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
+.header_menu {
+    font-weight: 300;
+    display: inline-block;
+}
+.header_menu ul {
+    padding-left: 0;
+}
+.header_menu li+li {
+    padding-left: 40px;
+}
+.header_menu li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header_menu li a:hover {
+    text-decoration: none;
+    color: #be926f;
+}
+.header_menu .active_menu {
+    color: #be926f;
+}
+@media (max-width: 768px) {
+    .header_menu li+li {
+        padding-left: 23px;
+    }
+}
+@media (max-width: 575px) {
+    .header_menu li {
+        display: block;
+        padding: 5px 0;
+    }
+    .header_menu li+li {
+        padding-left: 0;
+    }
+}
+.bag {
+    position: absolute;
+    top: 0;
+    right: 23px;
+}
+.bag a {
+    background: url(../img/Bag.png) center center no-repeat;
+    width: 17px;
+    height: 22px;
+    display: block;
+}
+.bag a::before {
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    background-color: #be926f;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    content: attr(data-counter);
+    text-align: center;
+    color: #232323;
+    font-weight: 300;
+    top: -5px;
+    right: -10px;
+}
