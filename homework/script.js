@@ -1,6 +1,6 @@
 "use strict";
 
-function isEmpty(myDog) {
+function isEmpty(obj) {
     for(var key in myDog) {
         if (myDog.hasOwnProperty(key)) {
             return false;
