@@ -10,7 +10,7 @@ function isValidNum(val) {
 
 function getUserInput(message) {
     let inputData;
-    while (!isValidNum(inputData)) {
+    while (!isValidNum(inputData) || inputData < 0) {
         inputData = parseInt(prompt(message));
     }
     return inputData;
@@ -61,7 +61,7 @@ function sumData(val) {
     return sum;
 }
 
-main();
+confirm("Стартуємо ?") ? main() : false;
 
 codeObj.addToArrByindex(95, 23);
 
