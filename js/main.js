@@ -37,9 +37,9 @@ function main() {
 }
 
 var codeObj = {
-    length: [45, 109, 32, 39, 1, 0],
+    dataArr: [45, 109, 32, 39, 1, 0],
     addToArrByindex: function(val, index) {
-        this.length[index] = val;
+        this.dataArr[index] = val;
     }
 };
 
@@ -65,4 +65,4 @@ confirm("Стартуємо ?") ? main() : false;
 
 codeObj.addToArrByindex(95, 23);
 
-print(sumData(codeObj.length));
+print(sumData(codeObj.dataArr));
