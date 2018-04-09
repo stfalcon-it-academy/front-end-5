@@ -1,0 +1,12 @@
+body {
+
+    padding: 0 15px;
+    text-align: center;
+    color: #345266;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    line-height: 2;
+}
