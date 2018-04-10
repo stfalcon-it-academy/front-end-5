@@ -1,0 +1,136 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+body{
+   min-width: 1170px;
+}
+.clear-fix:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.conteiner {
+    margin: 0 auto;
+    width: 1170px;
+}
+header {
+    background-color: #232323;
+}
+.header-top {
+    background-color: #2b2b2b;
+}
+.header-phone {
+    float: left;
+    text-decoration: none;
+}
+
+.header-phone,
+.header-user-menu a {
+    font-size: 14px;
+    line-height: 1.7142;
+    font-weight: 300;
+    color: #7f7f7f;
+}
+.header-user-menu {
+    float: right;}
+
+.header-phone,
+.header-user-menu{
+    padding: 6px 0;
+}
+
+.header-user-menu a {
+    text-decoration: none;
+    color: #666;
+}
+.header-user-menu a:hover{
+    text-decoration: underline;
+}
+.header-user-menu span {
+    margin: 0 10px;
+    color: #3b3b3b;
+}
+.header-logo {
+    display: inline-block;
+    padding: 30px 0 20px;
+}
+.header-form {
+    float: right;
+    margin: 30px 0 20px;
+    border: 1px solid #323232;
+}
+.header-form input::-ms-clear{
+    display: none;
+}
+.header-form input {
+    border: none;
+    background-color: transparent;
+    padding: 9px 10px 10px 24px;
+}
+.header-form input,
+.header-form input::placeholder {
+    font-size: 13px;
+    line-height: 1.84;
+    color: #666;
+}
+.header-form button {
+    width: 56px;
+    height: 44px;
+    background: transparent url(homework/imegs/Search.png)center center no-repeat;
+}
+.header-form input,
+.header-form button {
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.header-bottom ul {
+    display: inline-block;
+    margin-left: -10px;
+    padding: 0 0 30px;
+    list-style: none;
+}
+.header-bottom li {
+    display: inline-block;
+}
+.header-bottom li+li{
+    margin-left: 28px;
+}
+.header-bottom a,
+.header-bottom span {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.header-bottom .active,
+.header-bottom a:hover,
+.header-bottom span:hover{
+    color: #be926f;
+}
+
+.header-cart {
+    position: relative;
+    float: right;
+    padding: 10px;
+    width: 18px;
+    height: 22px;
+
+    background: transparent url("homework/imegs/header_cart.png")center center no-repeat;
+}
+.header-cart::before{
+    position: absolute;
+    display: inline-block;
+    top: 2px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #be926f;
+    font-size: 12px;
+    font-weight: 300;
+    color: #232323;
+    text-align: center;
+    content: attr(data-counter);
+}
