@@ -1,12 +1,13 @@
 function isEmpty(obj) {
       for (let key in obj){
-               return false;
+          if (obj[key]){
+              return false;
+          }
             }
-       return true;
+    return true;
     }
-
-let obj={};
+obj={};
 alert(isEmpty(obj));
 
-obj[num]= "7";
-alert (isEmpty(obj[num]));
+obj="7";
+alert (isEmpty(obj));
