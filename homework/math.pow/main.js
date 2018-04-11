@@ -3,7 +3,7 @@
 function Power (a,b) {
     var finish = a;
     for (var i= 1; i < b ; i++){
-        finish = a*a;
+        finish = finish * a;
     }
     return finish;
 }
