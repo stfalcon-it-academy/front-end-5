@@ -11,7 +11,7 @@ function bubble(data) {
             }
         }
     }
-    document.write("Масив відсортований функцією метода бульбашки:" +data);
+    return data;
 }
 
-bubble(data);
+document.write("Масив відсортований функцією метода бульбашки:"+bubble(data));
