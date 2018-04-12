@@ -1,17 +1,16 @@
 'use strict';
-var CodeObj;
-CodeObj = {
+var CodeObj = {
     Numbers:[45, 109, 32, 39, 1, 0]
 };
+
 CodeObj.Numbers[23]=95;
-document.write('Довжинна массиву - ' + CodeObj.Numbers);
+alert('Довжинна массиву - ' + CodeObj.Numbers);
 
-
-function SumData(){
+function SumData(array){
     var summ=0;
-    for (var key in CodeObj.Numbers){
-        summ = summ + CodeObj.Numbers[key];
+    for (var key in array.Numbers){
+        summ = summ + array.Numbers[key];
     }
-    document.write('<br \\/>Сума чисел массиву ' + summ);
+    return summ;
 }
-SumData();
+alert('Сума чисел массиву ' + SumData(CodeObj));

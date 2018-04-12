@@ -1,7 +1,6 @@
 "use strict";
 var data = [1, 2, 7, 10, 6, 9, 3, 8, 5, 4];
 var dataL = data.length;
-document.write('Наш массив' + data );
    function SortBublle(data){
        for(var i = dataL -1; i>0; i--){
             var counter=0;
@@ -17,8 +16,8 @@ document.write('Наш массив' + data );
                 break;
             }
        }
-       return document.write(  '<br \\/> Сортування методом "Бульбащки" - ' + data);
+       return data;
    }
 
    SortBublle(data);
-
+   alert( 'Сортування методом "Бульбащки" - ' + data);
