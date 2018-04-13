@@ -1,19 +1,27 @@
 "use strict";
 
-var data = [1, 2, 7, 10, 6, 9, 3, 8, 5, 4];
+var bubble = function (data) {
 
-alert("Вихідний масив: " + data);
+    var data = [1, 2, 7, 10, 6, 9, 3, 8, 5, 4];
 
-for (var y=0; y<data.length; y++){
-    for (var x=0; x<data.length; x++){
-        var sort;
-        if (data[x]>data[x+1]) {
-            sort = data[x];
-            data[x] = data[x + 1];
-            data[x + 1] = sort;
+   alert("Вихідний масив: " + data);
+
+    for (var y = 0; y < data.length; y++) {
+        for (var x = 0; x < data.length; x++) {
+            var sort;
+            if (data[x] > data[x + 1]) {
+                sort = data[x];
+                data[x] = data[x + 1];
+                data[x + 1] = sort;
+            }
+
         }
 
     }
+    return alert("Відсортований масив: " + data);
 
-}
- alert("Відсортований масив: " + data);
+
+};
+
+bubble();
+
