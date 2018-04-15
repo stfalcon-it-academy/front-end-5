@@ -1,0 +1,355 @@
+/*-------------поведінка гіпертексту---------------*/
+a {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #be926f;
+}
+
+/*------------------------------------------------*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    }
+
+/*.clearfix:after {
+    display: table;
+    clear: both;
+    content: "";
+}*/
+ .container {
+
+    min-width: 1170px;
+
+}
+ @media  (max-width: 1200px) {
+     .container {
+         min-width: 0;
+         max-width: 1170px;
+     }
+ }
+
+header {
+    background-color: #232323;
+}
+.top_header {
+    background-color: #2b2b2b;
+}
+.header_phone {
+    line-height: 1.714;
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+@media (max-width: 576px) {
+    .header_phone {
+        display: block;
+        text-align: center;
+    }
+}
+.top_header_menu a {
+   color: #666666;
+}
+
+.top_header_menu a:hover  {
+    text-decoration: underline;
+}
+.top_header_menu {
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: right;
+}
+@media (max-width: 576px) {
+    .top_header_menu {
+        text-align:center;
+    }
+}
+.or {
+    color: #3b3b3b;
+    padding: 0 10px;
+}
+/*.middle_header {
+height: 100px;
+}*/
+
+.main_logo {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+@media (max-width: 576px) {
+    .main_logo {
+        text-align: center;
+    }
+}
+.form {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #666666;
+    min-width: 294px;
+    display: inline-block;
+    float: right;
+}
+
+@media (max-width: 1200px) {
+    .form {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 65px;
+        border: 1px solid #666666;
+        text-align: center;
+    }
+}
+    @media (max-width: 576px) {
+        .form {
+            display: block;
+            margin: 0 auto;
+            text-align: left;
+            float: none;
+        }
+    }
+
+.form input {
+    background: transparent;
+    color: #666666;
+    padding: 11px 0 12px 14px;
+    border: none;
+    outline: none;
+    width: calc(100% - 30px);
+    }
+
+.form input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,                 /*забрали хрестик в input*/
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+.form input::placeholder {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.84;
+    font-weight: 300;
+}
+
+.form button {
+    border: none;
+    background: transparent url("../img/search.png") center center no-repeat;
+    height: 44px;
+    width: 30px;
+    vertical-align: top;
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
+
+@media (max-width: 630px) {
+    .bottom_header {
+        min-height: 218px;
+    }
+}
+    @media (max-width: 576px) {
+        .bottom_header {
+            min-height: 0;
+        }
+    }
+.bottom_header ul {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: -54px;
+    display: inline-block;
+    float: left;
+}
+    @media (max-width: 768px) {
+        .bottom_header ul {
+            display: block;
+            text-align: center;
+        }
+    }
+@media (max-width: 630px) {
+    .bottom_header ul {
+        margin-top: 20px;
+        float: right;
+        margin-right: 42px;
+    }
+}
+@media (max-width: 576px) {
+    .bottom_header ul {
+        float: none;
+        margin-right: -15px;
+    }
+}
+.bottom_header a{
+   color: #ffffff;
+
+}
+.active_menu a {
+    color: #be926f;
+}
+
+.bottom_header a:active {
+    color: #be926f;
+}
+.bottom_header a:hover {
+    text-decoration: underline;
+    color: #be926f;
+}
+.bottom_header li {
+     display: inline-block;
+ }
+    @media (max-width: 768px) {
+        .bottom_header li {
+        display: block;
+            padding-left: 13px;
+    }
+    }
+
+@media (max-width: 576px) {
+    .bottom_header li {
+        padding-left: 0;
+    }
+}
+
+.bottom_header li:first-child {
+    padding-left: 13px;
+}
+@media (max-width: 959px) {
+    .bottom_header li:first-child {
+        padding-left: 13px;
+    }
+}
+@media (max-width: 576px) {
+    .bottom_header li:first-child {
+        padding-left: 0;
+    }
+}
+.bottom_header li+li {
+    margin-left: 19px;
+}
+@media  (max-width: 991px) {
+    .bottom_header li+li {
+        margin-left: 14px;
+    }
+}
+@media  (max-width: 768px) {
+    .bottom_header li+li {
+        margin-left: 0;
+    }
+}
+@media (max-width: 630px) {
+    .bottom_header li+li {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.bag {
+    background: transparent url("../img/bag.png") center center no-repeat;
+    height: 22px;
+    width: 17px;
+    position: relative;
+    right: -5%;
+    top: 8px;
+}
+@media  (max-width: 991px) {
+    .bag {
+        right: -13%;
+    }
+}
+
+@media  (max-width: 768px) {
+    .bag {
+        right: -28%;
+    }
+}
+@media  (max-width: 630px) {
+    .bag {
+        top: 180px;
+        left: -114px;
+    }
+}
+@media (max-width: 576px) {
+    .bag {
+        margin-bottom: 16px;
+        top: 8px;
+        text-align: center;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.bag:before {
+    display: inline-block;
+    content: attr(data-counter);
+    top: -8px;
+    right: -7px;
+    line-height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    background-color: #be926f;
+    color:#232323;
+    font-size: 12px;
+    position: absolute;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main {
+    margin: 34px auto 0;
+    min-height: 117px;
+    max-width: 1170px;
+    background-color: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.main h1 {
+    padding-left: 20px;
+    font-size: 30px;
+    line-height: 1.25;
+    margin-top: 40px;
+}
+@media (max-width: 576px) {
+    .main h1 {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 25px;
+    }
+}
+.home_contact {
+    font-size: 14px;
+    padding-right: 15px;
+    padding-top: 48px;
+}
+@media  (max-width: 991px) {
+    .home_contact {
+        text-align: right;
+    }
+}
+@media (max-width: 576px) {
+    .home_contact {
+        padding-right: 0;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+.home_contact a {
+    color: #666666;
+
+}
+
+.home_contact a:hover {
+    color: #999999;
+}
