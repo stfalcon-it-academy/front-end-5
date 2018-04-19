@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+.main-block {
+    width: 800px;
+    margin: 0 auto;
+}
+.pseudo-post {
+    border-bottom: 2px solid #a3b6c7;
+}
+.pseudo-post:first-of-type {
+    margin-top: 100px;
+}
+.pseudo-post img {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    display: block;
+    margin: 25px auto 10px auto;
+}
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.novel-desc {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px auto;
+}
+.by {
+    font-style: italic;
+    margin: 20px 0;
+}
+.author-name {
+    font-weight: bold;
+}
+.info {
+    text-indent: 20px;
+    margin: 20px auto 40px auto;
+}
