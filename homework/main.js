@@ -1,48 +1,45 @@
 "use strict";
 
-let question = confirm("Хочете підняти число до степеня?");
+var question = confirm( "Ви хочете підняти число до степеня?");
 
-function desire () {
+function pov(x,y) {
+    let size = x;
+    for(let i = 0; i < y; i++) {
+        size = size * x;
+    }
+    return size;
+}
 
 
-    if (question === true) {
-        let x = prompt("Введіть значення:");
-        let y = prompt("Введіть степінь:");
-
-
-        if (x < 0 || x === 0){
-            alert("Ведіть значення більше нуля!!!");
-            desire();
-        }else if (y < 0){
-            alert("Введіть степінь більше нуля!!!");
-            desire();
-        }else if(y <= 2 ){
-            let a = Math.pow(x,2);
-            alert("Результат обрахунків = " + a);
-
-            question = confirm("Хочете підняти число до степеня?");
-
-            if(question === true){
-                desire();
-            } else {
-                alert("Бувай!)");
+function myPov() {
+    if(question){
+        var x = prompt("Введіть значення : ");
+        var y = prompt("Введіть степінь: ");
+        if(x === ""){
+            alert("Ви забули ввести значення яке потрібно піднести до степеня");
+            myPov();
+        } else if (y === ""){
+            alert ("Якщо покозник степеня не заданий користувачем, то він по замовчуванню рівний 2. Результат = " + x * x);
+            let q = confirm("Бажаєте продовжити роботу з піднесенням до степеня?");
+            if (q === true){
+                alert(myPov());
+            }else{
+                alert("Бувай!!!");
             }
 
-        } else{
-            let a = Math.pow(x,y);
-            alert("Результат обрахунків = " + a);
-
-            question = confirm("Хочете підняти число до степеня?");
-
-            if(question === true){
-                desire();
-            } else {
-                alert("Бувай!)");
+        } else {
+            alert("Результат обрахунків становить: " + pov(x,y));
+            let q = confirm("Бажаєте продовжити роботу з піднесенням до степеня?");
+            if (q === true){
+                alert(myPov());
+            }else{
+                alert("Бувай!!!");
             }
         }
-    } else {
-        alert("Бувай!)");
+
+    }else {
+        alert("Бувай");
     }
 }
 
-desire();
+myPov();
