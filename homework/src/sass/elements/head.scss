@@ -1,0 +1,33 @@
+// font-family: 'Source Sans Pro', sans-serif;
+body,html {
+  font-family: 'Open Sans',sans-serif;
+}
+a{
+  text-decoration: none;
+}
+h2{
+  padding: 0;
+  margin: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  height: 100%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

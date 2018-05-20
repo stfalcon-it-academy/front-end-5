@@ -1,0 +1,236 @@
+// Works
+//---------------------------------------------------------
+// Works
+.works{
+  .wrapper{
+    @media (max-width: 880px) {
+      padding: 0;
+    }
+  }
+}
+.works-top{
+  text-align: center;
+  padding-top: 132px;
+  .burger{
+    display: none;
+    @media (max-width: 850px) {
+      display:flex;
+      justify-content: center;
+      margin: 15px 0px;
+    }
+
+    button{
+      display: flex;
+      flex-direction: column;
+      border: none;
+      background: rgba(250,0,0,0);
+      cursor: pointer;
+      outline: 0;
+
+    }
+    span{
+      width: 30px;
+      height: 3px;
+      background-color: #333;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+  h2{
+    color: #6a6a6a;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-align: center;
+    @media (max-width: 880px) {
+      margin: 15px;
+    }
+  }
+  p{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.07;
+    margin: 14px 0 21px;
+  }
+  .center-one{
+
+    span{
+      margin: 0 auto;
+      display: block;
+      width: 8px;
+      height: 7px;
+      background-color: #e74c3c;
+      border-radius: 50%;
+      position: relative;
+
+      &:after{
+        position: absolute;
+        content: '';
+        width: 80px;
+        height: 2px;
+        border: 1px solid #cccccc;
+        top: 3px;
+        left: 14px;
+      }
+
+      &:before{
+        position: absolute;
+        content: '';
+        width: 80px;
+        height: 2px;
+        border: 1px solid #cccccc;
+        top: 3px;
+        right: 14px;
+      }
+    }
+  }
+
+  .works-menu{
+    margin: 50px 0 46px;
+    @media (max-width: 850px) {
+      display: none;
+      margin-top: 20px;
+      position: relative;
+    }
+    ul{
+      display: flex;
+      justify-content: center;
+      @media (max-width: 850px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba( 5, 0, 0, 0.5);
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+      }
+      li{
+        padding:10px 0px 0px 22px;
+        &:before{
+          content: '/';
+          height: 10px;
+          width: 1px;
+          margin-right: 22px;
+          color: #999999;
+        }
+        &:first-child:before{
+          content: '';
+        }
+        &:hover a{
+          color:#e74c3c;
+        }
+        @media (max-width: 850px){
+          width: 100%;
+          padding: 10px 0px;
+          &:before{
+            content: '';
+            margin-right: 0;
+          }
+        }
+      }
+      a{
+        color: #999999;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.works-items{
+  @media (max-width: 880px){
+    display: flex;
+    flex-direction: column;
+  }
+  .works-items-row{
+    display: flex;
+    @media (max-width: 880px) {
+      display:inline-block;
+    }
+    @media (max-width: 540px){
+      display: flex;
+      flex-direction: column;
+    }
+    .works-item{
+      width: 100%;
+      height: 480px;
+      position: relative;
+      @media (max-width: 880px){
+        width: 50%;
+        float: left;
+      }
+      @media (max-width: 540px){
+        width: 100%;
+        float: none;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .works-item-hover{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        top: 0;
+        left: 0px;
+        background: rgba( 239, 4, 5, 0.54);
+        padding-left: 50px;
+        span{
+          width: 44px;
+          height: 4px;
+          background-color: #ffffff;
+          display: block;
+          position: absolute;
+          top: 72%;
+        }
+        h2{
+          color: #ffffff;
+          font-family: "Source Sans Pro - Semibold",sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: 1.2px;
+          position: absolute;
+          top: 80%;
+        }
+        a{
+          position: absolute;
+          top: 87%;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.7px;
+        }
+      }
+      &:hover .works-item-hover{
+        display: block;
+      }
+    }
+  }
+
+}
+
+.burger-close2{
+  width: 26px;
+  height: 42px;
+  position: relative;
+  top: 15px;
+  left: -8px;
+  span{
+    position:absolute;
+    text-align: center;
+    &:first-child{
+      display: none;
+    }
+    &:nth-child(2){
+      transform: rotate(45deg);
+    }
+    &:nth-child(3){
+      transform: rotate(-45deg);
+    }
+  }
+}

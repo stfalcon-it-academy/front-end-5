@@ -1,0 +1,36 @@
+#toTop {
+  border-radius: 50%;
+  text-align:center;
+  padding:5px;
+  position:fixed;
+  bottom:65px; /* отступ кнопки от нижнего края страницы*/
+  right:20px;
+  cursor:pointer;
+  display:none;
+  color:#333;
+  font-size:11px;
+  width: 53px;
+  height: 53px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  background-color: #e74c3c;
+  z-index: 5;
+  &:before{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}

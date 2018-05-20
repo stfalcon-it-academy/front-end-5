@@ -1,0 +1,177 @@
+// Services
+//---------------------------------------------------------------------------
+// Services
+
+.services{
+  background: url("..//img/services-bcg.jpg") 50% 50% no-repeat;
+  .services-main{
+    padding-bottom: 85px;
+  }
+  .services--content{
+    margin-left: 22px;
+    height: 100%;
+    .slick-dots {
+      position: absolute;
+      left: -5%;
+      top: 14%;
+      z-index: 5;
+      width: 15%;
+      @media(max-width: 1300px){
+        left: 0;
+        bottom: 5%;
+      }
+      @media(max-width: 400px){
+        left: -15px;
+      }
+      li{
+        margin-top: 15px;
+        cursor: pointer;
+
+      }
+      button{
+        width: 1px;
+        height: 34px;
+        text-indent: -9999px;
+        margin: 0;
+        overflow:hidden;
+        padding: 0;
+        outline: 0;
+        border: none;
+        background: white;
+
+      }
+    }
+  }
+  .servic-title{
+    width: 100%;
+    display: inline-block;
+    margin: 146px 0px 64px 22px;
+    @media(max-width: 800px){
+      text-align: center;
+    }
+    @media(max-width: 500px){
+      margin-right: 0;
+    }
+    h2{
+      color: #f4f5f9;
+      font-family: "Source Sans Pro",sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 3.6px;
+      max-width: 563px;
+      text-align: right;
+      position: relative;
+      padding-right: 30px;
+      @media(max-width: 800px){
+        display: inline-block;
+      }
+      @media(max-width: 500px){
+        font-size: 30px;
+      }
+      &:before{
+        display: block;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 1px;
+        width: 6px;
+        height: 36px;
+        background-color: #e74c3c;
+      }
+    }
+  }
+  .servic-item{
+    margin-bottom: 65px;
+    @media(max-width: 1300px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    @media(max-width: 850px){
+      margin-bottom: 45px;
+    }
+    h2{
+      color: #e74c3c;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.61;
+      max-width: 563px;
+      text-align: right;
+      @media(max-width: 1300px){
+        display: inline-block;
+      }
+    }
+    p{
+      margin-top: 4px;
+      max-width: 563px;
+      color: #999999;
+      font-family: "Source Sans Pro",sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.61;
+      text-align: right;
+      @media(max-width: 1300px){
+        display: inline-block;
+        text-align: center;
+      }
+      @media(max-width: 850px){
+        max-width:300px ;
+      }
+    }
+  }
+}
+.services-content{
+  position: relative;
+  .services-icon{
+    width: 64px;
+    height: 64px;
+    background-color: #f4f5f9;
+    position: absolute;
+    right: 41%;
+    top: 12%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width: 1300px){
+      right: 15%;
+    }
+    @media(max-width: 1060px){
+      right: 5%;
+    }
+    @media(max-width: 570px){
+      display: none;
+    }
+    span{
+      display: block;
+      width: 27px;
+      height: 22px;
+    }
+    .servic-icon-one{
+      background: url("..//img/servic-icon-1.jpg");
+    }
+    .servic-icon-two{
+      background: url("..//img/servic-icon-2.jpg");
+    }
+    .servic-icon-three{
+      background: url("..//img/servic-icon-3.jpg");
+    }
+    &:before{
+      width: 74px;
+      height: 74px;
+      background-color: #ffffff;
+      opacity: 0.25;
+      content: '';
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+
+    }
+  }
+}
+
+.red{
+  background: red!important;
+
+}
