@@ -2,15 +2,15 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 body{
-   min-width: 1170px;
+    min-width: 1170px;
 }
 .clear-fix:after {
+    margin: 0 auto;
     display: table;
     clear: both;
     content: "";
 }
-.conteiner {
-    margin: 0 auto;
+.container {
     width: 1170px;
 }
 header {
@@ -76,7 +76,7 @@ header {
 .header-form button {
     width: 56px;
     height: 44px;
-    background: transparent url(homework/imegs/Search.png)center center no-repeat;
+    background: transparent url("/Course_local/homework/imegs/Search.png")center center no-repeat;
 }
 .header-form input,
 .header-form button {
@@ -117,7 +117,7 @@ header {
     width: 18px;
     height: 22px;
 
-    background: transparent url("homework/imegs/header_cart.png")center center no-repeat;
+    background: transparent url("/Course_local/homework/imegs/header_cart.png")center center no-repeat;
 }
 .header-cart::before{
     position: absolute;
