@@ -1,47 +1,69 @@
-# Блочна модель і позиціонування 
-### Блочна модель
-1. Блочні і текстові елементи.
-1. `display`
-  - `none`
-  - `block`
-  - `inline`
-  - `inline-block`
-  - `table-row`
-  - `table-cell`
-1. `width`
-1. `height`
-1. `margin`
-  - накладання відступів
-  - вихід відступів за межі батьківського елемента
-1. `padding`
-1. `border`
-1. `box-sizing`
-1. `overflow`
+# Одиниці виміру. Стилізація тексту
+### Одиниці виміру.
+1. `mm` `cm` `pt` `pc`
+1. `px`
+1. `%`
+1. `em`
+1. `rem`
+1. `vw`
+1. `vh`
+1. `vmin`
+1. `vmax`
+1. `inherit`
 
-### Позиціонування
-1. `vertical-align`
-1. `position`
-  - `static`
-  - `relative`
-  - `absolute`
-  - `fixed`
-1. `float`
-1. `clear`
+### Скидання стилів
+1. [`normalize.css`](https://necolas.github.io/normalize.css/)
+
+### Стилізація тексту
+1. `font-family`
+  - `serif`
+  - `sans-serif`
+  - `monospace`
+  - `cursive`
+  - `fantasy`
+1. `font-size`
+1. `font-weight`
+1. `font-style`
+1. `color`
+  - `currentColor`
+1. `text-decoration`
+1. `text-transform`
+1. `text-align`
+1. `text-indent`
+1. `line-height`
+1. `white-space`
+1. `columns`
+  - `column-count`
+  - `column-width`
+  - `column-gap`
+  - `column-rule`
+1. `text-shadow`
+1. `font-variant`
+1. `letter-spacing`
+1. `word-spacing`
+1. `user-select`
+1. Нестандартні шрифти.
+ - [Google Fonts](https://fonts.google.com)
+ - [Font Squirrel](https://www.fontsquirrel.com)
+ - [allfont](http://allfont.net)
+ 
+### Спецсимволи [?](https://css-tricks.com/snippets/html/glyphs/)
+### Наслідування
 
 ---
 # Домашнє завдання
-1. Зверстати шапку даного [макету](https://www.dropbox.com/s/oq6apyqrara7b4a/09_contact.psd?dl=0). А саме блоки з даного [скріншоту](http://screencast.com/t/gN7BwG27mdP)
-1. Для верстки текту користуватись напрацюваннями з попереднього уроку:
-  - Підключити файл стилів `normalize.css`.
-  - Підключити нестандартний шрифт, що використовується на сторінці.
-
+1. Підключити файл стилів `normalize.css`.
+1. Підключити нестандартний, що використовується на сторінці.
+1. Згідно [макету](https://www.dropbox.com/s/gx4piiwb52ntznq/lesson-5.%20homework.psd?dl=0) зверстати текстову сторінку.
 
 ---
 # Лінки
-- [CSS для JavaScript-разработчика](https://learn.javascript.ru/css-for-js)
-- [Блочная модель](http://xiper.net/learn/css/box-model/what-is-the-box-model)
-- [Варианты «clearfix-хака» и его замен: сводная таблица](http://css-live.ru/articles-css/clearfix-block-formatting-context-methods-cheatsheet.html)
-- [CSS позиционирование](http://html5book.ru/css-position/)
-- [Как работает автоматическое позиционирование в CSS?](http://frontender.info/how-does-auto-positioning-work-in-css/)
-- [Магические числа в CSS](http://frontender.info/magic-numbers-in-css/)
-- [Generator vertical rhythm](https://www.gridlover.net/try)
+- [Mozilla Foundation. Руководство по CSS](https://developer.mozilla.org/ru/docs/Web/CSS/Reference)
+- [Автопрефиксер онлайн](https://autoprefixer.github.io/ru/)
+- [Can I Use](http://caniuse.com/)
+- [REM vs EM – The Great Debate](http://zellwk.com/blog/rem-vs-em/)
+- [Using @font-face](https://css-tricks.com/snippets/css/using-font-face/)
+- [No @font-face Syntax will ever be Bulletproof, Nor Should It Be](https://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/)
+- [Typography Handbook](http://typographyhandbook.com)
+- [Невозможная типографика](http://prgssr.ru/development/nevozmozhnaya-tipografika.html)
+- [Зарелизил вторую версию awsm.css](https://igoradamenko.com/blog/all/awsm-css-v2-0/)
