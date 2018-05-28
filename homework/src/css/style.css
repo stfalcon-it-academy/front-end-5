@@ -170,6 +170,10 @@ header {
   top: 12px;
 }
 
+.head-slider-one {
+  outline: 0;
+}
+
 .head-slider-one .top {
   text-align: center;
 }
@@ -269,7 +273,8 @@ header {
 
 .head-slider-one .bottom .active {
   background: #e74c3c;
-  border: 1px solid #e74c3c;
+  border-radius: 3px;
+  border-color: #e74c3c;
 }
 
 .anchor {
@@ -352,6 +357,7 @@ header {
   width: 73px;
   height: 73px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .items-main .item-one .item-top:before {
@@ -362,19 +368,19 @@ header {
 }
 
 .items-main .item-one .item-top-one {
-  background: url("..//img/item-1.png") 50% 50% no-repeat;
+  background: url("..//img/item-1.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one .item-top-two {
-  background: url("..//img/item-2.png") 50% 50% no-repeat;
+  background: url("..//img/item-2.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one .item-top-three {
-  background: url("..//img/item-3.png") 50% 50% no-repeat;
+  background: url("..//img/item-3.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one .item-top-four {
-  background: url("..//img/item-4.png") 50% 50% no-repeat;
+  background: url("..//img/item-4.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one a {
@@ -572,6 +578,7 @@ header {
 
 .services-content {
   position: relative;
+  outline: 0;
 }
 
 .services-content .services-icon {
@@ -589,20 +596,23 @@ header {
 
 .services-content .services-icon span {
   display: block;
-  width: 27px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
 }
 
 .services-content .services-icon .servic-icon-one {
-  background: url("..//img/servic-icon-1.jpg");
+  background: url("..//img/servic-icon-1.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .services-content .services-icon .servic-icon-two {
-  background: url("..//img/servic-icon-2.jpg");
+  background: url("..//img/servic-icon-2.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .services-content .services-icon .servic-icon-three {
-  background: url("..//img/servic-icon-3.jpg");
+  background: url("..//img/servic-icon-3.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .services-content .services-icon:before {
@@ -1060,6 +1070,7 @@ header {
     left: -15px;
   }
 }
+
 .block-items {
   padding: 122px 0 111px;
   border-bottom: 1px solid #e6e7eb;
@@ -1089,6 +1100,7 @@ header {
   width: 73px;
   height: 73px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .items-main .item-one .item-top:before {
@@ -1099,19 +1111,19 @@ header {
 }
 
 .items-main .item-one .item-top-one {
-  background: url("..//img/item-1.png") 50% 50% no-repeat;
+  background: url("..//img/item-1.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one .item-top-two {
-  background: url("..//img/item-2.png") 50% 50% no-repeat;
+  background: url("..//img/item-2.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one .item-top-three {
-  background: url("..//img/item-3.png") 50% 50% no-repeat;
+  background: url("..//img/item-3.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one .item-top-four {
-  background: url("..//img/item-4.png") 50% 50% no-repeat;
+  background: url("..//img/item-4.svg") 50% 50% no-repeat;
 }
 
 .items-main .item-one a {
@@ -1705,6 +1717,10 @@ header {
   top: 12px;
 }
 
+.head-slider-one {
+  outline: 0;
+}
+
 .head-slider-one .top {
   text-align: center;
 }
@@ -1804,7 +1820,8 @@ header {
 
 .head-slider-one .bottom .active {
   background: #e74c3c;
-  border: 1px solid #e74c3c;
+  border-radius: 3px;
+  border-color: #e74c3c;
 }
 
 .anchor {
@@ -2598,6 +2615,7 @@ header {
 
 .services-content {
   position: relative;
+  outline: 0;
 }
 
 .services-content .services-icon {
@@ -2615,20 +2633,23 @@ header {
 
 .services-content .services-icon span {
   display: block;
-  width: 27px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
 }
 
 .services-content .services-icon .servic-icon-one {
-  background: url("..//img/servic-icon-1.jpg");
+  background: url("..//img/servic-icon-1.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .services-content .services-icon .servic-icon-two {
-  background: url("..//img/servic-icon-2.jpg");
+  background: url("..//img/servic-icon-2.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .services-content .services-icon .servic-icon-three {
-  background: url("..//img/servic-icon-3.jpg");
+  background: url("..//img/servic-icon-3.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .services-content .services-icon:before {

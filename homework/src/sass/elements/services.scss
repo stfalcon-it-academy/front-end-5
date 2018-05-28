@@ -123,6 +123,7 @@
 }
 .services-content{
   position: relative;
+  outline: 0;
   .services-icon{
     width: 64px;
     height: 64px;
@@ -145,17 +146,21 @@
     }
     span{
       display: block;
-      width: 27px;
-      height: 22px;
+      width: 30px;
+      height: 30px;
     }
     .servic-icon-one{
-      background: url("..//img/servic-icon-1.jpg");
+      background: url("..//img/servic-icon-1.svg") 50% 50% no-repeat;
+      background-size: contain;
+
     }
     .servic-icon-two{
-      background: url("..//img/servic-icon-2.jpg");
+      background: url("..//img/servic-icon-2.svg") 50% 50% no-repeat;
+      background-size: contain;
     }
     .servic-icon-three{
-      background: url("..//img/servic-icon-3.jpg");
+      background: url("..//img/servic-icon-3.svg") 50% 50% no-repeat;
+      background-size: contain;
     }
     &:before{
       width: 74px;

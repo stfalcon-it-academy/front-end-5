@@ -196,6 +196,7 @@ header{
 }
 
 .head-slider-one{
+  outline: 0;
   .top{
     text-align: center;
     span{
@@ -303,7 +304,8 @@ header{
     }
     .active{
       background: #e74c3c;
-      border: 1px solid #e74c3c;
+      border-radius: 3px;
+      border-color:#e74c3c;
     }
   }
 }

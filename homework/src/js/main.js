@@ -35,6 +35,7 @@ $(document).ready(function(){
         $(this).find('button').addClass('red2').parent().siblings().find('button').removeClass('red2');
 
     });
+    $('.slick-active button').addClass('red2');
 });
 $(document).ready(function(){
     $('.burger-menu').click(function () {
@@ -42,7 +43,8 @@ $(document).ready(function(){
         $(this).toggleClass('burger-close');
 
     });
-
+    $('.bottom-right button').removeClass('red2');
+    $('.bottom-left button').removeClass('red2');
 
 
     $('.burger-menu-two').click(function () {

@@ -56,10 +56,12 @@
   .study-main{
     margin-top: 68px;
     display: flex;
+
     @media(max-width: 1000px){
       justify-content: center;
     }
     .study-left{
+
       text-align: center;
       width: 665px;
       height: 629px;
@@ -78,6 +80,7 @@
         padding: 15px;
       }
       .study-slide{
+       
         flex-direction: column;
         display: flex;
         justify-content: center;

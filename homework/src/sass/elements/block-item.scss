@@ -27,6 +27,7 @@
       width: 73px;
       height: 73px;
       margin: 0 auto;
+      cursor: pointer;
       &:before{
         border: 1px solid #e6e6e6;
         display: block;
@@ -35,16 +36,17 @@
       }
     }
     .item-top-one{
-      background: url("..//img/item-1.png") 50% 50% no-repeat;
+      background: url("..//img/item-1.svg") 50% 50% no-repeat;
+
     }
     .item-top-two{
-      background: url("..//img/item-2.png") 50% 50% no-repeat;
+      background: url("..//img/item-2.svg") 50% 50% no-repeat;
     }
     .item-top-three{
-      background: url("..//img/item-3.png") 50% 50% no-repeat;
+      background: url("..//img/item-3.svg") 50% 50% no-repeat;
     }
     .item-top-four{
-      background: url("..//img/item-4.png") 50% 50% no-repeat;
+      background: url("..//img/item-4.svg") 50% 50% no-repeat;
     }
     a{
       color: #6a6a6a;
