@@ -15,8 +15,7 @@ header {
   align-items: center;
 }
 
-.default {
-  max-width: 1200px;
+#default {
   padding: 0 15px;
 }
 
@@ -1606,8 +1605,7 @@ header {
   align-items: center;
 }
 
-.default {
-  max-width: 1200px;
+#default {
   padding: 0 15px;
 }
 

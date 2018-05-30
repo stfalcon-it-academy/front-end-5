@@ -9,15 +9,11 @@ $(document).ready(function(){
         } else if($(this).scrollTop() <= 100 && menu.hasClass("fixed")) {
             menu.removeClass("fixed").addClass("default");
         }
-    });//scroll
+    });
 
 
     //anchor
-/*
-    $('.anchor-js').click(function () {
-        $('html, body').animate({scrollTop: $('header').height()+2500},'slow');
-        return false
-    });*/
+
 
     $('html, body').animate({
 

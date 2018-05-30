@@ -103,7 +103,8 @@ gulp.task('build',['clean','image-min','sass','css-libs','js-libs'], function ()
                 /\.burger-close/,
                 /\.burger-close2/,
                 /\.error/,
-                /\.remodal/
+                /\.remodal/,
+                /\.fixed/
             ]
         }))
         .pipe(cssnano())
