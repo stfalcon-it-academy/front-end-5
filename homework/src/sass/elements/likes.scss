@@ -1,0 +1,83 @@
+// likes
+// ----------------------------------------------------------------------------
+// likes
+.likes{
+  padding: 155px 0 137px;
+  background: url("..//img/likes-bcg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  @media (max-width: 480px){
+    padding: 50px 0 50px;
+  }
+  .likes-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    @media (max-width: 800px){
+      justify-content: space-around;
+    }
+    @media (max-width: 480px){
+      flex-direction: column;
+    }
+    .like-block{
+      text-align: center;
+      @media (max-width: 800px) {
+        margin-right: 15px;
+        margin-top: 15px;
+      }
+      @media (max-width: 480px){
+        margin-right: 0;
+        margin-top: 30px;
+      }
+      .like-icon{
+        width: 111px;
+        height: 111px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        background: rgba(250,0,0,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        span{
+          display: block;
+          width: 31px;
+          height: 31px;
+
+        }
+        .like-icon-one{
+          background: url("..//img/like-1.png") 50% 50% no-repeat;
+        }
+        .like-icon-two{
+          background: url("..//img/like-2.png") 50% 50% no-repeat;
+        }
+        .like-icon-three{
+          background: url("..//img/like-3.png") 50% 50% no-repeat;
+        }
+        .like-icon-four{
+          background: url("..//img/like-4.png") 50% 50% no-repeat;
+        }
+        .like-icon-five{
+          background: url("..//img/like-5.png") 50% 50% no-repeat;
+        }
+      }
+      h2{
+        color: #f4f5f9;
+        font-family: "Source Sans Pro",sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 44px 0 6px;
+        @media (max-width: 480px){
+          margin: 15px 0 10px;
+        }
+      }
+      p{
+        font-family: "Source Sans Pro",sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.9px;
+        font-size: 18px;
+        color: #f4f5f9;
+      }
+    }
+  }
+}
