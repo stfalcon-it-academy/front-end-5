@@ -6,9 +6,13 @@
   background-size:cover ;
   padding: 142px 0;
   height: 744px;
-  @media (max-width: 840px) {
+  @media (max-width: 850px) {
     background: url("..//img/team-bcg-2.png") 50% 50% no-repeat;
     background-size:cover ;
+  }
+  @media (max-width: 850px){
+    padding:50px 0 100px;
+    height: auto;
   }
   .team-main{
     position: relative;
@@ -132,14 +136,24 @@
       }
 
     .icon-one-block{
+      top:61%;
+      .icon-one{
+        margin-top: 17px;
+      }
       @media (max-width: 1250px) {
         left: 10%;
-        top: 59%;
+        top: 55%;
+      }
+      @media (max-width: 960px){
+        top:52%;
       }
     }
     .icon-two-block{
-      top: 53%;
+      top: 50%;
       left: 22%;
+      .icon-two{
+        margin-top: 19px;
+      }
       @media (max-width: 1250px) {
         left: 25%;
       }
@@ -149,7 +163,7 @@
        }
      }
     .icon-three-block{
-      top: 54%;
+      top: 50%;
       left: 45%;
       @media (max-width: 1250px) {
         left: 40%;
@@ -157,18 +171,20 @@
       .icon-three{
         width: 51px;
         height: 49px;
+        margin-top: 17px;
       }
     }
     .icon-four-block{
-      top: 63%;
+      top: 59%;
       left: 68%;
       @media (max-width: 1250px) {
         left: 55%;
-        top: 57%;
+        top: 55%;
       }
       .icon-four{
         width: 51px;
         height: 49px;
+        margin-top: 17px;
       }
     }
     .icon-five-block{
@@ -178,10 +194,17 @@
         left: 70%;
         top: 63%;
       }
+      @media (max-width: 850px){
+        top:55%;
+        margin-top: 17px;
+      }
       .icon-five{
         width: 51px;
         height: 49px;
       }
+    }
+    .icon-one-block,.icon-two-block,.icon-three-block,.icon-four-block,.icon-five-block{
+
     }
     .active{
       .icon-two{
@@ -209,7 +232,12 @@
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 152px;
+    @media (max-width: 650px) {
+      flex-wrap: wrap;
+      padding-top: 50px;
+    }
   }
+
 }
 .team-red{
   position: relative;

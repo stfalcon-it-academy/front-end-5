@@ -5,6 +5,9 @@
   padding: 155px 0 137px;
   background: url("..//img/likes-bcg.jpg") 50% 50% no-repeat;
   background-size: cover;
+  @media (max-width: 480px){
+    padding: 50px 0 50px;
+  }
   .likes-main{
     display: flex;
     justify-content: space-between;
@@ -12,11 +15,18 @@
     @media (max-width: 800px){
       justify-content: space-around;
     }
+    @media (max-width: 480px){
+      flex-direction: column;
+    }
     .like-block{
       text-align: center;
       @media (max-width: 800px) {
         margin-right: 15px;
         margin-top: 15px;
+      }
+      @media (max-width: 480px){
+        margin-right: 0;
+        margin-top: 30px;
       }
       .like-icon{
         width: 111px;
@@ -57,6 +67,9 @@
         font-weight: 700;
         line-height: 1;
         margin: 44px 0 6px;
+        @media (max-width: 480px){
+          margin: 15px 0 10px;
+        }
       }
       p{
         font-family: "Source Sans Pro",sans-serif;

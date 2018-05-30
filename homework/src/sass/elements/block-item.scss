@@ -4,6 +4,9 @@
 .block-items{
   padding: 122px 0 111px;
   border-bottom: 1px solid #e6e7eb;
+  @media (max-width: 880px){
+    padding: 50px 0 50px;
+  }
 }
 .items-main{
   display: flex;

@@ -2,23 +2,60 @@
 // --------------------------------------------
 // HEADER
 header{
-  background: url("..//img/bcg-header.jpg") 50% 50% ;
-  background-size:auto ;
+  background: url("..//img/bcg-header.jpg") 50% 50% no-repeat;
+  background-size:cover;
   height: 991px;
+
+
 }
 .header-main {
   position: relative;
+  padding-top: 40px;
+
 }
 .header-top{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+
   @media (max-width: 1050px) {
     flex-wrap: wrap;
   }
 }
-
+.default{
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 5px 5px 20px #333;
+  background: #333;
+  opacity: 0.8;
+  padding: 20px 0;
+  .nav-menu{
+    margin-right: 20px;
+    @media (max-width: 1050px) {
+      margin-right: 0;
+    }
+    a{
+      padding-bottom: 10px;
+    }
+  }
+  .header-logo{
+    margin-left: 20px;
+    img{
+      width: 110px;
+      height: 42px;
+    }
+  }
+  .burger{
+    margin-right: 20px;
+  }
+}
 .nav-menu {
   @media(max-width: 1050px){
     display: none;
@@ -42,6 +79,9 @@ header{
       @media (max-width: 1050px) {
         margin: 10px 20px 20px 20px;
         text-align: center;
+        &:last-child{
+          margin-right: 20px;
+        }
       }
       &:last-child{
         margin-right: 0px;
@@ -300,6 +340,7 @@ header{
       &:hover{
         background: #e74c3c;
         border: 1px solid #e74c3c;
+        opacity: 0.7;
       }
     }
     .active{
@@ -314,13 +355,16 @@ header{
   height: 64px;
   position: absolute;
   bottom: -4%;
-  left: 47%;
+  left: 46%;
   background: #f4f5f9;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  @media (max-width: 500px) {
+    left: 43%;
+  }
   &:before{
     width: 74px;
     height: 74px;
@@ -331,9 +375,9 @@ header{
     position: absolute;
     border-radius: 50%;
   }
-  span{
+  a{
     display: block;
-    background: url("..//img/anchor.png") 50% 50% no-repeat;
+    background: url("..//img/anchor.svg") 50% 50% no-repeat;
     width: 22px;
     height: 31px;
   }

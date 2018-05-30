@@ -5,6 +5,9 @@
   background: #f4f5f9;
   padding: 142px 0 111px;
   border-bottom: 1px solid #d8d9db;
+  @media (max-width: 880px){
+    padding: 50px 0;
+  }
   .others-main{
     .others-title{
       text-align: center;
@@ -103,7 +106,8 @@
           }
           &:nth-child(3){
             &:before{
-              background: url("..//img/others-item-3.png") 50% 50% no-repeat;
+              background: url("..//img/others-item-33.png") 50% 50% no-repeat;
+              background-size: cover;
               width: 120px;
               height: 57px;
             }
@@ -111,6 +115,7 @@
           &:nth-child(4){
             &:before{
               background: url("..//img/others-item-4.png") 50% 50% no-repeat;
+              background-size: cover;
               width: 157px;
               height: 60px;
             }

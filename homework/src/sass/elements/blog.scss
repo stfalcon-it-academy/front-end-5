@@ -4,6 +4,9 @@
 .blog{
   background: #f4f5f9;
   padding: 112px 0;
+  @media (max-width: 880px){
+    padding: 50px 0;
+  }
   .blog-title{
     text-align: center;
     h2{
@@ -64,10 +67,12 @@
     .blog-img{
       width: 25%;
       height: 480px;
-      background: url("..//img/blog-1.png")  no-repeat;
-      background-size: cover;
-      @media (max-width: 1366px){
-        background-size: cover;
+      padding-bottom: 25%;
+      position: relative;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 480px;
       }
       @media (max-width: 1100px){
         width: 50%;
@@ -76,15 +81,8 @@
         width: 100%;
       }
     }
-    .blog-img-two{
-      background: url("..//img/blog-2.png") 50% 50% no-repeat;
-    }
-    .blog-img-three{
-      background: url("..//img/blog-3.png") 50% 50% no-repeat;
-    }
-    .blog-img-four{
-      background: url("..//img/blog-4.png") 50% 50% no-repeat;
-    }
+
+
     .blog-content{
       width: 25%;
       height: 480px;

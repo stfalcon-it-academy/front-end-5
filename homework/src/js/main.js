@@ -1,5 +1,41 @@
 'use stict';
 $(document).ready(function(){
+
+    //fixed menu
+    var menu = $('.header-top');
+    $(window).scroll(function(){
+        if ( $(this).scrollTop() > 100 && menu.hasClass("default") ){
+            menu.removeClass("default").addClass("fixed");
+        } else if($(this).scrollTop() <= 100 && menu.hasClass("fixed")) {
+            menu.removeClass("fixed").addClass("default");
+        }
+    });//scroll
+
+
+    //anchor
+/*
+    $('.anchor-js').click(function () {
+        $('html, body').animate({scrollTop: $('header').height()+2500},'slow');
+        return false
+    });*/
+
+    $('html, body').animate({
+
+    }, 'slow');
+    $('.anchor-js').click(function (event) {
+        event.preventDefault();
+        var target_top = $('.likes').offset().top;
+        $('html, body').animate({
+            scrollTop: target_top - 100
+        }, 'slow');});
+
+    //anchor
+
+
+
+    //slider
+
+
     $('.header-slider').slick();
    $('.services-js').slick({
         vertical: true,
@@ -52,11 +88,78 @@ $(document).ready(function(){
         $(this).toggleClass('burger-close2');
     });
 
-    $('.anchor-js').click(function () {
-        $('html, body').animate({scrollTop: $('header').height()+2500},'slow');
-        return false
-    })
+
 });
+
+// run numbers
+
+var show = true;
+var countbox = "#counts";
+$(window).on("scroll load resize", function(){
+    if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
+    var w_top = $(window).scrollTop();        // Количество пикселей на которое была прокручена страница
+    var e_top = $(countbox).offset().top;     // Расстояние от блока со счетчиками до верха всего документа
+    var w_height = $(window).height();        // Высота окна браузера
+    var d_height = $(document).height();      // Высота всего документа
+    var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+    if(w_top + 400 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
+        $(".spincrement").spincrement({
+
+            duration: 20000
+        });
+        show = false;
+    }
+});
+
+// isotop
+
+var item = $('.works-item');
+$('.button-print').click(function () {
+    item.eq(3).hide();
+    item.eq(5).hide();
+});
+$('.button-all').click(function () {
+    item.show();
+
+});
+$('.button-animation').click(function () {
+    item.eq(3).show();
+    item.eq(5).show();
+    item.eq(6).hide();
+    item.eq(7).hide();
+});
+$('.button-art').click(function () {
+    item.eq(1).hide();
+    item.eq(2).hide();
+});
+$('.button-web').click(function () {
+    item.eq(1).show();
+    item.eq(2).show();
+    item.eq(6).hide();
+    item.eq(7).hide();
+});
+$('.button-photo').click(function () {
+    item.hide();
+    item.eq(2).show();
+    item.eq(7).show();
+    item.eq(8).show();
+});
+$('.button-video').click(function () {
+    item.eq(3).show();
+    item.eq(5).show();
+    item.eq(6).hide();
+    item.eq(7).hide();
+});
+
+$('.button-group button').click(function () {
+    $(this).addClass('button-active').siblings().removeClass('button-active');
+});
+
+// isotop
+
+// run numbers
+
+
 $(function() {
 
     $(window).scroll(function() {
@@ -108,6 +211,6 @@ $(function() {
 
         }
     });
-});
 
+});
 
