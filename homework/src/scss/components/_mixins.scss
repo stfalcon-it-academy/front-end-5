@@ -1,0 +1,12 @@
+// convert font size from px to rem
+@mixin font-size($px-val) {
+  font-size: ($px-val / $default-font-size) + rem;
+}
+// convert leter spacing from px to em
+@mixin letter-spacing($val) {
+  letter-spacing: ($val / 1000) + em;
+}
+// get relative line height calc
+@mixin line-height($px-val, $font-size) {
+  line-height: $px-val / $font-size;
+}

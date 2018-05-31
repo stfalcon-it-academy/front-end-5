@@ -1,0 +1,141 @@
+.page-footer {
+  overflow: hidden;
+  background-color: #202020;
+  font-size: 0;
+
+  @media screen and (max-width: 510px) {
+    text-align: center;
+  }
+
+  .foter-copyright {
+    float: right;
+    padding: 33px 0;
+    font-weight: 400;
+    @include font-size(14px);
+    @include line-height(24px, 14px);
+    text-transform: capitalize;
+    color: #999999;
+
+    @media screen and (max-width: 510px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+
+    + li {
+      margin-left: 20px;
+    }
+  }
+
+  a {
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    padding: 35px 0;
+    text-decoration: none;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 3;
+      display: block;
+      width: 22px;
+      height: 22px;
+      margin-top: -11px;
+      opacity: 1;
+      background: url("../../img/footer-icons.png");
+      background-clip: content-box;
+
+      transition: opacity .2s linear;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 3;
+      display: block;
+      width: 22px;
+      height: 22px;
+      margin-top: -11px;
+      opacity: 0;
+      background: url("../../img/footer-icons.png");
+      background-clip: content-box;
+
+      transition: opacity .2s linear;
+    }
+
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  .facebook-icon a:before {
+    background-position: -23px 47px;
+  }
+  .facebook-icon a:after {
+    background-position: -25px 23px;
+  }
+
+  .twitter-icon a:before {
+    background-position: -169px 46px;
+  }
+  .twitter-icon a:after {
+    background-position: -171px 22px;
+  }
+
+  .rss-icon a:before {
+    background-position: -48px 47px;
+  }
+  .rss-icon a:after {
+    background-position: -50px 23px;
+  }
+
+  .google-icon a:before {
+    background-position: -72px 47px;
+  }
+  .google-icon a:after {
+    background-position: -74px 23px;
+  }
+
+  .linkedin-icon a:before {
+    background-position: -96px 47px;
+  }
+  .linkedin-icon a:after {
+    background-position: -98px 23px;
+  }
+
+  .skype-icon a:before {
+    background-position: -120px 46px;
+  }
+  .skype-icon a:after {
+    background-position: -122px 22px;
+  }
+
+  .vimeo-icon a:before {
+    background-position: -145px 46px;
+  }
+  .vimeo-icon a:after {
+    background-position: -147px 22px;
+  }
+
+  .tumblr-icon a:before {
+    background-position: 0px 47px;
+  }
+  .tumblr-icon a:after {
+    background-position: -2px 23px;
+  }
+}

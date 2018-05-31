@@ -1,0 +1,140 @@
+.stats {
+  position: relative;
+  background-image: url("../../img/stats-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #aaa;
+  color: #fff;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .stats-list {
+    margin: 0 -25px 0 -25px;
+    padding: 78px 0 64px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0;
+    text-align: center;
+    color: #f4f5f9;
+  }
+
+  .list-item {
+    float: left;
+    width: 20%;
+    padding: 78px 0 69px;
+
+    @media screen and (max-width: 768px) {
+      float: none;
+      margin: 0 auto;
+      padding: 0 0 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  .stats-item-ico {
+    display: block;
+    margin: 0 auto 45px;
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      float: none;
+      margin-bottom: 20px;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+    &:after {
+      background-image: url("../../img/stats-sprite-sheet.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .stats-item-count {
+    display: block;
+    margin: 0 auto 7px;
+    @include font-size(30px);
+    @include line-height(30px, 30px);
+    @include letter-spacing(50);
+    font-weight: 700;
+  }
+
+  .stats-item-title {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    @include font-size(18px);
+    @include line-height(30px, 18px);
+    @include letter-spacing(50);
+    text-transform: capitalize;
+  }
+
+  .user-fav-ico {
+    &:after {
+      width: 30px;
+      height: 26px;
+      background-position: -1px 0;
+    }
+  }
+
+  .total-posts-ico {
+    &:after {
+      width: 29px;
+      height: 29px;
+      background-position: -33px 0;
+    }
+  }
+
+  .posts-ico {
+    &:after {
+      width: 31px;
+      height: 31px;
+      background-position: -64px 0;
+    }
+  }
+
+  .camp-ico {
+    &:after {
+      width: 31px;
+      height: 29px;
+      background-position: -97px 0;
+    }
+  }
+
+  .feach-ico {
+    &:after {
+      width: 22px;
+      height: 28px;
+      background-position: -130px 0;
+    }
+  }
+}

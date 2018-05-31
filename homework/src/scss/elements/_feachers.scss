@@ -1,0 +1,132 @@
+.feachers {
+  border-bottom: 1px solid #e6e7eb;
+}
+
+.feacher-item {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 25%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 50%;
+    margin-bottom: 22px;
+  }
+
+  @media screen and (max-width: 510px) {
+    max-width: 100%;
+  }
+}
+
+.feacher-interaktive {
+  display: block;
+  text-decoration: none;
+
+  &:hover .feacher-icon::after {
+    transform: rotate(45deg);
+    border-color: $color-red;
+  }
+
+  &:hover .feacher-title {
+    color: $color-red;
+  }
+}
+
+.feachers-list {
+  margin: 92px auto 110px;
+  text-align: center;
+  font-size: 0;
+
+  .feacher-title {
+    position: relative;
+    display: block;
+    padding-bottom: 16px;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    @include font-size(18px);
+    @include line-height(20px, 18px);
+    @include letter-spacing(75);
+    font-weight: 600;
+    color: #6a6a6a;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      width: 40px;
+      margin-left: -20px;
+      background-color: #000;
+    }
+  }
+
+  .feacher-icon {
+    position: relative;
+    display: block;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 74px;
+      height: 74px;
+      margin: 0 auto 28px;
+      border: 1px solid #e5e5e5;
+      border-radius: 1px;
+      transition: all .2s ease;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-image: url("../../img/feachers-spritesheet.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .clean-code-icon:before {
+    width: 22px;
+    height: 19px;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-position: 0px 0px;
+  }
+
+  .creative-ideas-icon:before {
+    width: 17px;
+    height: 27px;
+    margin-left: -8px;
+    margin-top: -14px;
+    background-position: -31px 0px;
+  }
+
+  .free-support-icon:before {
+    width: 21px;
+    height: 22px;
+    margin-left: -10px;
+    margin-top: -11px;
+    background-position: -58px 0px
+  }
+
+  .sleek-design-icon:before {
+    width: 27px;
+    height: 13px;
+    margin-left: -14px;
+    margin-top: -6px;
+    background-position: -86px -4px;
+  }
+
+  .feacher-description {
+    padding: 0;
+    margin: 18px 15px 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    @include font-size(12px);
+    @include line-height(20px, 12px);
+    @include letter-spacing(75);
+    color: #999999;
+  }
+}
