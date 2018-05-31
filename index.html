@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tajam_landing_page</title>
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="dist/remodal.css">
+    <link rel="stylesheet" href="dist/remodal-default-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-------------header------------------------------------------------------------>
+    <div class="header">
+    <div class="container">
+        <!-----------------top header------------------------------>
+    <div class="top_header"><a name="home"></a>
+        <div class="header_logo">
+            <div class="logo_top_img">
+                <a href="index.html">
+                    <svg class="svg_logo_img"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="50" viewBox="0 0 44 50">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        </metadata>
+                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="logo_name">
+                <a href="index.html">
+                    <svg class="logo_svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="97px" height="27px">
+                        <defs>
+                            <linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
+                                <stop offset="0%" stop-color="rgb(0,224,208)" stop-opacity="1" />
+                                <stop offset="100%" stop-color="rgb(74,163,204)" stop-opacity="1" />
+                            </linearGradient>
+
+                        </defs>
+                        <text font-family='Roboto' fill="rgb(255, 255, 255)" font-size="30px" x="0px" y="21px">tajam</text>
+                        <text font-family='Roboto' fill="url(#PSgrad_0)" font-size="30px" x="0px" y="21px">tajam</text>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#expertise">expertise</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#works">works</a></li>
+                <li><a href="#people_say">people say</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="js-top_slider">
+            <div class="slder-item">
+                <h2>We Are Awesome Creative Agency</h2>
+                <hr class="top_header_line"/>
+                <p class="top_header_slider_text">
+                    This is Photoshop's version  of Lorem Ipsum.
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                    amet mauris. Morbi accumsan ipsum velit.
+                </p>
+                <div class="top_slider_button">
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="slder-item">
+                <h2>We Are Awesome Creative Agency</h2>
+                <hr class="top_header_line"/>
+                <p class="top_header_slider_text">
+                    This is Photoshop's version  of Lorem Ipsum.
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                    amet mauris. Morbi accumsan ipsum velit.
+                </p>
+                <div class="top_slider_button">
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="slder-item">
+                <h2>We Are Awesome Creative Agency</h2>
+                <hr class="top_header_line"/>
+                <p class="top_header_slider_text">
+                    This is Photoshop's version  of Lorem Ipsum.
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                    amet mauris. Morbi accumsan ipsum velit.
+                </p>
+                <div class="top_slider_button">
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="slder-item">
+                <h2>We Are Awesome Creative Agency</h2>
+                <hr class="top_header_line"/>
+                <p class="top_header_slider_text">
+                    This is Photoshop's version  of Lorem Ipsum.
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                    amet mauris. Morbi accumsan ipsum velit.
+                </p>
+                <div class="top_slider_button">
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div><!-------------------------------------------------- main header-------------------------------------------->
+    </div>
+    </div>
+<div class="main_header"><a name="about"></a>
+    <div class="container">
+        <div class="story_wrapper">
+    <div class="about_logo">
+        <img src="img/about_logo.png" alt="logo">
+    </div>
+    <div class="our_story">
+        <h3 class="our_story_title">
+            OUR STORY
+        </h3>
+        <p class="our_story_text">
+            This is Photoshop's version  of Lorem Ipsum.
+            Proin gravida nibh vel velit auctor aliquet.
+            Aenean sollicitudin, lorem quis bibendum auctor,
+            nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Duis sed odio sit amet nibh vulputate cursus
+            <br><br>
+            Morbi accumsan ipsum velit. Nam nec tellus a odio
+            tincidunt auctor a ornare odio. Sed non  mauris vitae
+            erat consequat auctor eu in elit. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+        </p>
+    </div>
+    </div>
+    </div>
+    <div class="top_slider_button">
+        <a href="#">LEARN MORE</a>
+    </div>
+</div>
+<!--video_container------------------------->
+<div class="video_container">
+    <div class="container">
+        <div class="video_flex">
+        <div class="play_button">
+           <a data-remodal-target="modal" class="play_button_triple">
+           <img src="img/play@1X.png"></a>
+        </div>
+        <p class="watch_our_story">
+            WATCH OUR STORY
+        </p>
+        </div>
+        <div class="remodal" data-remodal-id="modal">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <iframe width="640" scrolling="0" height="480" frameborder="0" allowtransparency="true" src="https://www.youtube.com/embed/UUkn-enk2RU?ecver=2?autoplay=1"></iframe>
+        </div>
+    </div>
+</div>
+<!----------------------------expertise_container---------------->
+<div class="expertise_container"><a name="expertise"></a>
+    <div class="container">
+        <div class="expertise_title_wraper">
+        <h3 class="experise_title">
+            EXPERTISE
+        </h3>
+
+<p class="experise_title_undertext">
+    Lorem ipsum dolor sit amet proin gravida nibh vel velit
+</p>
+            <hr class="top_header_line"/>
+        <div class="table">
+            <div class="expertise_row">
+                <div class="tab_1 tab">
+                <div class="table_content_wrapper">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 481.6 481.6" style="enable-background:new 0 0 481.6 481.6;" xml:space="preserve">
+<g>
+	<path d="M422.2,24.5H59.4C26.7,24.5,0,51.1,0,83.9V314c0,32.7,26.6,59.4,59.4,59.4h167.9v56.7h-83.7c-7.5,0-13.5,6-13.5,13.5
+		s6,13.5,13.5,13.5H338c7.5,0,13.5-6,13.5-13.5s-6-13.5-13.5-13.5h-83.7v-56.7h167.9c32.7,0,59.4-26.6,59.4-59.4V83.9
+		C481.6,51.1,455,24.5,422.2,24.5z M59.4,51.5h362.9c17.8,0,32.4,14.5,32.4,32.4v192.3H27V83.9C27,66,41.5,51.5,59.4,51.5z
+		 M422.2,346.4H59.4C41.6,346.4,27,331.9,27,314v-10.8h427.6V314C454.6,331.8,440.1,346.4,422.2,346.4z"/>
+</g>
+                    </svg>
+                    <h4>WEB DESIGN & DEVELOPMENT</h4>
+                    <p class="table_text">
+                        This is Photoshop's version  of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                </div>
+                <div class="tab_2 tab"><div class="table_content_wrapper">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M505.025,19.549c-14.688-14.686-44.146-6.307-92.708,26.377c-41.254,27.766-90.738,69.819-139.336,118.417
+			c-72.047,72.046-126.823,142.784-145.061,186.458c-3.002-1.088-6.115-1.958-9.327-2.593c-18.872-3.733-39.369,1.04-56.238,13.086
+			c-24.207,17.286-30.618,41.971-31.549,46.132c-5.096,19.032-14.747,37.191-27.921,52.529c-4.237,4.933-3.753,12.349,1.09,16.691
+			c16.927,15.17,38.58,22.779,61.102,22.779c21.706,0,44.22-7.069,64.077-21.249c9.311-6.649,16.36-14.001,17.725-15.456
+			c16.872-18.131,24.036-41.904,20.482-63.625c42.85-15.361,117.553-72.181,192.871-147.499
+			c48.598-48.598,90.652-98.083,118.417-139.336C511.332,63.696,519.713,34.238,505.025,19.549z M129.392,446.415
+			c-0.642,0.685-6.495,6.852-14.13,12.302c-27.732,19.8-61.684,22.09-86.345,6.845c11.549-15.834,20.132-33.683,25.063-52.254
+			v-0.001c0.055-0.208,0.105-0.418,0.149-0.63c0.041-0.189,4.193-19.127,22.119-31.927c11.53-8.235,25.277-11.547,37.711-9.089
+			c10.255,2.026,18.876,7.88,24.275,16.48C148.829,405.018,145.104,429.532,129.392,446.415z M159.217,376.663
+			c-0.245-0.41-3.87-7.77-10.624-13.24c5.819-15.557,18.346-36.584,35.806-60.729l37.455,37.455
+			C195.505,359.116,173.914,371.48,159.217,376.663z M241.198,325.685l-42.301-42.301c7.31-9.41,15.219-19.157,23.648-29.127
+			l47.806,47.806C260.233,310.608,250.489,318.493,241.198,325.685z M455.159,104.266c-26.926,38.916-66.643,85.235-111.832,130.422
+			c-18.973,18.973-37.367,36.232-54.844,51.694l-50.257-50.257c15.94-18.032,33.32-36.538,51.661-54.877
+			c45.188-45.189,91.507-84.905,130.422-111.834c47.916-33.155,64.45-33.208,67.626-32.774
+			C488.371,39.813,488.313,56.353,455.159,104.266z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M119.256,414.119c-5.783-3.183-13.052-1.076-16.236,4.708c-0.322,0.585-0.711,1.132-1.158,1.626
+			c-0.894,0.93-3.832,3.77-6.884,5.951c-4.63,3.305-9.626,5.674-14.85,7.041c-6.387,1.671-10.209,8.203-8.538,14.59
+			c1.406,5.372,6.25,8.93,11.555,8.93c1.002,0,2.019-0.127,3.034-0.391c8.049-2.106,15.684-5.71,22.693-10.714
+			c4.499-3.213,10.471-9.095,10.512-9.14c1.777-1.927,3.319-4.069,4.583-6.366C127.149,424.57,125.04,417.301,119.256,414.119z"/>
+	</g>
+</g>
+                    </svg>
+                    <h4>BRANDING IDENTITY</h4>
+                    <p class="table_text">
+                        This is Photoshop's version  of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                </div>
+                <div class="tab_3 tab">
+                    <div class="table_content_wrapper">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.811 472.811" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 472.811 472.811">
+                        <g>
+                            <path d="M358.75,0H114.061C97.555,0,84.128,13.428,84.128,29.934v412.944c0,16.505,13.428,29.934,29.934,29.934H358.75   c16.506,0,29.934-13.428,29.934-29.934V29.934C388.683,13.428,375.256,0,358.75,0z M99.128,75.236h274.556v312.687H99.128V75.236z    M114.061,15H358.75c8.234,0,14.934,6.699,14.934,14.934v35.302H99.128V29.934C99.128,21.699,105.827,15,114.061,15z    M358.75,457.811H114.061c-8.234,0-14.934-6.699-14.934-14.934v-44.955h274.556v44.955   C373.683,451.112,366.984,457.811,358.75,457.811z"/>
+                            <path d="m236.406,404.552c-13.545,0-24.564,11.02-24.564,24.565s11.02,24.564 24.564,24.564 24.564-11.02 24.564-24.564-11.019-24.565-24.564-24.565zm0,39.129c-8.031,0-14.564-6.534-14.564-14.564 0-8.031 6.533-14.565 14.564-14.565s14.564,6.534 14.564,14.565c0,8.03-6.533,14.564-14.564,14.564z"/>
+                            <path d="m202.406,47.645h68c2.762,0 5-2.239 5-5s-2.238-5-5-5h-68c-2.762,0-5,2.239-5,5s2.238,5 5,5z"/>
+                            <path d="m184.409,47.645c1.31,0 2.6-0.53 3.53-1.46 0.93-0.94 1.47-2.22 1.47-3.54s-0.54-2.6-1.47-3.54c-0.931-0.93-2.221-1.46-3.53-1.46-1.32,0-2.601,0.53-3.54,1.46-0.93,0.93-1.46,2.22-1.46,3.54s0.53,2.6 1.46,3.54c0.93,0.93 2.22,1.46 3.54,1.46z"/>
+                        </g>
+                    </svg>
+                    <h4>MOBILE APP</h4>
+                    <p class="table_text">
+                        This is Photoshop's version  of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="expertise_row">
+                <div class="tab_4 tab">
+                    <div class="table_content_wrapper">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 390.4 390.4" style="enable-background:new 0 0 390.4 390.4;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M211.2,22c-4.8,0-8,3.2-8,8v168.8L92.8,325.2c-3.2,3.2-3.2,8.8,0.8,11.2c32.8,28.8,74.4,44,117.6,44
+			c99.2,0,179.2-80.8,179.2-179.2S310.4,22,211.2,22z M211.2,364.4c-36.8,0-72-12.8-100.8-35.2l107.2-122.4c1.6-1.6,1.6-3.2,1.6-5.6
+			V38c86.4,4,155.2,76,155.2,163.2C374.4,291.6,300.8,364.4,211.2,364.4z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M180,10C80,10,0,90.8,0,190c0,51.2,22.4,100.8,61.6,135.2c1.6,1.6,3.2,1.6,5.6,1.6c0,0,0,0,0.8,0c2.4,0,4-0.8,5.6-2.4
+			l112.8-128.8c1.6-1.6,1.6-3.2,1.6-5.6V18C188,13.2,184.8,10,180,10z M171.2,186L65.6,307.6C33.6,276.4,15.2,234,15.2,190
+			c0.8-88,69.6-159.2,156-164V186z"/>
+    </g></g>
+                        </svg>
+                    <h4>SEARCH ENGINE OPTIMIZATION</h4>
+                    <p class="table_text">
+                        This is Photoshop's version  of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                </div>
+                <div class="tab_5 tab"><div class="table_content_wrapper">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 197.973 197.973" style="enable-background:new 0 0 197.973 197.973;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M163.84,0H34.133c-1.884,0-3.413,1.529-3.413,3.413v172.423c0,12.208,10.399,22.137,23.178,22.137h90.179
+			c12.781,0,23.178-9.929,23.177-22.137V3.413C167.253,1.529,165.724,0,163.84,0z M160.43,175.836c0,8.443-7.335,15.31-16.352,15.31
+			H53.9c-9.016,0-16.352-6.869-16.352-15.31V6.827H160.43V175.836z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="61.442" y="119.467" width="6.827" height="27.307"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="51.202" y="129.707" width="27.307" height="6.827"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M124.588,102.4c-6.588,0-11.947,5.361-11.947,11.947c0,6.586,5.359,11.947,11.947,11.947
+			c6.588,0,11.947-5.361,11.947-11.947C136.535,107.761,131.176,102.4,124.588,102.4z M124.588,119.467
+			c-2.823,0-5.12-2.297-5.12-5.12c0-2.823,2.297-5.12,5.12-5.12c2.823,0,5.12,2.297,5.12,5.12
+			C129.708,117.17,127.411,119.467,124.588,119.467z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M107.522,122.88c-6.588,0-11.947,5.361-11.947,11.947c0,6.586,5.359,11.947,11.947,11.947
+			c6.588,0,11.947-5.361,11.947-11.947C119.468,128.241,114.109,122.88,107.522,122.88z M107.522,139.947
+			c-2.823,0-5.12-2.297-5.12-5.12c0-2.823,2.297-5.12,5.12-5.12c2.823,0,5.12,2.297,5.12,5.12
+			C112.642,137.65,110.345,139.947,107.522,139.947z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M141.655,122.88c-6.588,0-11.947,5.361-11.947,11.947c0,6.586,5.359,11.947,11.947,11.947
+			c6.588,0,11.947-5.361,11.947-11.947C153.602,128.241,148.243,122.88,141.655,122.88z M141.655,139.947
+			c-2.823,0-5.12-2.297-5.12-5.12c0-2.823,2.297-5.12,5.12-5.12c2.823,0,5.12,2.297,5.12,5.12
+			C146.775,137.65,144.478,139.947,141.655,139.947z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M124.588,143.36c-6.588,0-11.947,5.361-11.947,11.947s5.359,11.947,11.947,11.947c6.588,0,11.947-5.361,11.947-11.947
+			S131.176,143.36,124.588,143.36z M124.588,160.427c-2.823,0-5.12-2.297-5.12-5.12s2.297-5.12,5.12-5.12
+			c2.823,0,5.12,2.297,5.12,5.12S127.411,160.427,124.588,160.427z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M44.375,10.24v81.92h109.227V10.24H44.375z M146.775,85.333H51.202V17.067h95.573V85.333z"/>
+	</g>
+</g>
+                    </svg>
+                    <h4>GAME DEVELOPMENT</h4>
+                    <p class="table_text">
+                        This is Photoshop's version  of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                </div>
+                <div class="tab_6 tab"><div class="table_content_wrapper">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 51.997 51.997" style="enable-background:new 0 0 51.997 51.997;" xml:space="preserve">
+<g>
+	<path d="M51.911,16.242C51.152,7.888,45.239,1.827,37.839,1.827c-4.93,0-9.444,2.653-11.984,6.905
+		c-2.517-4.307-6.846-6.906-11.697-6.906c-7.399,0-13.313,6.061-14.071,14.415c-0.06,0.369-0.306,2.311,0.442,5.478
+		c1.078,4.568,3.568,8.723,7.199,12.013l18.115,16.439l18.426-16.438c3.631-3.291,6.121-7.445,7.199-12.014
+		C52.216,18.553,51.97,16.611,51.911,16.242z M49.521,21.261c-0.984,4.172-3.265,7.973-6.59,10.985L25.855,47.481L9.072,32.25
+		c-3.331-3.018-5.611-6.818-6.596-10.99c-0.708-2.997-0.417-4.69-0.416-4.701l0.015-0.101C2.725,9.139,7.806,3.826,14.158,3.826
+		c4.687,0,8.813,2.88,10.771,7.515l0.921,2.183l0.921-2.183c1.927-4.564,6.271-7.514,11.069-7.514
+		c6.351,0,11.433,5.313,12.096,12.727C49.938,16.57,50.229,18.264,49.521,21.261z"/>
+	<path d="M15.999,7.904c-5.514,0-10,4.486-10,10c0,0.553,0.447,1,1,1s1-0.447,1-1c0-4.411,3.589-8,8-8c0.553,0,1-0.447,1-1
+		S16.551,7.904,15.999,7.904z"/>
+</g>
+                    </svg>
+                    <h4>MADE WITH LOVE</h4>
+                    <p class="table_text">
+                        This is Photoshop's version  of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="team_container"><a name="team"></a>
+    <div class="container">
+        <div class="team_title_wraper">
+        <div class="team_title">MEET OUR AMAZING TEAM
+        </div>
+        <div class="team_title_undertext">
+            Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        </div>
+            <hr class="top_header_line"/>
+            <div class="team_wrapper">
+                <div class="img_name">
+                    <img class="person" src="img/person.jpg" alt="person">
+                    <div class="person_info">
+                    <h4 class="member_name">SEMF UCUK</h4>
+                <p class="profession">CEO & FOUNDER</p>
+                </div>
+                </div>
+                <div class="img_name">
+                    <img class="person" src="img/person.jpg" alt="person">
+                    <div class="person_info">
+                    <h4 class="member_name">DIK ADALIN</h4>
+                    <p class="profession">ENGINEERING</p>
+                </div> </div>
+                <div class="img_name">
+                    <img class="person" src="img/person.jpg" alt="person">
+                    <div class="person_info">
+                    <h4 class="member_name">JENG KOL</h4>
+                    <p class="profession">DESIGNER</p>
+                </div> </div>
+                <div class="img_name">
+                    <img class="person" src="img/person.jpg" alt="person">
+                    <div class="person_info">
+                    <h4 class="member_name">PET ROMAK</h4>
+                    <p class="profession">MARKETING</p>
+                </div>
+                </div>
+            </div>
+            <div class="become_team">
+                Become part of our dream team, let’s join us !
+            </div>
+            <div class="top_slider_button">
+                <a href="#">WE ARE HIRING</a>
+            </div>
+        </div>
+                </div>
+            </div><!----team_container------------->
+<div class="our_works"><a name="works"></a>
+    <div class="container">
+        <div class="top_our_works">
+            <h3 class="our_story_title">OUR WORKS</h3>
+            <p><a class="dribble_hypertext" href="#">See All Project in dribble &#62</a></p>
+        </div>
+    </div>
+    <div class="works">
+        <div class="tab_row">
+            <div class="page1"><a href="#"><img src="img/example_2.jpg"></a></div>
+            <div class="page2"><a href="#"><img src="img/example_3.jpg"></a></div>
+            <div class="page1"><a href="#"><img src="img/example_2.jpg"></a></div>
+            <div class="page2"><a href="#"><img src="img/example_3.jpg"></a></div>
+            <div class="page1"><a href="#"><img src="img/example_2.jpg"></a></div>
+            <div class="page2"><a href="#"><img src="img/example_3.jpg"></a></div>
+        </div>
+        <div class="tab_row">
+            <div class="page1"><a href="#"><img src="img/example_3.jpg"></a></div>
+            <div class="page2"><a href="#"><img src="img/example_2.jpg"></a></div>
+            <div class="page1"><a href="#"><img src="img/example_3.jpg"></a></div>
+            <div class="page2"><a href="#"><img src="img/example_2.jpg"></a></div>
+            <div class="page1"><a href="#"><img src="img/example_3.jpg"></a></div>
+            <div class="page2"><a href="#"><img src="img/example_2.jpg"></a></div>
+        </div>
+    </div>
+    <div class="top_slider_button">
+        <a href="#">Load MORE</a>
+    </div>
+</div>
+<div class="footer_slider"> <!---footer-slider-----><a name="people_say"></a>
+<div class="container">
+    <div class="footer_slider_wrapper">
+    <div class="top_footer_slider">
+        <p class="footer_top_symbol">&#8220</p>
+    </div>
+        <div class="js-footer_slider">
+            <div class="footer_slider_item">
+                <p class="footer_slider_text">
+                    This is Photoshop's version  of Lorem Ipsum.
+                    Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor,
+                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet
+                    mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                    tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                    consequat auctor eu in elit.
+                </p>
+                <div class="footer_slider_name">JANE GALADRIEL</div>
+                <div class="footer_slider_profession">CEO TENGKUREP</div>
+            </div>
+            <div class="footer_slider_item">
+                <p class="footer_slider_text">
+                    This is Photoshop's version  of Lorem Ipsum.
+                    Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor,
+                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet
+                    mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                    tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                    consequat auctor eu in elit.
+                </p>
+                <div class="footer_slider_name">JANE GALADRIEL</div>
+                <div class="footer_slider_profession">CEO TENGKUREP</div>
+            </div>
+            <div class="footer_slider_item"><p class="footer_slider_text">
+                This is Photoshop's version  of Lorem Ipsum.
+                Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollicitudin, lorem quis bibendum auctor,
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                Duis sed odio sit amet nibh vulputate cursus a sit amet
+                mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                consequat auctor eu in elit.
+            </p>
+                <div class="footer_slider_name">JANE GALADRIEL</div>
+                <div class="footer_slider_profession">CEO TENGKUREP</div></div>
+            <div class="footer_slider_item"><p class="footer_slider_text">
+                This is Photoshop's version  of Lorem Ipsum.
+                Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollicitudin, lorem quis bibendum auctor,
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                Duis sed odio sit amet nibh vulputate cursus a sit amet
+                mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                consequat auctor eu in elit.
+            </p>
+                <div class="footer_slider_name">JANE GALADRIEL</div>
+                <div class="footer_slider_profession">CEO TENGKUREP</div></div>
+            <div class="footer_slider_item"><p class="footer_slider_text">
+                This is Photoshop's version  of Lorem Ipsum.
+                Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollicitudin, lorem quis bibendum auctor,
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                Duis sed odio sit amet nibh vulputate cursus a sit amet
+                mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                consequat auctor eu in elit.
+            </p>
+                <div class="footer_slider_name">JANE GALADRIEL</div>
+                <div class="footer_slider_profession">CEO TENGKUREP</div></div>
+            <div class="footer_slider_item"><p class="footer_slider_text">
+                This is Photoshop's version  of Lorem Ipsum.
+                Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollicitudin, lorem quis bibendum auctor,
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                Duis sed odio sit amet nibh vulputate cursus a sit amet
+                mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                consequat auctor eu in elit.
+            </p>
+                <div class="footer_slider_name">JANE GALADRIEL</div>
+                <div class="footer_slider_profession">CEO TENGKUREP</div></div>
+        </div>
+        <div class="nav_slider_wrapper">
+            <!--<div class="nav_slider_prev"><button class="slick-prev slick-arrow"></button></div>-->
+        <div class="js_footer_small_slider">
+            <div class="small_slider">
+                <img src="img/slider_img/4but.png">
+            </div>
+            <div class="small_slider">
+                <img src="img/slider_img/1but.png">
+            </div>
+            <div class="small_slider">
+                <img src="img/slider_img/2but.png"></div>
+            <div class="small_slider">
+                <img src="img/slider_img/3but.png">
+            </div>
+            <div class="small_slider">
+                <img src="img/slider_img/4but.png">
+            </div>
+            <div class="small_slider">
+                <img src="img/slider_img/5but.png">
+            </div>
+        </div>
+           <!-- <div class="nav_slider_next"><button class="slick-next slick-arrow"></button></div>-->
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer_form_container"><a name="contact"></a>
+    <div class="container">
+        <div class="footer_form_wrapper">
+            <div class="footer_form">
+            <h3 class="footer_form_title">
+                GIVE US A GOOD NEWS
+            </h3>
+                <form class="subscibe" action="#" method="get" id="form">
+                    <div class="form_field">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="form_field">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form_field">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form_field">
+                        <textarea name="message" type="text" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" form="form" value="submit">Submit</button>
+                </form>
+            </div>
+            <div class="footer_brands">
+                <h3 class="footer_form_title">OUR HAPPY CLIENT</h3>
+                <div class="brands">
+                    <div class="brands_column">
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/Zara_Logo.svg@1X.png" alt="zara">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/1280px-Barneys_New_York_Logo.svg@1X.png" alt="Barneys">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/Calvin_klein_logo.svg@1X.png" alt="Calvin Klein">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/Converse_logo.svg@1X.png">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/1280px-Levi's_logo.svg@1X.png">
+                        </div>
+                    </div>
+                    <div class="brands_column">
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/Logo_of_Mango_(new).svg@1X.png" alt="Mango">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/1280px-Gucci_Logo.svg@1X.png" alt="gucci">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/1280px-Logo_NIKE.svg@1X.png" alt="Nike">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/Puma_Logo.svg@1X.png" alt="Puma">
+                        </div>
+                        <div class="brand_logo">
+                            <img src="img/brand_logos/Billabong.svg@1X.png" alt="Billabong">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer_container">
+    <div class="container">
+        <div class="top_footer_wrapper">
+            <div class="footer_info">
+                <div class="header_logo">  <!---logo---->
+                    <div class="logo_top_img">
+                        <a href="index.html">
+                            <svg class="svg_logo_img"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="50" viewBox="0 0 44 50">
+                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                </metadata>
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50" xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo_name">
+                        <a href="index.html">
+                            <svg class="logo_svg"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="97px" height="27px">
+                                <defs>
+                                    <linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
+                                        <stop offset="0%" stop-color="rgb(0,224,208)" stop-opacity="1" />
+                                        <stop offset="100%" stop-color="rgb(74,163,204)" stop-opacity="1" />
+                                    </linearGradient>
+                                </defs>
+                                <text font-family='Roboto' fill="rgb(255, 255, 255)" font-size="30px" x="0px" y="21px">tajam</text>
+                                <text font-family='Roboto' fill="url(#PSgrad_0)" font-size="30px" x="0px" y="21px">tajam</text>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer_info_text">
+                    lorem quis bibendum auctor, nisi elit consequat ipsum,
+                    nec sagittis sem nibh elit.
+                    Duis sed odio sit amet auctror a ornare
+                    odio non mauris vitae erat in elit
+                </p>
+            </div>
+            <div class="footer_adress">
+                <h4 class="footer_titles">
+                    OUR STUDIO
+                </h4>
+                <div class="adress">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="adress_info">
+                         Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                        11480 - Indonesia
+                    </p>
+                </div>
+                <div class="cellphone">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+6221-22243333" class="footer_phone">(+62) 21-2224 3333</a>
+                </div>
+            </div>
+            <div class="footer_subscribe">
+                <h4 class="footer_titles">
+                    STAY IN TOUCH
+                </h4>
+                <form class="footer_subscibe" action="#" method="get" id="footer_form">
+                    <div class="bottom_footer_form_wrapper">
+                    <div class="form_footer">
+                        <input class="field_footer" type="email" placeholder="Subscribe our newsletter">
+                    </div>
+                    <button class="Rectangle_10" type="submit" form="footer_form" value="submit">
+                            <img class="button_subscribe_logo" src="icons/subscribe_icon.png">
+                    </button>
+                    </div>
+                </form>
+                <div class="footer_social">
+                    <a href="#"><img class="social_img" src="icons/facebook.png" alt="facebook"></a>
+                    <a href="#"><img class="social_img" src="icons/twitter.png" alt="twitter"></a>
+                    <a href="#"><img class="social_img" src="icons/dribbble.png" alt="dribble"></a>
+                    <a href="#"><img class="social_img" src="icons/instagram.png" alt="instagram"></a>
+                    <a href="#"><img class="social_img" src="icons/gplus.png" alt="g+"></a>
+                    <a href="#"><img class="social_img" src="icons/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer_wraper">
+            <div class="left_wrapper">
+               <a class="help" href="#">HELP</a>
+                <a class="help" href="#"> TERMS & CONDITION</a>
+                <a class="help" href="#">PRIVACY</a>
+            </div>
+            <div class="right_wrapper">Copyright © 2015 - Tajem Creative</div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="dist/remodal.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+</body>
+</html>
