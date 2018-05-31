@@ -1,0 +1,92 @@
+.on-touch {
+  padding: 135px 0 150px;
+  background-color: #f4f5f9;
+
+  .contacts-info {
+    width: 40%;
+    min-width: 282px;
+    padding: 94px 7%;
+    margin-right: 4%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 992px) {
+      float: none;
+      margin-bottom: 4%;
+      width: 100%;
+    }
+
+    h3 {
+      margin: 0 0 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: "Source Sans Pro", sans-serif;
+      @include font-size(24px);
+      @include line-height(24px, 24px);
+      color: $color-red;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      @include font-size(18px);
+      @include line-height(24px, 18px);
+      color: #999999;
+
+      + h3 {
+        margin-top: 64px;
+      }
+    }
+
+    address {
+      font-style: normal;
+    }
+  }
+
+  .on-touch-form {
+    width: 56%;
+    min-height: 557px;
+    padding: 75px 8% 96px;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 992px) {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  input,
+  textarea,
+  button {
+    outline: none;
+    display: block;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px 0 14px;
+    margin-bottom: 12px;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+    @include font-size(14px);
+    @include line-height(24px, 14px);
+    color: #999999;
+  }
+
+  textarea {
+    min-height: 112px;
+    margin-bottom: 30px;
+    resize: none;
+    overflow: hidden;
+  }
+
+  button {
+    padding: 16px 35px 13px;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "template",
+  "authors": [
+    "user"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "normalize.css": "^8.0.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "./dist/jquery.js"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.js",
+        "slick/slick.scss"
+      ]
+    },
+    "normalize.css": {
+      "main": [
+        "normalize.css"
+      ]
+    }
+  },
+  "preen": {
+    "jquery": [
+      "dist/*js"
+    ],
+    "normalize.css": [
+      "*.css"
+    ],
+    "slick": [
+      "dist/*.js"
+    ]
+  }
+}

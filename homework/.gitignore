@@ -1,0 +1,9 @@
+# Folders
+node_modules/
+bower_components/
+sources/*
+dist/*
+
+# Files
+!.gitkeep
+package-lock.json

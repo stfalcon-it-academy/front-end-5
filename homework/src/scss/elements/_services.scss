@@ -1,0 +1,185 @@
+.services {
+  position: relative;
+  overflow: hidden;
+  background-color: #202020;
+
+  .left-col {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 46%;
+    padding: 147px 80px 147px 0;
+    text-align: right;
+
+    @media screen and (max-width: 992px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 85%;
+    }
+
+    @media screen and (max-width: 510px) {
+      width: 95%;
+      padding-right: 0;
+    }
+  }
+
+  .right-col {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 54%;
+    height: 100%;
+    background-color: #ccc;
+    background-image: url("../../img/our-services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .services-list {
+    float: right;
+    width: 88%;
+    max-width: 588px;
+    padding-left: 15px;
+  }
+
+  .list-item {
+    position: relative;
+    margin-bottom: 50px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .item-icon {
+    box-sizing: content-box;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 64px;
+    height: 64px;
+    margin: 14px -117px 0 0;
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    background-clip: padding-box;
+    border-radius: 50%;
+    background-color: #f4f5f9;
+    font-size: 0;
+    text-align: center;
+
+    @media screen and (max-width: 510px) {
+      display: none;
+    }
+
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .services-title {
+    height: 38px;
+    padding: 0 32px 0 0;
+    margin: 0 0 60px 0;
+    border-right: 6px solid $color-red;
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font-size(35px);
+    @include line-height(42px, 35px);
+    @include letter-spacing(100);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f4f5f9;
+  }
+
+  .item-header {
+    margin: 0 0 8px 0;
+    padding: 0;
+    @include font-size(18px);
+    @include line-height(29px, 18px);
+    font-weight: 600;
+    color: $color-red;
+    text-transform: uppercase;
+  }
+
+  .item-desc {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    @include font-size(14px);
+    @include line-height(29px, 14px);
+    color: #999999;
+  }
+
+  .icon-web {
+    &:after {
+      width: 27px;
+      height: 22px;
+      background-image: url("../../img/feachers-spritesheet.png");
+      background-position: -66px -38px;
+    }
+  }
+
+  .icon-print {
+    &:after {
+      width: 31px;
+      height: 26px;
+      background-image: url("../../img/feachers-spritesheet.png");
+      background-position: -29px -34px;
+    }
+  }
+
+  .icon-photo {
+    &:after {
+      width: 25px;
+      height: 22px;
+      background-image: url("../../img/feachers-spritesheet.png");
+      background-position: 0px -38px;
+    }
+  }
+}
+
+.services-nav {
+  position: absolute;
+  z-index: 3;
+  left: 3%;
+  top: 50%;
+  transform: translateX(-50%);
+  font-size: 0;
+
+  .item {
+    padding: 6px 0;
+  }
+
+  a {
+    display: block;
+    height: 34px;
+    width: 1px;
+    padding: 0 4px;
+    border-left: 1px solid #3e3e3e;
+    transition: all .2s ease;
+
+    &:hover {
+      border-left:: 2px solid $color-red;
+    }
+  }
+
+  .item-active {
+    border-left:: 2px solid $color-red;
+  }
+}

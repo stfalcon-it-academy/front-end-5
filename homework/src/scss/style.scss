@@ -1,0 +1,23 @@
+// Libs imports
+@import "./libs/normalize.scss";
+@import "./libs/slick.scss";
+@import "./fonts.scss";
+// Import components
+@import "./components/variables.scss";
+@import "./components/mixins.scss";
+@import "./base.scss";
+// Page elements
+@import "./elements/header.scss";
+@import "./elements/feachers.scss";
+@import "./elements/history.scss";
+@import "./elements/services.scss";
+@import "./elements/work.scss";
+@import "./elements/study.scss";
+@import "./elements/stats.scss";
+@import "./elements/pricing.scss";
+@import "./elements/team.scss";
+@import "./elements/others.scss";
+@import "./elements/blog.scss";
+@import "./elements/form.scss";
+@import "./elements/started.scss";
+@import "./elements/footer.scss";
