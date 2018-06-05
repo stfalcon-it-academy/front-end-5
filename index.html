@@ -19,7 +19,8 @@
     <div class="header">
     <div class="container">
         <!-----------------top header------------------------------>
-    <div class="top_header"><a name="home"></a>
+    <div class="top_header"><div id="home"></div>
+        <div class="top_header_nav">
         <div class="header_logo">
             <div class="logo_top_img">
                 <a href="index.html">
@@ -50,8 +51,15 @@
                 </a>
             </div>
         </div>
-        <nav>
-            <ul>
+        <nav class="main_nav">
+            <a id="nav_menu" class="nav_menu ">
+                <div class="burger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            </a>
+            <ul class="nav_list">
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#expertise">expertise</a></li>
@@ -61,6 +69,7 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
+        </div>
         <div class="js-top_slider">
             <div class="slder-item">
                 <h2>We Are Awesome Creative Agency</h2>
@@ -122,7 +131,7 @@
     </div><!-------------------------------------------------- main header-------------------------------------------->
     </div>
     </div>
-<div class="main_header"><a name="about"></a>
+<div class="main_header"><div id="about"></div>
     <div class="container">
         <div class="story_wrapper">
     <div class="about_logo">
@@ -171,7 +180,7 @@
     </div>
 </div>
 <!----------------------------expertise_container---------------->
-<div class="expertise_container"><a name="expertise"></a>
+<div class="expertise_container"><div id="expertise"></div>
     <div class="container">
         <div class="expertise_title_wraper">
         <h3 class="experise_title">
@@ -375,7 +384,7 @@
         </div>
     </div>
 </div>
-<div class="team_container"><a name="team"></a>
+<div class="team_container"><div id="team"></div>
     <div class="container">
         <div class="team_title_wraper">
         <div class="team_title">MEET OUR AMAZING TEAM
@@ -421,7 +430,7 @@
         </div>
                 </div>
             </div><!----team_container------------->
-<div class="our_works"><a name="works"></a>
+<div class="our_works"><div id="works"></div>
     <div class="container">
         <div class="top_our_works">
             <h3 class="our_story_title">OUR WORKS</h3>
@@ -450,7 +459,7 @@
         <a href="#">Load MORE</a>
     </div>
 </div>
-<div class="footer_slider"> <!---footer-slider-----><a name="people_say"></a>
+<div class="footer_slider"> <!---footer-slider-----><div id="people_say"></div>
 <div class="container">
     <div class="footer_slider_wrapper">
     <div class="top_footer_slider">
@@ -560,7 +569,7 @@
     </div>
 </div>
 </div>
-<div class="footer_form_container"><a name="contact"></a>
+<div class="footer_form_container"><div id="contact"></div>
     <div class="container">
         <div class="footer_form_wrapper">
             <div class="footer_form">
@@ -569,16 +578,16 @@
             </h3>
                 <form class="subscibe" action="#" method="get" id="form">
                     <div class="form_field">
-                        <input type="text" placeholder="Name">
+                        <input type="text" name="name" placeholder="Name" required="required">
                     </div>
                     <div class="form_field">
-                        <input type="email" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email" required="required">
                     </div>
                     <div class="form_field">
                         <input type="text" placeholder="Subject">
                     </div>
                     <div class="form_field">
-                        <textarea name="message" type="text" placeholder="Your message"></textarea>
+                        <textarea name="message" type="text" placeholder="Your message" required="required"></textarea>
                     </div>
                     <button type="submit" form="form" value="submit">Submit</button>
                 </form>
@@ -688,7 +697,7 @@
                 <form class="footer_subscibe" action="#" method="get" id="footer_form">
                     <div class="bottom_footer_form_wrapper">
                     <div class="form_footer">
-                        <input class="field_footer" type="email" placeholder="Subscribe our newsletter">
+                        <input class="field_footer" name="email" type="email" placeholder="Subscribe our newsletter" required="required">
                     </div>
                     <button class="Rectangle_10" type="submit" form="footer_form" value="submit">
                             <img class="button_subscribe_logo" src="icons/subscribe_icon.png">
@@ -718,6 +727,7 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
 <script src="dist/remodal.js"></script>
+<script src="js/jquery.validate.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
 </html>

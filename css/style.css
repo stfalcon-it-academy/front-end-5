@@ -195,7 +195,7 @@ nav :hover {
 
 @media (max-width: 560px) {
   .top_header_slider_text {
-    width: 100%;
+    width: 260px;
     height: 100%;
   }
 }
@@ -213,6 +213,13 @@ nav :hover {
 @media (max-width: 780px) {
   .top_slider_button {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .top_slider_button {
+    font-size: 14px;
+    width: 115px;
   }
 }
 
@@ -524,6 +531,7 @@ nav :hover {
 @media (max-width: 991px) {
   .tab {
     border: none;
+    width: 318px;
   }
 }
 
@@ -970,6 +978,13 @@ h4 {
   align-items: flex-end;
 }
 
+@media (max-width: 560px) {
+  .js_footer_small_slider {
+    padding-bottom: 40px;
+    width: 270px;
+  }
+}
+
 .js_footer_small_slider .slick-current {
   transform: scale(1.4, 1.4);
   cursor: pointer;
@@ -1103,7 +1118,7 @@ h4 {
 
 @media (max-width: 560px) {
   .form_field input {
-    width: 100%;
+    width: 280px;
   }
 }
 
@@ -1111,11 +1126,19 @@ h4 {
   width: 458px;
   height: 200px;
   padding-left: 4px;
+  max-width: 460px;
+  max-height: 260px;
+  min-height: 196px;
+  min-width: 440px;
 }
 
 @media (max-width: 560px) {
   .form_field textarea {
-    width: 100%;
+    width: 280px;
+    max-width: 280px;
+    max-height: 260px;
+    min-height: 196px;
+    min-width: 280px;
   }
 }
 
@@ -1308,6 +1331,10 @@ h3 .footer_form_title {
   margin-top: 42px;
 }
 
+.fa-map-marker-alt:before {
+  color: #ffffff;
+}
+
 .adress_info {
   width: 237px;
   display: inline-block;
@@ -1326,6 +1353,10 @@ h3 .footer_form_title {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.fa-phone:before {
+  color: #ffffff;
 }
 
 .footer_phone {
@@ -1366,6 +1397,12 @@ h3 .footer_form_title {
   outline: none;
 }
 
+@media (max-width: 560px) {
+  .field_footer {
+    width: 190px;
+  }
+}
+
 .button_subscribe_logo {
   padding-top: 6px;
 }
@@ -1400,7 +1437,7 @@ button.Rectangle_10 :hover {
 }
 
 .social_img:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1) rotate(30deg);
   transition: all 0.6s ease-out;
 }
 
@@ -1425,7 +1462,7 @@ button.Rectangle_10 :hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: 275px;
 }
 
 a.help {
@@ -1474,4 +1511,108 @@ a.help:hover {
   color: #00e0d0;
   transform: scale(1.1, 1.1);
   transition: all 0.4s ease-out;
+}
+
+input.error {
+  border: 1px solid #ff0000;
+}
+
+label.error {
+  display: block;
+  color: #ff0000;
+  font-weight: normal;
+}
+
+.fix_nav {
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .fix_nav {
+    background: linear-gradient(0deg, rgba(9, 5, 47, 0.84) 0%, rgba(49, 29, 94, 0.84) 100%);
+    width: 100%;
+  }
+}
+
+.fix_nav a {
+  color: #00e0d0;
+}
+
+.fix_nav :hover {
+  color: #009ceb;
+}
+
+.nav_menu {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .nav_menu {
+    color: #fff;
+    display: block;
+    padding: 12px 10px;
+    cursor: pointer;
+  }
+}
+
+.nav_list {
+  list-style: none;
+}
+
+@media (max-width: 780px) {
+  .nav_list {
+    overflow: hidden;
+    height: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .top_header_nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -22px;
+    padding-top: 6px;
+  }
+}
+
+.nav_open {
+  height: auto;
+  opacity: 0.8;
+}
+
+.burger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #00e0d0;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
