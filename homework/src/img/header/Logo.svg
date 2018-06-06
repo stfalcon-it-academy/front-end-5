@@ -1,0 +1,41 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" width="141" height="52" viewBox="0 0 141 52">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #f4f5f9;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #f4f5f9;
+        stroke-width: 3px;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 41.538px;
+        font-family: "Open Sans";
+      }
+
+      .cls-3 {
+        fill: #4a4c55;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #f1ebe7;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M0,0H51.676V52H0V0Z"/>
+  <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-2" d="M41.954,0H141V52H41.954V0Z"/>
+  <text id="B" class="cls-3" transform="translate(14.35 40.167) scale(0.861 0.867)">B</text>
+  <text id="INO" class="cls-4" transform="translate(61.715 39.6) scale(0.861 0.867)">INO</text>
+</svg>
