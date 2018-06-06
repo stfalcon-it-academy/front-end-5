@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Final</title>
-    <link rel="stylesheet" href="src/css/style.min.css">
+    <link rel="stylesheet" href="src/css/libs/normalize.css">
+    <link rel="stylesheet" href="src/css/libs/slick.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/style.css">
   </head>
   <body>
+
+    <div class='overlay'>
+      <div class='overlay--window'>
+        <div class='overlay--message'>
+          SUPER-PUPER SELF-WRITTEN MODAL WINDOW</div>
+        <div class='overlay--buttons'>
+          <a href='#' class='overlay--button-yes'>YES</a>
+          <a href='#' class='overlay--button-no'>NO</a>
+          <div class='close-button'></div>
+        </div>
+      </div>
+    </div>
 
     <div class='header-bar-frame' id='header'>
       <nav class='header-bar-menu js_unchecked'>
@@ -103,8 +118,7 @@
             </div>
         </div>
       </div>
-      <div id='goBot'>
-      </div>
+      <a id='goBot' href='#'></a>
       <div class='triangle'></div>
     </div>
 
@@ -217,32 +231,31 @@
         <nav class='recent-works--nav'>
           <ul>
             <li>
-              <a href='#'>ALL</a>
+              <a href='#' data-sort-by='all' class='recent-works--nav-all'>ALL</a>
             </li>
             <li>
-              <a href='#'>PRINT DESIGN</a>
+              <a href='#' data-sort-by='printdesign' class='recent-works--nav-printdesign'>PRINT DESIGN</a>
             </li>
             <li>
-              <a href='#'>ANIMATION</a>
+              <a href='#' data-sort-by='animation' class='recent-works--nav-animation'>ANIMATION</a>
             </li>
             <li>
-              <a href='#'>ART</a>
+              <a href='#' data-sort-by='art' class='recent-works--nav-art'>ART</a>
             </li>
             <li>
-              <a href='#'>WEB DESIGN</a>
+              <a href='#' data-sort-by='webdesign' class='recent-works--nav-webdesign'>WEB DESIGN</a>
             </li>
             <li>
-              <a href='#'>PHOTOGRAPHY</a>
+              <a href='#' data-sort-by='photography' class='recent-works--nav-photography'>PHOTOGRAPHY</a>
             </li>
             <li>
-              <a href='#'>VIDEO</a>
+              <a href='#' data-sort-by='video' class='recent-works--nav-video'>VIDEO</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class='recent-works--bricks mw-1920'>
-
-        <div class='recent-work--brick brick-1'>
+        <div class='recent-work--brick brick-1 d-yes' data-category="printdesign">
           <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -250,7 +263,7 @@
             <span class='bg-category'>art / t-shirt</span>
           </div>
         </div>
-        <div class='recent-work--brick brick-2'>
+        <div class='recent-work--brick brick-2 d-yes' data-category="animation">
           <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -258,7 +271,7 @@
             <span class='bg-category'>art / t-shirt</span>
           </div>
         </div>
-        <div class='recent-work--brick brick-3'>
+        <div class='recent-work--brick brick-3 d-yes' data-category="art">
             <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -266,7 +279,7 @@
             <span class='bg-category'>art / t-shirt</span>
           </div>
         </div>
-        <div class='recent-work--brick brick-4'>
+        <div class='recent-work--brick brick-4 d-yes' data-category="webdesign">
           <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -274,7 +287,7 @@
             <span class='bg-category'>art / t-shirt</span>
           </div>
         </div>
-        <div class='recent-work--brick brick-5'>
+        <div class='recent-work--brick brick-5 d-yes' data-category="photography">
           <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -282,7 +295,7 @@
             <span class='bg-category'>art / t-shirt</span>
           </div>
         </div>
-        <div class='recent-work--brick brick-6'>
+        <div class='recent-work--brick brick-6 d-yes' data-category="video">
           <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -290,7 +303,7 @@
             <span class='bg-category'>art / t-shirt</span>
           </div>
         </div>
-        <div class='recent-work--brick brick-7'>
+        <div class='recent-work--brick brick-7 d-yes' data-category="photography">
           <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -298,7 +311,7 @@
             <span class='bg-category'>art / t-shirt</span>
           </div>
         </div>
-        <div class='recent-work--brick brick-8'>
+        <div class='recent-work--brick brick-8 d-yes' data-category="photography">
           <a href='#'></a>
           <div class='bg-brick'></div>
           <div class='bg-text'>
@@ -353,9 +366,9 @@
         </div>
         <div class='case-study--slide-block-right'>
           <div class='case-study--slide-block-right--slider'>
-            <div class='pic-1'><img src='src/img/case/1.png'></div>
-            <div class='pic-2'><img src='src/img/case/2.png'></div>
-            <div class='pic-3'><img src='src/img/case/3.png'></div>
+            <div class='pic-1'><img src='src/img/case/1.png' alt='picture'></div>
+            <div class='pic-2'><img src='src/img/case/2.png' alt='picture'></div>
+            <div class='pic-3'><img src='src/img/case/3.png' alt='picture'></div>
           </div>
         </div>
       </div>
@@ -647,11 +660,11 @@
         <div class='form-block'>
           <div class='form-block--content'>
             <form id='form-block--form' method='get'>
-              <input type='text' placeholder='Name' required>
-              <input type='email' placeholder='Email' required>
-              <input type='text' placeholder='Subject' required>
-              <textarea placeholder='Message' required></textarea>
-              <button type='submit'>SEND MESSAGE</button>
+              <input type='text' name='name' placeholder='Name'>
+              <input type='email' name='email' placeholder='Email'>
+              <input type='text' name='subject' placeholder='Subject'>
+              <textarea placeholder='Message' name='message'></textarea>
+              <button type='submit' id='form-button'>SEND MESSAGE</button>
             </form>
           </div>
         </div>
@@ -664,7 +677,7 @@
       <p>
         30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.
       </p>
-      <button><a href='#'>START FREE TRIAL</a></button>
+      <a href='#' id='start-button'>START FREE TRIAL</a>
     </div>
     <div class='footer' id='footer'>
       <div class='centrifier flex f-betw wrap-on-600 rel'>
@@ -685,6 +698,10 @@
       </div>
     </div>
 
-     <script type="text/javascript" src="src/js/scripts.min.js"></script>
+     <script type='text/javascript' src='src/js/libs/jquery.min.js'></script>
+     <script type="text/javascript" src="src/js/libs/slick.js"></script>
+     <script type="text/javascript" src="src/js/libs/animated-scroll-to.js"></script>
+     <script type='text/javascript' src='src/js/libs/jquery.validate.min.js'></script>
+     <script type="text/javascript" src="src/js/script.js"></script>
   </body>
 </html>

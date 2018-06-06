@@ -1,0 +1,24 @@
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Regular.otf');
+}
+@font-face {
+  font-family: OpenSans-semiBold;
+  src: url('../fonts/OpenSans-SemiBold.otf');
+}
+@font-face {
+  font-family: OpenSans-semiBoldItalic;
+  src: url('../fonts/OpenSans-SemiBoldItalic.otf');
+}
+@font-face {
+  font-family: Source-sans;
+  src: url('../fonts/SourceSansPro-Regular.otf');
+}
+@font-face {
+  font-family: Source-sans-light;
+  src: url('../fonts/SourceSansPro-Light.otf');
+}
+@font-face {
+  font-family: Source-sans-bold;
+  src: url('../fonts/SourceSansPro-Bold.otf');
+}
