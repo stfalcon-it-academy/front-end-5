@@ -1,17 +1,18 @@
-function mathPow() {
-    var a = prompt("Введіть число");
-    var b = prompt("Введіть степінь");
-    var x = Math.pow(a, b);
-    if (a === "") {
-        alert("Число не введено!");
-        mathPow()
+function mathPow(a, b) {
+    var x = a;
+    for (i = 1; i < b; i++) {
+        x = x * a;
     }
-    else if (b === "") {
-        alert("Степінь не введено!");
-        mathPow()
-    }
-    else
-        alert("Число " + a + " піднято до степеню " + b + ". Результат: " + x);
+    return x;
 }
 
-mathPow();
+var a = prompt("Введіть число");
+var b = prompt("Введіть степінь");
+if (a === "") {
+    alert("Число не введено!");
+}
+else if (b === "") {
+    alert("Степінь не введено!");
+}
+else
+    alert("Число " + a + " піднято до степеню " + b + ". Результат: " + mathPow(a, b));
