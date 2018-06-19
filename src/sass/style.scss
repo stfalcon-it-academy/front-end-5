@@ -1,0 +1,25 @@
+// Підключення Css
+
+//@import "foo.css";
+//@import "foo" screen;
+//@import url(foo);
+
+
+// Підключення Scss
+@import "components/_normalize";
+@import "components/slick";
+@import "components/_variable";
+@import "components/_grid";
+@import "components/_colors";
+@import "components/_mixin";
+
+
+
+@import "chunks/_header";
+@import "chunks/_features";
+@import "chunks/_works";
+@import "chunks/_meet";
+@import "chunks/_some";
+@import "chunks/_discuss";
+@import "chunks/_footer";
+

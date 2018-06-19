@@ -1,0 +1,255 @@
+.discuss {
+  padding-top: 3.8%;
+}
+
+.h2_title_discuss {
+  @include h2_title;
+  margin-bottom: 1.8%;
+}
+.heart_discuss{
+  @include title_heart;
+  margin-bottom: 4%;
+}
+
+.discuss_text {
+  @include Lato-Thin;
+  @include font-size(18px);
+  line-height: 24px;
+  color: $color_8;
+  text-align: center;
+  margin: 0 auto 6.4% auto;
+  width: 75%;
+}
+
+.location {
+  margin-right: 12%;
+  h3 {
+    @include OpenSans;
+    @include font-size(18.35px);
+    color: $color_8;
+    line-height: 26.7px;
+    margin-bottom: 11.5%;
+  }
+  address {
+    @include OpenSans;
+    @include font-size(10.84px);
+    color: $color_17;
+    line-height: 20.02px;
+    max-width: 69%;
+  }
+  a {
+    @include OpenSans;
+    @include font-size(10.84px);
+    color: $color_17;
+    line-height: 20.02px;
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+@media (max-width: 768px){
+  .location {
+    margin-right: 0;
+    h3 {
+      text-align: center;
+    }
+    address {
+      max-width: 100%;
+      text-align: center;
+    }
+    a {
+      text-align: center;
+    }
+  }
+}
+
+.fact_wrap1,
+.fact_wrap2,
+.fact_wrap3,
+.fact_wrap4,
+.message {
+  h3 {
+    @include OpenSansB;
+    @include font-size(20.02px);
+    line-height: 26.7px;
+    color: $color_8;
+    margin-bottom: 3.6%;
+  }
+}
+
+@media (max-width: 768px){
+  .say {
+      padding-top: 8%;
+      text-align: center;
+  }
+}
+
+
+.name_txt,
+.email_txt,
+.message_txt {
+  width: 100% ;
+  height: 50px;
+  padding: 5px 0;
+  background: #ffffff;
+  border: none;
+  font-size: 15px;
+  color: #000000;
+  border-bottom: 1px solid $color_18;
+  box-sizing: border-box;
+  outline:none;
+  opacity: .2;
+  &::placeholder {
+    @include OpenSans;
+    @include font-size(10.84px);
+    line-height: 20.02px;
+    color: $color_18;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px){
+  .name_txt,
+  .email_txt {
+    margin-left: 0;
+  }
+}
+
+.name_txt,
+.email_txt {
+  width: 95%;
+  margin-bottom: 4%;
+}
+
+.email_txt {
+  margin-left: 4%;
+}
+
+@media (max-width: 768px){
+  .email_txt {
+    margin-left: 0;
+  }
+}
+.message_txt {
+ margin-bottom: 2%;
+}
+
+
+
+.btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+  .btn_send_now {
+    @include OpenSans;
+    @include font-size(13.35px);
+    line-height: 20.02px;
+    color: $color_2;
+    border: none;
+    cursor: pointer;
+    padding: 14px 0 14px  25px;
+    position: relative;
+    outline: none;
+    background: $color_1;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 14px;
+      background: url("../img/icons/envelope.png") no-repeat;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.discuss_social {
+  padding-top: 12%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    display: inline-block;
+    width: 70px;
+    height: 23px;
+    position: relative;
+    text-align: center;
+
+    &:before{
+      position: absolute;
+      content: '';
+      width: 23px;
+      height: 23px;
+      opacity: .2;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .discuss_social {
+    justify-content: center;
+    li{
+      margin-bottom:5% ;
+    }
+  }
+}
+
+@media (max-width: 369px) {
+  .discuss_social {
+    a {
+      width: 50px;
+    }
+  }
+
+}
+
+.discuss_social {
+  li{
+    margin-bottom: 15%;
+  }
+}
+
+.behance:before {
+  background: url("../img/icons/behance.png") center no-repeat;
+}
+
+.twitter_discuss:before {
+  background: url("../img/icons/twitter_discuss.png") center no-repeat;
+}
+
+.dribbble_discuss:before {
+  background: url("../img/icons/dribbble_discuss.png") center no-repeat;
+}
+
+.forrst:before {
+  background: url("../img/icons/forrst.png") no-repeat;
+}
+
+.google_plus:before {
+  background: url("../img/icons/google_plus.png") no-repeat;
+}
+
+.behance:hover:before,
+.twitter_discuss:hover:before,
+.dribbble_discuss:hover:before,
+.forrst:hover:before,
+.google_plus:hover:before {
+  opacity: 1;
+}
+
+.map {
+  margin-top: 3.7%;
+  height: 185px;
+}
+
+
+
+
+
+
