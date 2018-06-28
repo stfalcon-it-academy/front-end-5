@@ -1,0 +1,185 @@
+footer {
+  padding-top: 2.5% ;
+  background: $color_19;
+}
+
+.footer_logo {
+  h2 {
+    @include Lato-Black;
+    @include font-size(26.72px);
+    letter-spacing: 0.05em;
+    color: $color_1;
+    margin-bottom: 6%;
+    span {
+      color: $color_3;
+    }
+  }
+  .logo_text {
+    @include Lato-Thin;
+    @include font-size(12.41px);
+    line-height: 22.9px;
+    color: $color_1;
+    margin-bottom: 16%;
+    padding-right: 17%;
+  }
+}
+
+@media (max-width: 575px) {
+  h2 {
+    text-align: center;
+  }
+  .logo_text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  .footer_logo {
+    .logo_text{
+      margin-bottom: 7%;
+      padding-right: 0;
+    }
+  }
+}
+
+.subscribe_wrap {
+  h3 {
+    @include Lato-Black;
+    @include font-size(18px);
+    line-height: 21.61px;
+    color: $color_1;
+    margin-bottom: 14%;
+  }
+  form {
+    width: 245px;
+    border: 2px $color_1 solid;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 6%;
+  }
+  .subscribe_text {
+    @include OpenSans;
+    @include font-size(11.7px);
+    line-height: 21.61px;
+    color: $color_1;
+    margin-bottom: 16%;
+  }
+}
+
+@media (max-width: 575px) {
+  .subscribe_wrap {
+    margin-left: 0;
+    h3 {
+      text-align: center;
+      margin-bottom: 5%;
+    }
+    form {
+      margin:0 auto 5% auto;
+    }
+    .subscribe_text {
+      text-align: center;
+      margin-bottom: 7%;
+    }
+  }
+}
+
+@media (max-width: 989px) {
+  .subscribe_wrap {
+    margin-left: 10%;
+    h3 {
+      margin-bottom: 7%;
+    }
+  }
+}
+
+
+.subscribe_txt {
+  @include Lato-Thin;
+  @include font-size(15px);
+  border: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: $color_1;
+  padding: 10px 5px;
+  width: 200px;
+}
+
+.subscribe_send_now {
+  width: 40px;
+  height: 37px;
+  background: url("../../img/icons/arrow.png") center no-repeat;
+  color: $color_2;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.explore {
+  h3 {
+    @include Lato-Black;
+    @include font-size(18px);
+    line-height: 21.38px;
+    color: $color_1;
+    margin-bottom: 8.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .explore {
+    h3 {
+      text-align: center;
+    }
+  }
+}
+
+.explore_service {
+  display: flex;
+  justify-content: flex-start;
+  .one_list,
+  .two_list {
+    a {
+      @include OpenSans;
+      @include font-size(11.58px);
+      line-height: 28.5px;
+      color: $color_1;
+      display: block;
+    }
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .explore {
+    display: none;
+  }
+}
+
+@media (max-width: 574px) {
+  .explore {
+    display: block;
+    margin-bottom: 4%;
+  }
+
+  .explore_service {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.two_list {
+  margin-left: 15%;
+}
+
+
+.one_list,
+.two_list {
+  a:hover {
+    text-decoration: underline;
+  }
+}
