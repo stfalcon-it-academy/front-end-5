@@ -265,10 +265,42 @@ $(document).ready(function () {
                 d_height = $(document).height(),    // Висота всього документа
                 e_height = countbox.outerHeight();  // Повна висота блока з бігаючими цифрами
         if (w_top + 1000>= e_top || w_height + w_top === d_height || e_height + e_top < w_height) {
-            $('.value').spincrement({
-                thousandSeparator: "",
-                duration: 100000
-            });
+
+            $('#value1')
+                .prop('number', 0)
+                .animateNumber(
+                    {
+                        number: 3200
+                    },
+                    20000
+                );
+
+            $('#value2')
+                .prop('number', 0)
+                .animateNumber(
+                    {
+                        number: 120
+                    },
+                    20000
+                );
+
+            $('#value3')
+                .prop('number', 0)
+                .animateNumber(
+                    {
+                        number: 360
+                    },
+                    20000
+                );
+
+            $('#value4')
+                .prop('number', 0)
+                .animateNumber(
+                    {
+                        number: 42
+                    },
+                    20000
+                );
 
             show = false;
         }
