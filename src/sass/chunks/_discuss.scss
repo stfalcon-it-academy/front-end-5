@@ -89,8 +89,7 @@
 
 
 .name_txt,
-.email_txt,
-.message_txt {
+.email_txt{
   width: 100% ;
   height: 50px;
   padding: 5px 0;
@@ -113,12 +112,6 @@
   }
 }
 
-@media (max-width: 768px){
-  .name_txt,
-  .email_txt {
-    margin-left: 0;
-  }
-}
 
 .name_txt,
 .email_txt {
@@ -126,9 +119,6 @@
   margin-bottom: 4%;
 }
 
-.email_txt {
-  margin-left: 4%;
-}
 
 @media (max-width: 768px){
   .email_txt {
@@ -139,6 +129,29 @@
  margin-bottom: 2%;
 }
 
+
+.message_txt {
+  width: 98% ;
+  height: 50px;
+  padding: 5px 0;
+  background: #ffffff;
+  border: none;
+  font-size: 15px;
+  color: #000000;
+  border-bottom: 1px solid $color_18;
+  box-sizing: border-box;
+  outline:none;
+  opacity: .2;
+  &::placeholder {
+    @include OpenSans;
+    @include font-size(10.84px);
+    line-height: 20.02px;
+    color: $color_18;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
 
 
 .btn_wrap {
@@ -236,11 +249,18 @@
 }
 
 .behance:hover:before,
-.twitter_discuss:hover:before,
 .dribbble_discuss:hover:before,
-.forrst:hover:before,
 .google_plus:hover:before {
   opacity: 1;
+  transform: scale(1.2, 1.2) rotate(-30deg);
+  transition: all 1s ease-out;
+}
+
+.twitter_discuss:hover:before,
+.forrst:hover:before {
+  opacity: 1;
+  transform: scale(1, 1) rotate(30deg);
+  transition: all 1s ease-out;
 }
 
 .map {
@@ -249,7 +269,28 @@
 }
 
 
+.two_field {
+  .error,
+  div {
+    width: 50%;
+  }
+}
 
+.one_field {
+  .error,
+  div {
+    width: 100%;
+  }
+}
 
+.error-message {
+  color: red;
+}
 
-
+.error {
+  .name_txt,
+  .email_txt,
+  .message_txt {
+    margin-bottom: 0;
+  }
+}

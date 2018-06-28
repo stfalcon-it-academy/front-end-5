@@ -1,10 +1,11 @@
-.some_slider_item0,
-.some_slider_item1 {
+
+.some{
   width: 100%;
   max-width: 2000px;
   position: relative;
   padding-top: 3.7%;
   padding-bottom: 3.1%;
+  margin: 0 auto;
   &:before {
     position: absolute;
     content: '';
@@ -17,13 +18,10 @@
   }
 }
 
-.some_slider_item0 {
-  background: $color_3 url("../img/city0.jpg") 50% 0/cover no-repeat;
+.some {
+  background: $color_3 url("../img/city0.jpg") center/cover no-repeat;
 }
 
-.some_slider_item1 {
-  background: $color_3 url("../img/city1.jpg") 50% 0/cover no-repeat;
-}
 
 .h2_title_some {
   @include h2_title;
@@ -35,7 +33,7 @@
 }
 .heart_some{
   @include title_heart;
-  margin-bottom: 1.2%;
+  margin-bottom: 5%;
   opacity: .5;
   width: 170px;
   background: url("../img/icons/heart2.png") center no-repeat;
@@ -72,6 +70,7 @@
     color: $color_1;
     text-align: center;
     margin-bottom: 1%;
+
   }
   .fact {
     @include OpenSans;
@@ -83,13 +82,34 @@
   }
 }
 
+@media (max-width: 575px){
+  .fact_wrap1,
+  .fact_wrap2,
+  .fact_wrap3,
+  .fact_wrap4 {
+    padding-top: 20%;
+    margin-bottom: 10%;
+  }
+}
+
+
 @media (max-width: 768px){
   .fact_wrap1,
   .fact_wrap2,
   .fact_wrap3,
   .fact_wrap4 {
-    padding-top: 30%;
+    padding-top: 40%;
     margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 989px){
+  .fact_wrap1,
+  .fact_wrap2,
+  .fact_wrap3,
+  .fact_wrap4 {
+    margin-bottom: 10%;
+    padding-top: 30%;
   }
 }
 

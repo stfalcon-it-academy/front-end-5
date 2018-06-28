@@ -54,6 +54,11 @@
       top: 0;
       left: 2%;
     }
+    &:hover:before{
+      border: 4px $color_3 double ;
+      transform: scale(1.1, 1.1) rotate(360deg);
+      transition: all 1s ease-out;
+    }
   }
 }
 
@@ -159,14 +164,14 @@
   }
   &:hover:before{
     opacity: 1;
+    transform: scale(1.1, 1.1) rotate(360deg);
+    transition: all 1s ease-out;
   }
 }
 
 .customize:before {
   background: url("../img/icons/customize.png") center no-repeat;
-  :hover {
   }
-}
 
 .time:before {
   background: url("../img/icons/time.png") center no-repeat;

@@ -1,6 +1,6 @@
 .meet {
   padding-top: 5.3%;
-  margin-bottom: 5.5%;
+  margin-bottom: 1%;
 }
 
 .h2_title_meet {
@@ -18,15 +18,56 @@
   line-height: 17.75px;
   color: $color_8;
   text-align: center;
-  margin: 0 auto 9.4% auto;
+  margin: 0 auto 2% auto;
   width: 70%;
 }
+
+.meet_slider {
+  width: 100%;
+  position: relative;
+  .slick-prev,
+  .slick-next{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border: 1px solid rgba(0,0,0,.2);
+    transition: .5s;
+    border-bottom: none;
+    border-left: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    color: transparent;
+    &:hover {
+      border-color: $color_2;
+      box-shadow: 7px -5px 12px rgba(0,0,0,.1);
+    }
+  }
+  .slick-prev {
+    transform: rotate(225deg);
+    bottom: 50%;
+    left: -3%;
+  }
+  .slick-next {
+    transform: rotate(45deg);
+    bottom: 50%;
+    right: -3%;
+  }
+}
+
+.meet_slider_item {
+  width: 100%;
+  padding-top: 3.7%;
+  padding-bottom: 3.1%;
+}
+
+
 
 .photo {
   width: 224px;
   height: 249px;
   position: relative;
-  margin: 0 auto 5% auto;
+  margin: 0 auto 2% auto;
 }
 
 .inner_overlay_meet {

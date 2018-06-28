@@ -3,15 +3,45 @@
 //init slider Slick
 
 $(function () {
-    $('.some_slider-js').slick({
+    $('.meet_slider-js' ).slick({
         arrows: false,
         initialSlide: 0,
         adaptiveHeight: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        speed: 2000
+        slidesToShow: 4,
+        speed: 2000,
+        responsive: [
+            {
+                breakpoint: 1170,
+                settings: {
+                    slidesToShow: 4,
+
+                }
+            },{
+                breakpoint: 990,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },{
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+
+                }
+            }
+        ]
     });
 });
 
@@ -182,7 +212,7 @@ $('.button-group').each(function (i, buttonGroup) {
 $(window).scroll(function () {
     var header = $('.header_top');
 
-    if ($(window).scrollTop() >= 200) {
+    if ($(window).scrollTop() >= 300) {
         header.addClass('fixed-header');
     }
     else {
@@ -194,15 +224,14 @@ $(window).scroll(function () {
 //burger menu
 
 $(function () {
-    $('.burger_trigger, .header_menu').click(function () {
-        $('.header_menu, .burger_menu').toggleClass('menu_opened');
+    $('.burger_trigger, .header_menu a').click(function () {                     //При кліку на .burger_trigger та  .header_menu a' класи
+        $('.header_menu,.burger_menu').toggleClass('menu_opened');               //До .header_menu,.burger_menu додається або забирається клас menu_opened
     });
     $(document).click(function (e) {
-        if ($(e.target).closest('.burger_trigger').length) return;
-        $('.header_menu, .burger_menu').removeClass('menu_opened');
-        e.stopPropagation();
-    })
-
+        if ($(e.target).closest('.burger_trigger, .header_menu').length) return; //При кліку .burger_trigger, .header_menu
+        $('.header_menu,.burger_menu').removeClass('menu_opened')                // У класів .header_menu,.burger_menu видаляємо клас menu_opened
+        e.stopPropagation();                                                     //зупиняєм всплиття події
+    });
 });
 
 
@@ -212,7 +241,7 @@ $(document).ready(function(){
 
     const HEIGHT_HEADER = 46;
 
-    $(".header_menu").on("click","a", function (event) {
+    $('.header_menu').on('click','a', function (event) { //При кліку на .header_menu
         event.preventDefault();
         let id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -221,3 +250,67 @@ $(document).ready(function(){
     });
 });
 
+
+//running number
+
+$(document).ready(function () {
+
+    var show = true;
+    var countbox = $('.some');
+    $(window).on("scroll load resize", function () {
+        if (!show) return false;                    //  Відміна показу анимації, якщо вона вже була виконана
+           var w_top = $(window).scrollTop(),       // Кількість пікселів на яку була проскролена сторінка
+                e_top = countbox.offset().top,      // Відстань від блока бігаючими цифрами до верху всього документа
+                w_height = $(window).height(),      // Висота вікна браузера
+                d_height = $(document).height(),    // Висота всього документа
+                e_height = countbox.outerHeight();  // Повна висота блока з бігаючими цифрами
+        if (w_top + 1000>= e_top || w_height + w_top === d_height || e_height + e_top < w_height) {
+            $('.value').spincrement({
+                thousandSeparator: "",
+                duration: 100000
+            });
+
+            show = false;
+        }
+    });
+
+});
+
+
+//validate form
+
+function showError(container, errorMessage) {
+    container.className = 'error';
+    var msgElem = document.createElement('span');
+    msgElem.className = "error-message";
+    msgElem.innerHTML = errorMessage;
+    container.appendChild(msgElem);
+}
+
+function resetError(container) {
+    container.className = '';
+    if (container.lastChild.className === "error-message") {
+        container.removeChild(container.lastChild);
+    }
+}
+
+function validate(form) {
+    var elems = form.elements;
+
+    resetError(elems.name.parentNode);
+    if (!elems.name.value) {
+        showError(elems.name.parentNode, "Введіть ім'я.");
+    }
+
+
+    resetError(elems.email.parentNode);
+    if (!elems.email.value) {
+        showError(elems.email.parentNode, 'Вкажіть email адресу.');
+    }
+
+    resetError(elems.message.parentNode);
+    if (!elems.message.value) {
+        showError(elems.message.parentNode, 'Відсутній текст повідомлення.');
+    }
+
+}
