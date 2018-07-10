@@ -1,0 +1,167 @@
+
+//import fonts
+
+@mixin Lato-Black {
+  font-family:'Lato';
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin Lato-ThinItalic {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: italic;
+}
+
+@mixin Lato-Thin {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin OpenSansS {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin OpenSans {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin  OpenSansB {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin h2_title {
+  h2 {
+    @include Lato-Black;
+    @include font-size(28px);
+    color: $color_3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@mixin title_heart{
+  width: 230px;
+  height: 18px;
+  opacity: .3;
+  background: url(" ../img/icons/heart.png") center no-repeat;
+  margin: 0 auto;
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    background-color: $color_2;
+    opacity: 0.1;
+  }
+  &:before{
+    top: 50%;
+    left: 0;
+  }
+  &:after {
+    top: 50%;
+    right: 0;
+  }
+}
+
+
+
+@font-face {
+  font-family:'Lato';
+  src: url('../fonts/Lato-Black/Lato-Black.eot');
+  src: url('../fonts/Lato-Black/Lato-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Lato-Black/Lato-Black.woff2') format('woff2'),
+  url('../fonts/Lato-Black/Lato-Black.woff') format('woff'),
+  url('../fonts/Lato-Black/Lato-Black.ttf') format('truetype'),
+  url('../fonts/Lato-Black/Lato-Black.svg#Lato-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-ThinItalic/Lato-ThinItalic.eot');
+  src: url('../fonts/Lato-ThinItalic/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Lato-ThinItalic/Lato-ThinItalic.woff2') format('woff2'),
+  url('../../fonts/Lato-ThinItalic/Lato-ThinItalic.woff') format('woff'),
+  url('../fonts/Lato-ThinItalic/Lato-ThinItalic.ttf') format('truetype'),
+  url('../fonts/Lato-ThinItalic/Lato-ThinItalic.svg#Lato-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Thin/Lato-Thin.eot');
+  src: url('../fonts/Lato-Thin/Lato-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Lato-Thin/Lato-Thin.woff2') format('woff2'),
+  url('../fonts/Lato-Thin/Lato-Thin.woff') format('woff'),
+  url('../fonts/Lato-Thin/Lato-Thin.ttf') format('truetype'),
+  url('../fonts/Lato-Thin/Lato-Thin.svg#Lato-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff2') format('woff2'),
+  url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff') format('woff'),
+  url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.ttf') format('truetype'),
+  url('../fonts/OpenSans-SemiBold/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans/OpenSans.eot');
+  src: url('../fonts/OpenSans/OpenSans.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans/OpenSans.woff2') format('woff2'),
+  url('../fonts/OpenSans/OpenSans.woff') format('woff'),
+  url('../fonts/OpenSans/OpenSans.ttf') format('truetype'),
+  url('../fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Bold/OpenSans-Bold.woff2') format('woff2'),
+  url('../fonts/OpenSans-Bold/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype'),
+  url('../fonts/OpenSans-Bold/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+// font px to rem
+@mixin  font-size($px-value){
+  font-size: $px-value / $body-font-size * 1rem;
+}
+
+//letter spacing px to em
+@mixin letter-spacing($px-value, $font-size) {
+  letter-spacing: $px-value / $font-size * 1em;
+}
+
+// relative line height
+@mixin line-height($px-value, $font-size){
+  line-height: $px-value / $font-size;
+}
+
+
